@@ -1,0 +1,88 @@
+{
+  "id": "lesson_variability_intuition",
+  "title": "ばらつきを直感でつかむ",
+  "subtitle": "図とストーリーで理解するデータの散らばり",
+  "estimated_minutes": 17,
+  "topic": "descriptive_statistics",
+  "summary": "数式だけではつかみにくい「データの散らばり」を、ドットプロットやレンジチャートを使って直感的に理解します。プレゼン資料で伝わる説明の組み立て方も学びましょう。",
+  "learning_objectives": [
+    "視覚表現を通じてばらつきの特徴を説明できる",
+    "レンジ・四分位範囲・標準偏差の関係を整理できる",
+    "ストーリー仕立てでばらつきを伝えるプレゼンスライドを構成できる"
+  ],
+  "prerequisites": [
+    "lesson_coefficient_variation",
+    "lesson_histogram_basics"
+  ],
+  "steps": [
+    {
+      "id": "lesson_variability_intuition_step01",
+      "order": 1,
+      "type": "text",
+      "title": "ばらつきを目で感じるドットプロット",
+      "body": "10人分の睡眠時間データをドットプロットにした図を思い浮かべましょう。平均が同じでも、点の散らばり具合を見るだけで「まとまりのある集団」か「バラバラな集団」かが直感的に伝わります。"
+    },
+    {
+      "id": "lesson_variability_intuition_step02",
+      "order": 2,
+      "type": "image",
+      "title": "3種類の視覚表現を比較",
+      "body": "ドットプロット、ボックスプロット、エラーバー付き棒グラフの3種類を同じデータで描いた比較図です。それぞれが伝えるメッセージの違いを確認しましょう。",
+      "media": {
+        "type": "image",
+        "asset_name": "variability_intuition_fig01.png",
+        "caption": "ばらつきを伝える3つの図の比較"
+      }
+    },
+    {
+      "id": "lesson_variability_intuition_step03",
+      "order": 3,
+      "type": "text",
+      "title": "レンジと四分位範囲の使い分け",
+      "body": "レンジ（最大値 - 最小値）は手軽ですが、外れ値に弱い指標です。四分位範囲（IQR）はデータの中央50%に注目するため、外れ値の影響を受けにくいという長所があります。状況によってどちらを強調するか考えましょう。",
+      "checkpoint": {
+        "prompt": "外れ値が多いデータのばらつきを説明するとき、IQRを使うと伝わりやすい理由は？",
+        "expected_answer": "中央50%に注目するため外れ値の影響を避け、典型的な散らばりを説明できるから。"
+      }
+    },
+    {
+      "id": "lesson_variability_intuition_step04",
+      "order": 4,
+      "type": "image",
+      "title": "ストーリー仕立てのスライド例",
+      "body": "プロジェクトチームの作業時間データを例に、ばらつきの原因を3枚のスライドで説明する構成を示しました。各スライドでどんな問いを投げかけると効果的かメモしています。",
+      "media": {
+        "type": "image",
+        "asset_name": "variability_intuition_fig02.png",
+        "caption": "ストーリー仕立てでばらつきを伝えるスライド構成"
+      }
+    },
+    {
+      "id": "lesson_variability_intuition_step05",
+      "order": 5,
+      "type": "text",
+      "title": "数値指標とのブリッジ",
+      "body": "視覚表現で直感をつかんだら、標準偏差や変動係数といった数値指標を添えて定量的なメッセージに落とし込みます。視覚と数値を往復することで、説得力のある伝え方が完成します。"
+    },
+    {
+      "id": "lesson_variability_intuition_step06",
+      "order": 6,
+      "type": "text",
+      "title": "まとめ: ばらつきは語り方が命",
+      "body": "ばらつきは「大きい・小さい」で終わらせず、視覚とストーリーで背景を語ることが大切です。図と指標の二刀流で、意思決定者に納得感を届けましょう。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "ドットプロット",
+      "四分位範囲",
+      "視覚化"
+    ],
+    "external_links": [
+      {
+        "title": "データ可視化の教科書（統計編）",
+        "url": "https://www.visualizingdata.com/"
+      }
+    ]
+  }
+}

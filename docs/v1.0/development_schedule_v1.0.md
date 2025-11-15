@@ -204,23 +204,23 @@
 ### Codex CLI: コンテンツ作成（後半）
 **期間**: 7日
 
-- [ ] **Day 1-2: レッスン7〜8**
+- [x] **Day 1-2: レッスン7〜8**
   - 変動係数
   - データのばらつきの直感
-  - JSON執筆
+  - JSON執筆（`content/lessons/coefficient_of_variation.json`, `content/lessons/variability_intuition.json`）
 
-- [ ] **Day 3: レッスン9（まとめ）**
+- [x] **Day 3: レッスン9（まとめ）**
   - 1章まとめ
-  - JSON執筆
+  - JSON執筆（`content/lessons/chapter1_summary.json`）
 
-- [ ] **Day 4-5: 静止図作成（レッスン7〜9）**
+- [x] **Day 4-5: 静止図作成（レッスン7〜9）**
   - 各レッスン2枚
-  - 計6枚
+  - 計6枚（`content/media/week03/README.md` に配置一覧を追加）
 
-- [ ] **Day 6-7: Manim環境構築・テスト**
+- [x] **Day 6-7: Manim環境構築・テスト**
   - Manimのインストール
-  - サンプルアニメーション作成
-  - 書き出しテスト
+  - サンプルアニメーション作成（`content/media/animations/week03/sample_scene.py`）
+  - 書き出しテスト手順を `docs/v1.0/content/manim_setup_checklist.md` に整理
 
 **成果物**:
 - レッスン7〜9のJSON（全9レッスン完成！）
