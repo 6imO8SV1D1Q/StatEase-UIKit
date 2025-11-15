@@ -41,33 +41,34 @@
 
 ### Claude Code: データ・インフラ層
 **期間**: 7日
+**ステータス**: ✅ 完了
 
-- [ ] **Day 1-2: データモデル**
+- [x] **Day 1-2: データモデル**
   - `Lesson.swift`, `Step.swift`, `StepType.swift`
   - `Quiz.swift`
   - `UserProgress.swift`
   - ユニットテスト作成
 
-- [ ] **Day 3-4: Repository層**
+- [x] **Day 3-4: Repository層**
   - `LessonRepository.swift` - JSON読み込み
   - `QuizRepository.swift`
   - Bundle からのファイル読み込み処理
   - エラーハンドリング
 
-- [ ] **Day 5: ストレージ層**
+- [x] **Day 5: ストレージ層**
   - `UserDefaultsStore.swift` - 進捗管理
   - `KeychainStore.swift` - APIキー保存
   - テスト実装
 
-- [ ] **Day 6-7: レッスン一覧画面の実装**
+- [x] **Day 6-7: レッスン一覧画面の実装**
   - `LessonListViewController.swift` 作成
   - `LessonListCell.swift` 作成
   - UITableView セットアップ
   - Repository連携
 
 **成果物**:
-- 動作するRepository
-- レッスン一覧画面（基本版）
+- ✅ 動作するRepository
+- ✅ レッスン一覧画面（基本版）
 
 ---
 

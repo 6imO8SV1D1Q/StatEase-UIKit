@@ -1,0 +1,13 @@
+{
+  "id": "test_mean_quiz_1",
+  "lessonId": "test_mean_basic",
+  "question": "3,4,5 の平均はどれですか？",
+  "options": [
+    "3",
+    "3.5",
+    "4",
+    "4.5"
+  ],
+  "answerIndex": 2,
+  "explanation": "3+4+5=12 を 3 で割るので 4 になります。"
+}

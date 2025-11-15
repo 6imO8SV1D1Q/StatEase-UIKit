@@ -1,0 +1,28 @@
+{
+  "id": "mean_basic",
+  "title": "平均とは何か",
+  "chapter": "descriptive",
+  "durationMinutes": 5,
+  "steps": [
+    {
+      "type": "text",
+      "content": "平均は、複数の値をひとつの代表値で表すための量です。"
+    },
+    {
+      "type": "text",
+      "content": "値の全体的な位置を知りたいときに使います。"
+    },
+    {
+      "type": "text",
+      "content": "計算は、すべての値を足して個数で割ります。"
+    },
+    {
+      "type": "text",
+      "content": "3,4,5 の場合、(3+4+5)/3 = 4 です。"
+    },
+    {
+      "type": "text",
+      "content": "平均は「値を足して個数で割った代表値」です。"
+    }
+  ]
+}
