@@ -1,0 +1,104 @@
+name: Deploy to TestFlight
+
+on:
+  push:
+    branches:
+      - 'claude/**'
+      - 'codex/**'
+
+jobs:
+  deploy:
+    runs-on: macos-26
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Apple API Key
+        run: |
+          mkdir -p ~/private_keys
+          echo "${{ secrets.APPLE_API_KEY_CONTENT }}" > ~/private_keys/AuthKey_${{ secrets.APPLE_API_KEY_ID }}.p8
+
+      - name: Install certificates and provisioning profile
+        run: |
+          # Create temporary keychain
+          security create-keychain -p "" build.keychain
+          security default-keychain -s build.keychain
+          security unlock-keychain -p "" build.keychain
+          security set-keychain-settings -t 3600 -u build.keychain
+
+          # Import certificate
+          echo "${{ secrets.CERTIFICATES_P12 }}" | base64 --decode > certificate.p12
+          security import certificate.p12 -k build.keychain -P "${{ secrets.CERTIFICATE_PASSWORD }}" -T /usr/bin/codesign
+          security set-key-partition-list -S apple-tool:,apple: -s -k "" build.keychain
+
+          # Install provisioning profile
+          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+          echo "${{ secrets.PROVISIONING_PROFILE }}" | base64 --decode > ~/Library/MobileDevice/Provisioning\ Profiles/profile.mobileprovision
+
+      - name: Increment build number
+        run: |
+          BUILD_NUMBER=$(($(date +%s) / 60))
+          cd StatEase-UIKit
+          xcrun agvtool new-version -all $BUILD_NUMBER
+
+      - name: Build archive
+        run: |
+          cd StatEase-UIKit
+          xcodebuild -project StatEase-UIKit.xcodeproj \
+            -scheme "StatEase-UIKit" \
+            -archivePath $PWD/build/StatEase-UIKit.xcarchive \
+            -sdk iphoneos \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            clean archive \
+            CODE_SIGN_STYLE=Manual \
+            CODE_SIGN_IDENTITY="iPhone Distribution" \
+            DEVELOPMENT_TEAM="${{ secrets.DEVELOPMENT_TEAM }}" \
+            PROVISIONING_PROFILE_SPECIFIER="${{ secrets.PROVISIONING_PROFILE_SPECIFIER }}"
+
+      - name: Export IPA
+        run: |
+          cd StatEase-UIKit
+          cat > ExportOptions.plist <<EOF
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+            <key>method</key>
+            <string>app-store-connect</string>
+            <key>teamID</key>
+            <string>${{ secrets.DEVELOPMENT_TEAM }}</string>
+            <key>provisioningProfiles</key>
+            <dict>
+              <key>com.yusukeabe.StatEase-UIKit</key>
+              <string>${{ secrets.PROVISIONING_PROFILE_SPECIFIER }}</string>
+            </dict>
+            <key>uploadSymbols</key>
+            <true/>
+            <key>uploadBitcode</key>
+            <false/>
+          </dict>
+          </plist>
+          EOF
+
+          xcodebuild -exportArchive \
+            -archivePath $PWD/build/StatEase-UIKit.xcarchive \
+            -exportOptionsPlist ExportOptions.plist \
+            -exportPath $PWD/build
+
+      - name: Upload to TestFlight
+        run: |
+          cd StatEase-UIKit
+          xcrun altool --upload-app \
+            --type ios \
+            --file "$PWD/build/StatEase-UIKit.ipa" \
+            --apiKey "${{ secrets.APPLE_API_KEY_ID }}" \
+            --apiIssuer "${{ secrets.APPLE_API_ISSUER_ID }}"
+
+      - name: Cleanup
+        if: always()
+        run: |
+          security delete-keychain build.keychain || true
+          rm -rf ~/Library/MobileDevice/Provisioning\ Profiles/profile.mobileprovision
+          rm -rf ~/private_keys
