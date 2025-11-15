@@ -91,14 +91,14 @@ class StepImageCell: UITableViewCell {
 
     func configure(with step: Step) {
         titleLabel.text = step.title
-        contentLabel.text = step.content
+        contentLabel.text = step.body
 
-        // タイトルがない場合は非表示
-        titleLabel.isHidden = step.title == nil || step.title?.isEmpty == true
+        // タイトルが空の場合は非表示
+        titleLabel.isHidden = step.title.isEmpty
 
-        // 画像を読み込み
-        if let imageName = step.imageName {
-            stepImageView.image = UIImage(named: imageName)
+        // 画像を読み込み（mediaがある場合）
+        if let media = step.media, media.type == "image" {
+            stepImageView.image = UIImage(named: media.assetName)
 
             // 画像が存在しない場合はプレースホルダー
             if stepImageView.image == nil {

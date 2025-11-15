@@ -115,9 +115,9 @@ class LessonListCell: UITableViewCell {
     ///   - isCompleted: 完了済みかどうか
     func configure(with lesson: Lesson, isCompleted: Bool) {
         titleLabel.text = lesson.title
-        descriptionLabel.text = lesson.description
-        difficultyLabel.text = lesson.difficulty
-        durationLabel.text = "約\(lesson.durationMinutes)分"
+        descriptionLabel.text = lesson.subtitle
+        difficultyLabel.text = lesson.topic
+        durationLabel.text = "約\(lesson.estimatedMinutes)分"
         completionIcon.isHidden = !isCompleted
     }
 

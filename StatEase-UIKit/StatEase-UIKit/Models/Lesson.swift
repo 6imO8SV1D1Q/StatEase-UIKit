@@ -7,25 +7,46 @@
 
 import Foundation
 
-/// レッスン
+/// リソース情報
+struct LessonResources: Codable {
+    let keyTerms: [String]
+    let externalLinks: [ExternalLink]?
+
+    enum CodingKeys: String, CodingKey {
+        case keyTerms = "key_terms"
+        case externalLinks = "external_links"
+    }
+}
+
+/// 外部リンク
+struct ExternalLink: Codable {
+    let title: String
+    let url: String
+}
+
+/// レッスン（公式JSONフォーマットv1.0対応）
 struct Lesson: Codable {
     let id: String
     let title: String
-    let description: String
-    let thumbnailName: String?
-    let difficulty: String
+    let subtitle: String
     let estimatedMinutes: Int
+    let topic: String
+    let summary: String
+    let learningObjectives: [String]
+    let prerequisites: [String]
     let steps: [Step]
-    let quizId: String?
+    let resources: LessonResources
 
     enum CodingKeys: String, CodingKey {
         case id
         case title
-        case description
-        case thumbnailName = "thumbnail_name"
-        case difficulty
+        case subtitle
         case estimatedMinutes = "estimated_minutes"
+        case topic
+        case summary
+        case learningObjectives = "learning_objectives"
+        case prerequisites
         case steps
-        case quizId = "quiz_id"
+        case resources
     }
 }

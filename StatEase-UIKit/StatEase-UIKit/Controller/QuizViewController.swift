@@ -177,14 +177,14 @@ class QuizViewController: UIViewController {
         isAnswered = false
 
         questionNumberLabel.text = "問題 \(currentQuestionIndex + 1) / \(quiz.questions.count)"
-        questionLabel.text = question.question
+        questionLabel.text = question.prompt
 
         // 選択肢をクリア
         optionsStackView.arrangedSubviews.forEach { $0.removeFromSuperview() }
 
         // 選択肢ボタンを作成
-        for option in question.options {
-            let button = createOptionButton(for: option)
+        for choice in question.choices {
+            let button = createOptionButton(for: choice)
             optionsStackView.addArrangedSubview(button)
         }
 
@@ -193,7 +193,7 @@ class QuizViewController: UIViewController {
         nextButton.isHidden = true
     }
 
-    private func createOptionButton(for option: QuizOption) -> UIButton {
+    private func createOptionButton(for option: QuizChoice) -> UIButton {
         var config = UIButton.Configuration.bordered()
         config.title = option.text
         config.cornerStyle = .medium
