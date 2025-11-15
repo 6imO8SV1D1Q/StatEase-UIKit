@@ -7,56 +7,37 @@
 
 import UIKit
 
-/// レッスン一覧画面
 class LessonListViewController: UIViewController {
 
-    // MARK: - Properties
+    private var lessons: [Lesson] = []
+    private var progressMap: [String: UserProgress] = [:]
 
-    private let tableView: UITableView = {
-        let table = UITableView(frame: .zero, style: .plain)
+    private lazy var tableView: UITableView = {
+        let table = UITableView(frame: .zero, style: .grouped)
+        table.backgroundColor = .systemGroupedBackground
+        table.delegate = self
+        table.dataSource = self
+        table.register(LessonListCell.self, forCellReuseIdentifier: LessonListCell.identifier)
+        table.separatorStyle = .none
         table.translatesAutoresizingMaskIntoConstraints = false
-        table.rowHeight = UITableView.automaticDimension
-        table.estimatedRowHeight = 80
         return table
     }()
-
-    private let lessonRepository: LessonRepositoryProtocol
-    private let userProgress = UserProgress.shared
-
-    private var lessons: [Lesson] = []
-
-    // MARK: - Initialization
-
-    init(lessonRepository: LessonRepositoryProtocol = LessonRepository()) {
-        self.lessonRepository = lessonRepository
-        super.init(nibName: nil, bundle: nil)
-    }
-
-    required init?(coder: NSCoder) {
-        self.lessonRepository = LessonRepository()
-        super.init(coder: coder)
-    }
-
-    // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        setupTableView()
-        loadLessons()
+        loadData()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        // 画面が表示されるたびにテーブルを更新（完了状態の反映のため）
+        loadProgress()
         tableView.reloadData()
     }
 
-    // MARK: - Setup
-
     private func setupUI() {
         title = "StatEase"
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .systemGroupedBackground
 
         view.addSubview(tableView)
 
@@ -68,31 +49,27 @@ class LessonListViewController: UIViewController {
         ])
     }
 
-    private func setupTableView() {
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.register(LessonListCell.self, forCellReuseIdentifier: LessonListCell.reuseIdentifier)
-    }
-
-    // MARK: - Data Loading
-
-    private func loadLessons() {
-        do {
-            lessons = try lessonRepository.fetchAllLessons()
-            // 章ごと、または ID でソート（必要に応じて）
-            lessons.sort { $0.id < $1.id }
+    private func loadData() {
+        let result = LessonRepository.shared.fetchAllLessons()
+        switch result {
+        case .success(let fetchedLessons):
+            lessons = fetchedLessons
             tableView.reloadData()
-        } catch {
-            showError(error)
+        case .failure(let error):
+            print("Failed to load lessons: \(error)")
+            showErrorAlert()
         }
     }
 
-    // MARK: - Error Handling
+    private func loadProgress() {
+        let allProgress = UserDefaultsStore.shared.fetchAllProgress()
+        progressMap = Dictionary(uniqueKeysWithValues: allProgress.map { ($0.lessonId, $0) })
+    }
 
-    private func showError(_ error: Error) {
+    private func showErrorAlert() {
         let alert = UIAlertController(
             title: "エラー",
-            message: "レッスンの読み込みに失敗しました。\n\(error.localizedDescription)",
+            message: "レッスンデータの読み込みに失敗しました",
             preferredStyle: .alert
         )
         alert.addAction(UIAlertAction(title: "OK", style: .default))
@@ -101,8 +78,10 @@ class LessonListViewController: UIViewController {
 }
 
 // MARK: - UITableViewDataSource
-
 extension LessonListViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return lessons.count
@@ -110,33 +89,33 @@ extension LessonListViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(
-            withIdentifier: LessonListCell.reuseIdentifier,
+            withIdentifier: LessonListCell.identifier,
             for: indexPath
         ) as? LessonListCell else {
             return UITableViewCell()
         }
 
         let lesson = lessons[indexPath.row]
-        let isCompleted = userProgress.isLessonCompleted(lessonId: lesson.id)
-
+        let isCompleted = progressMap[lesson.id]?.isCompleted ?? false
         cell.configure(with: lesson, isCompleted: isCompleted)
-        cell.accessoryType = .disclosureIndicator
 
         return cell
     }
 }
 
 // MARK: - UITableViewDelegate
-
 extension LessonListViewController: UITableViewDelegate {
-
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-
         let lesson = lessons[indexPath.row]
-
-        // レッスン詳細画面への遷移（Week 2で実装）
         let detailVC = LessonDetailViewController(lesson: lesson)
         navigationController?.pushViewController(detailVC, animated: true)
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
     }
 }

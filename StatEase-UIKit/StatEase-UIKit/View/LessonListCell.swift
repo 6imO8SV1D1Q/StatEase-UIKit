@@ -23,10 +23,27 @@ class LessonListCell: UITableViewCell {
         return label
     }()
 
-    private let durationLabel: UILabel = {
+    private let descriptionLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 14, weight: .regular)
         label.textColor = .secondaryLabel
+        label.numberOfLines = 2
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+
+    private let durationLabel: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 12, weight: .regular)
+        label.textColor = .secondaryLabel
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+
+    private let difficultyLabel: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 12, weight: .medium)
+        label.textColor = .systemBlue
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -57,6 +74,8 @@ class LessonListCell: UITableViewCell {
 
     private func setupUI() {
         contentView.addSubview(titleLabel)
+        contentView.addSubview(descriptionLabel)
+        contentView.addSubview(difficultyLabel)
         contentView.addSubview(durationLabel)
         contentView.addSubview(completionIcon)
 
@@ -66,11 +85,19 @@ class LessonListCell: UITableViewCell {
             titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             titleLabel.trailingAnchor.constraint(equalTo: completionIcon.leadingAnchor, constant: -8),
 
+            // 説明ラベル
+            descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 4),
+            descriptionLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
+            descriptionLabel.trailingAnchor.constraint(equalTo: titleLabel.trailingAnchor),
+
+            // 難易度ラベル
+            difficultyLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 8),
+            difficultyLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
+            difficultyLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12),
+
             // 所要時間ラベル
-            durationLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 4),
-            durationLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
-            durationLabel.trailingAnchor.constraint(equalTo: titleLabel.trailingAnchor),
-            durationLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12),
+            durationLabel.leadingAnchor.constraint(equalTo: difficultyLabel.trailingAnchor, constant: 12),
+            durationLabel.centerYAnchor.constraint(equalTo: difficultyLabel.centerYAnchor),
 
             // 完了アイコン
             completionIcon.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
@@ -88,6 +115,8 @@ class LessonListCell: UITableViewCell {
     ///   - isCompleted: 完了済みかどうか
     func configure(with lesson: Lesson, isCompleted: Bool) {
         titleLabel.text = lesson.title
+        descriptionLabel.text = lesson.description
+        difficultyLabel.text = lesson.difficulty
         durationLabel.text = "約\(lesson.durationMinutes)分"
         completionIcon.isHidden = !isCompleted
     }
@@ -97,6 +126,8 @@ class LessonListCell: UITableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         titleLabel.text = nil
+        descriptionLabel.text = nil
+        difficultyLabel.text = nil
         durationLabel.text = nil
         completionIcon.isHidden = true
     }
