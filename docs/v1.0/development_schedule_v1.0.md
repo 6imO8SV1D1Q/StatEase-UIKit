@@ -74,26 +74,26 @@
 ### Codex CLI: サンプルコンテンツ + 本番開始
 **期間**: 7日
 
-- [ ] **Day 1: JSONフォーマット確認**
+- [x] **Day 1: JSONフォーマット確認**
   - Claude Codeが定義したデータ形式を確認
-  - サンプルJSON作成
+  - サンプルJSON作成（`content/lessons/sample_lesson.json`）
 
-- [ ] **Day 2-3: レッスン1（平均）完成版**
+- [x] **Day 2-3: レッスン1（平均）完成版**
   - `mean_basic.json` 執筆
   - やさしい結城浩風の文体で
-  - 5〜7ステップ
+  - 6ステップ構成 + チェックポイント
 
-- [ ] **Day 4: レッスン2（分散）**
+- [x] **Day 4: レッスン2（分散）**
   - `variance_basic.json` 執筆
 
-- [ ] **Day 5: レッスン3（標準偏差）**
+- [x] **Day 5: レッスン3（標準偏差）**
   - `std_deviation_basic.json` 執筆
 
-- [ ] **Day 6: 静止図（レッスン1〜3）**
-  - 各レッスン2枚（計6枚）
-  - PNG形式
+- [x] **Day 6: 静止図（レッスン1〜3）**
+  - 各レッスン2枚（計6枚）のPNGをデザインドライブ `StatEase/UIKit/Week01` へアップロード
+  - リポジトリには `content/media/week01/README.md` でファイル名と配置先を記載
 
-- [ ] **Day 7: 確認問題**
+- [x] **Day 7: 確認問題**
   - `chapter1_quiz.json` 作成
   - 4択問題 × 5問
 

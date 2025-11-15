@@ -1,0 +1,45 @@
+{
+  "id": "lesson_sample_template",
+  "title": "サンプルレッスン",
+  "subtitle": "JSONフォーマットの雛形",
+  "estimated_minutes": 10,
+  "topic": "template",
+  "summary": "StatEase UIKitで利用するレッスンJSONの最小構成サンプルです。",
+  "learning_objectives": [
+    "レッスンJSONの必須フィールドを把握する",
+    "ステップの構造を理解する"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "lesson_sample_template_step01",
+      "order": 1,
+      "type": "text",
+      "title": "テキストステップ",
+      "body": "このステップでは本文にMarkdownを使用できます。例えば **太字** や箇条書き。"
+    },
+    {
+      "id": "lesson_sample_template_step02",
+      "order": 2,
+      "type": "image",
+      "title": "画像ステップ",
+      "body": "`media.asset_name`に指定したPNGをアプリに同梱してください。",
+      "media": {
+        "type": "image",
+        "asset_name": "sample_placeholder.png",
+        "caption": "仮の図版キャプション"
+      },
+      "checkpoint": {
+        "prompt": "JSONの配列に順序を付けるフィールドは？",
+        "expected_answer": "order"
+      }
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "JSON",
+      "Step"
+    ],
+    "external_links": []
+  }
+}
