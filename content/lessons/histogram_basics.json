@@ -1,0 +1,87 @@
+{
+  "id": "lesson_histogram_basics",
+  "title": "ヒストグラムで分布を眺めよう",
+  "subtitle": "度数分布の形からデータの性格を読み解く",
+  "estimated_minutes": 22,
+  "topic": "descriptive_statistics",
+  "summary": "ヒストグラムはデータを区間ごとに集計して分布の形を可視化するグラフです。ビン幅の選び方や読み取りのポイントを身につけ、数列の羅列からは見えなかった特徴を発見しましょう。",
+  "learning_objectives": [
+    "ヒストグラムの構成要素（ビン・度数）を説明できる",
+    "適切なビン幅の選び方を判断できる",
+    "ヒストグラムから偏りや多峰性を読み取れる"
+  ],
+  "prerequisites": [
+    "lesson_central_tendency_features"
+  ],
+  "steps": [
+    {
+      "id": "lesson_histogram_basics_step01",
+      "order": 1,
+      "type": "text",
+      "title": "度数分布表から一歩進んで",
+      "body": "数表だけでは分布の全体像がつかみづらいと感じたことはありませんか？ヒストグラムは度数分布表をグラフにしたもので、データの形を直感的に捉える助けになります。"
+    },
+    {
+      "id": "lesson_histogram_basics_step02",
+      "order": 2,
+      "type": "text",
+      "title": "ヒストグラムの作り方",
+      "body": "1. データの最小値と最大値を調べる\n2. ビン幅（区間の幅）を決める\n3. 各ビンに含まれるデータ数を数える\n4. 度数を高さにして棒を描く\n\nこれで度数分布表が視覚的なグラフへと変身します。"
+    },
+    {
+      "id": "lesson_histogram_basics_step03",
+      "order": 3,
+      "type": "image",
+      "title": "ビン幅の違いによる見え方",
+      "body": "同じデータでもビン幅を狭くしたり広くしたりすると印象が変わります。適切な幅はデータ件数や分析目的に左右されるため、いくつか試しながら最もしっくりくる形を探りましょう。",
+      "media": {
+        "type": "image",
+        "asset_name": "histogram_basics_fig01.png",
+        "caption": "ビン幅が狭い場合と広い場合の比較"
+      }
+    },
+    {
+      "id": "lesson_histogram_basics_step04",
+      "order": 4,
+      "type": "text",
+      "title": "形が語るメッセージ",
+      "body": "ヒストグラムは山の数や偏りから多くの情報を語ってくれます。山が1つなら単峰型、2つ以上なら多峰型。右に尾を引くなら右裾が長い分布です。形を読むことで、代表値だけでは気づけなかった特徴が見えてきます。",
+      "checkpoint": {
+        "prompt": "あるヒストグラムが右に長い尾を持っていました。このデータで平均と中央値はどちらが大きくなりやすいでしょうか？",
+        "expected_answer": "右裾が長いので外れ値が大きい方向に伸びている。平均は大きな値に引っ張られるため中央値より大きくなりやすい。"
+      }
+    },
+    {
+      "id": "lesson_histogram_basics_step05",
+      "order": 5,
+      "type": "image",
+      "title": "密度ヒストグラムにも挑戦",
+      "body": "データの件数が異なるグループを比較したいときは、面積が1になるよう縦軸を調整した密度ヒストグラムが便利です。同じスケールで形を見比べられます。",
+      "media": {
+        "type": "image",
+        "asset_name": "histogram_basics_fig02.png",
+        "caption": "頻度ヒストグラムと密度ヒストグラムの対比"
+      }
+    },
+    {
+      "id": "lesson_histogram_basics_step06",
+      "order": 6,
+      "type": "text",
+      "title": "まとめ: 形から読み解く力を養おう",
+      "body": "ヒストグラムは数値の羅列を物語に変えてくれる道具です。ビン幅の調整や形の読み方を身につければ、データの性格がぐっと身近に感じられるようになります。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "ヒストグラム",
+      "ビン幅",
+      "多峰性"
+    ],
+    "external_links": [
+      {
+        "title": "統計学入門: ヒストグラムの読み方",
+        "url": "https://www.stat.go.jp/"
+      }
+    ]
+  }
+}
