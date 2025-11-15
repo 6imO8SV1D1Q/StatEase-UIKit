@@ -30,8 +30,8 @@
 
 | Week | Claude Code | Codex CLI |
 |------|------------|-----------|
-| Week 1 | Phase 1: 基盤構築（モデル・Repository） | Phase 1: サンプルコンテンツ + 本番1〜3 |
-| Week 2 | Phase 2: 画面実装（一覧・詳細・クイズ） | Phase 2: レッスン4〜6 + 静止図前半 |
+| Week 1 | ✅ Phase 1: 基盤構築（モデル・Repository） | Phase 1: サンプルコンテンツ + 本番1〜3 |
+| Week 2 | ✅ Phase 2: 画面実装（一覧・詳細・クイズ） | Phase 2: レッスン4〜6 + 静止図前半 |
 | Week 3 | Phase 3: AI機能・設定画面 | Phase 3: レッスン7〜9 + 静止図後半 |
 | Week 4 | Phase 4: 統合・UI調整・テスト | Phase 4: アニメーション作成・調整 |
 
