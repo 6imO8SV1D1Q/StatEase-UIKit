@@ -66,7 +66,7 @@ jobs:
           <plist version="1.0">
           <dict>
             <key>method</key>
-            <string>app-store</string>
+            <string>app-store-connect</string>
             <key>teamID</key>
             <string>${{ secrets.DEVELOPMENT_TEAM }}</string>
             <key>provisioningProfiles</key>
