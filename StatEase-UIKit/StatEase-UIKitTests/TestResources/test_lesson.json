@@ -1,0 +1,22 @@
+{
+  "id": "test_mean_basic",
+  "title": "テスト: 平均とは何か",
+  "chapter": "descriptive",
+  "durationMinutes": 5,
+  "steps": [
+    {
+      "type": "text",
+      "content": "平均は、複数の値をひとつの代表値で表すための量です。"
+    },
+    {
+      "type": "image",
+      "file": "mean_step1.png",
+      "description": "3,4,5 を数直線に並べた図"
+    },
+    {
+      "type": "video",
+      "file": "mean_anim1.mp4",
+      "description": "3,4,5 が動いて平均位置が動く様子"
+    }
+  ]
+}

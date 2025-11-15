@@ -1,0 +1,88 @@
+{
+  "id": "lesson_central_tendency_features",
+  "title": "代表値をどう使い分ける？",
+  "subtitle": "平均・中央値・最頻値の得意分野を理解しよう",
+  "estimated_minutes": 18,
+  "topic": "descriptive_statistics",
+  "summary": "代表値には平均だけでなく、中央値や最頻値といった仲間がいます。それぞれの性格を比べ、どんな場面で活躍するのかを具体例で整理します。",
+  "learning_objectives": [
+    "平均・中央値・最頻値の定義を言葉で説明できる",
+    "データの性質に応じて適切な代表値を選べる",
+    "外れ値が指標に与える影響を比較できる"
+  ],
+  "prerequisites": [
+    "lesson_mean_basic",
+    "lesson_variance_basic"
+  ],
+  "steps": [
+    {
+      "id": "lesson_central_tendency_features_step01",
+      "order": 1,
+      "type": "text",
+      "title": "3人のキャラクターに会ってみよう",
+      "body": "算術平均・中央値・最頻値は、データの中心を語る3人のキャラクターのような存在です。まずはそれぞれの自己紹介を通して、お互いの違いを感じ取ってみましょう。"
+    },
+    {
+      "id": "lesson_central_tendency_features_step02",
+      "order": 2,
+      "type": "text",
+      "title": "定義を丁寧におさらい",
+      "body": "- **算術平均**: 合計を件数で割った値\n- **中央値**: データを小さい順に並べたとき中央に位置する値\n- **最頻値**: 最も多く現れた値\n\nそれぞれがどこに視線を向けているかを意識すると使い分けが楽になります。"
+    },
+    {
+      "id": "lesson_central_tendency_features_step03",
+      "order": 3,
+      "type": "image",
+      "title": "外れ値があるときの比較",
+      "body": "外れ値がひとつだけ加わったとき、3つの指標がどのように動くかを図で並べました。中央値と最頻値はほとんど動かず、平均だけが大きく変化します。",
+      "media": {
+        "type": "image",
+        "asset_name": "central_tendency_fig01.png",
+        "caption": "外れ値に対する3つの代表値の反応"
+      }
+    },
+    {
+      "id": "lesson_central_tendency_features_step04",
+      "order": 4,
+      "type": "text",
+      "title": "中央値が輝くケース",
+      "body": "家計調査や賃金統計のように、外れ値が極端になりやすいデータでは中央値が頼もしい味方になります。実際の統計では中央値を公式発表に用いることが多く、現場感覚と噛み合う値を提示してくれます。",
+      "checkpoint": {
+        "prompt": "ある町の世帯年収の中央値が420万円、平均が520万円でした。この差はどんな状況を示唆しますか？",
+        "expected_answer": "高収入の世帯が少数存在し、平均を押し上げている。中央値を見ると典型的な世帯は420万円付近にいると読み取れる。"
+      }
+    },
+    {
+      "id": "lesson_central_tendency_features_step05",
+      "order": 5,
+      "type": "image",
+      "title": "最頻値が役立つとき",
+      "body": "小売の在庫管理や需要予測では、もっとも売れるサイズや色を把握することが大切です。最頻値は「一番よくある」パターンを示してくれる頼れる指標です。",
+      "media": {
+        "type": "image",
+        "asset_name": "central_tendency_fig02.png",
+        "caption": "靴のサイズ分布で見る最頻値の強み"
+      }
+    },
+    {
+      "id": "lesson_central_tendency_features_step06",
+      "order": 6,
+      "type": "text",
+      "title": "まとめ: 3兄弟を上手に使い分けよう",
+      "body": "代表値の3兄弟は、データの形に応じて活躍の場が変わります。算術平均は全体のバランスを見るとき、中央値は偏りに強い指標が欲しいとき、最頻値は「一番よくあるケース」を押さえたいときに力を発揮します。場面に応じて選び分けましょう。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "中央値",
+      "最頻値",
+      "外れ値"
+    ],
+    "external_links": [
+      {
+        "title": "e-Stat: 賃金構造基本統計調査",
+        "url": "https://www.e-stat.go.jp/"
+      }
+    ]
+  }
+}

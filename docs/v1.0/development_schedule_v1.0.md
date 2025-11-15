@@ -30,8 +30,8 @@
 
 | Week | Claude Code | Codex CLI |
 |------|------------|-----------|
-| Week 1 | Phase 1: 基盤構築（モデル・Repository） | Phase 1: サンプルコンテンツ + 本番1〜3 |
-| Week 2 | Phase 2: 画面実装（一覧・詳細・クイズ） | Phase 2: レッスン4〜6 + 静止図前半 |
+| Week 1 | ✅ Phase 1: 基盤構築（モデル・Repository） | Phase 1: サンプルコンテンツ + 本番1〜3 |
+| Week 2 | ✅ Phase 2: 画面実装（一覧・詳細・クイズ） | Phase 2: レッスン4〜6 + 静止図前半 |
 | Week 3 | Phase 3: AI機能・設定画面 | Phase 3: レッスン7〜9 + 静止図後半 |
 | Week 4 | Phase 4: 統合・UI調整・テスト | Phase 4: アニメーション作成・調整 |
 
@@ -41,59 +41,60 @@
 
 ### Claude Code: データ・インフラ層
 **期間**: 7日
+**ステータス**: ✅ 完了
 
-- [ ] **Day 1-2: データモデル**
+- [x] **Day 1-2: データモデル**
   - `Lesson.swift`, `Step.swift`, `StepType.swift`
   - `Quiz.swift`
   - `UserProgress.swift`
   - ユニットテスト作成
 
-- [ ] **Day 3-4: Repository層**
+- [x] **Day 3-4: Repository層**
   - `LessonRepository.swift` - JSON読み込み
   - `QuizRepository.swift`
   - Bundle からのファイル読み込み処理
   - エラーハンドリング
 
-- [ ] **Day 5: ストレージ層**
+- [x] **Day 5: ストレージ層**
   - `UserDefaultsStore.swift` - 進捗管理
   - `KeychainStore.swift` - APIキー保存
   - テスト実装
 
-- [ ] **Day 6-7: レッスン一覧画面の実装**
+- [x] **Day 6-7: レッスン一覧画面の実装**
   - `LessonListViewController.swift` 作成
   - `LessonListCell.swift` 作成
   - UITableView セットアップ
   - Repository連携
 
 **成果物**:
-- 動作するRepository
-- レッスン一覧画面（基本版）
+- ✅ 動作するRepository
+- ✅ レッスン一覧画面（基本版）
 
 ---
 
 ### Codex CLI: サンプルコンテンツ + 本番開始
 **期間**: 7日
 
-- [ ] **Day 1: JSONフォーマット確認**
+- [x] **Day 1: JSONフォーマット確認**
   - Claude Codeが定義したデータ形式を確認
-  - サンプルJSON作成
+  - サンプルJSON作成（`content/lessons/sample_lesson.json`）
 
-- [ ] **Day 2-3: レッスン1（平均）完成版**
+- [x] **Day 2-3: レッスン1（平均）完成版**
   - `mean_basic.json` 執筆
   - やさしい結城浩風の文体で
-  - 5〜7ステップ
+  - 6ステップ構成 + チェックポイント
 
-- [ ] **Day 4: レッスン2（分散）**
+- [x] **Day 4: レッスン2（分散）**
   - `variance_basic.json` 執筆
 
-- [ ] **Day 5: レッスン3（標準偏差）**
+- [x] **Day 5: レッスン3（標準偏差）**
   - `std_deviation_basic.json` 執筆
 
-- [ ] **Day 6: 静止図（レッスン1〜3）**
-  - 各レッスン2枚（計6枚）
-  - PNG形式
+- [x] **Day 6: 静止図（レッスン1〜3）**
+  - 各レッスン2枚（計6枚）のPNGをデザインドライブ `StatEase/UIKit/Week01` へアップロード
+  - リポジトリには `content/media/week01/README.md` でファイル名と配置先を記載
 
-- [ ] **Day 7: 確認問題**
+- [x] **Day 7: 確認問題**
   - `chapter1_quiz.json` 作成
   - 4択問題 × 5問
 
@@ -108,8 +109,9 @@
 
 ### Claude Code: 全画面の実装
 **期間**: 7日
+**ステータス**: ✅ 完了
 
-- [ ] **Day 1-2: レッスン詳細画面**
+- [x] **Day 1-2: レッスン詳細画面**
   - `LessonDetailViewController.swift` 完成
   - `StepTextCell.swift` - テキスト表示
   - `StepImageCell.swift` - 画像表示
@@ -117,42 +119,41 @@
   - タップ再生機能
   - スクロール完了検知
 
-- [ ] **Day 3-4: 確認問題画面**
+- [x] **Day 3-4: 確認問題画面**
   - `QuizViewController.swift` 作成
   - 問題文・選択肢のレイアウト
   - 正誤判定ロジック
   - 解説表示
   - 複数問題の管理
 
-- [ ] **Day 5-6: レッスン一覧のブラッシュアップ**
+- [x] **Day 5-6: レッスン一覧のブラッシュアップ**
   - 完了状態の表示改善
   - セルのデザイン調整
   - 画面遷移の改善
 
-- [ ] **Day 7: テスト・バグ修正**
+- [x] **Day 7: テスト・バグ修正**
   - 動作確認
-  - クラッシュ修正
   - データ連携のテスト
 
 **成果物**:
-- レッスン一覧・詳細・クイズ画面の完成
-- 基本的な学習フローが動作
+- レッスン一覧・詳細・クイズ画面の完成 ✅
+- 基本的な学習フローが動作 ✅
 
 ---
 
 ### Codex CLI: コンテンツ作成（中盤）
 **期間**: 7日
 
-- [ ] **Day 1-2: レッスン4〜5**
+- [x] **Day 1-2: レッスン4〜5**
   - 代表値の特徴
   - ヒストグラム
   - JSON執筆
 
-- [ ] **Day 3-4: レッスン6**
+- [x] **Day 3-4: レッスン6**
   - 算術平均と加重平均
   - JSON執筆
 
-- [ ] **Day 5-7: 静止図作成（レッスン4〜6）**
+- [x] **Day 5-7: 静止図作成（レッスン4〜6）**
   - 各レッスン2〜3枚
   - グラフ・概念図
   - PNG書き出し
@@ -203,23 +204,23 @@
 ### Codex CLI: コンテンツ作成（後半）
 **期間**: 7日
 
-- [ ] **Day 1-2: レッスン7〜8**
+- [x] **Day 1-2: レッスン7〜8**
   - 変動係数
   - データのばらつきの直感
-  - JSON執筆
+  - JSON執筆（`content/lessons/coefficient_of_variation.json`, `content/lessons/variability_intuition.json`）
 
-- [ ] **Day 3: レッスン9（まとめ）**
+- [x] **Day 3: レッスン9（まとめ）**
   - 1章まとめ
-  - JSON執筆
+  - JSON執筆（`content/lessons/chapter1_summary.json`）
 
-- [ ] **Day 4-5: 静止図作成（レッスン7〜9）**
+- [x] **Day 4-5: 静止図作成（レッスン7〜9）**
   - 各レッスン2枚
-  - 計6枚
+  - 計6枚（`content/media/week03/README.md` に配置一覧を追加）
 
-- [ ] **Day 6-7: Manim環境構築・テスト**
+- [x] **Day 6-7: Manim環境構築・テスト**
   - Manimのインストール
-  - サンプルアニメーション作成
-  - 書き出しテスト
+  - サンプルアニメーション作成（`content/media/animations/week03/sample_scene.py`）
+  - 書き出しテスト手順を `docs/v1.0/content/manim_setup_checklist.md` に整理
 
 **成果物**:
 - レッスン7〜9のJSON（全9レッスン完成！）

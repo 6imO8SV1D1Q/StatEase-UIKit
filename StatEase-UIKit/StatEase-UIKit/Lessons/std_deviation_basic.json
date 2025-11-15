@@ -1,0 +1,28 @@
+{
+  "id": "std_deviation_basic",
+  "title": "標準偏差とは何か",
+  "chapter": "descriptive",
+  "durationMinutes": 5,
+  "steps": [
+    {
+      "type": "text",
+      "content": "標準偏差は、分散の平方根です。"
+    },
+    {
+      "type": "text",
+      "content": "分散と同じように、ばらつきを表します。"
+    },
+    {
+      "type": "text",
+      "content": "標準偏差の良いところは、元のデータと同じ単位になることです。"
+    },
+    {
+      "type": "text",
+      "content": "例えば、身長のデータなら標準偏差も「cm」で表せます。"
+    },
+    {
+      "type": "text",
+      "content": "標準偏差は「分散の平方根で、ばらつきを表す量」です。"
+    }
+  ]
+}
