@@ -7,23 +7,47 @@
 
 import Foundation
 
-/// レッスンの1ステップ
+/// メディア情報
+struct StepMedia: Codable {
+    let type: String  // "image" or "video"
+    let assetName: String
+    let caption: String?
+
+    enum CodingKeys: String, CodingKey {
+        case type
+        case assetName = "asset_name"
+        case caption
+    }
+}
+
+/// チェックポイント（理解度確認）
+struct StepCheckpoint: Codable {
+    let prompt: String
+    let expectedAnswer: String
+
+    enum CodingKeys: String, CodingKey {
+        case prompt
+        case expectedAnswer = "expected_answer"
+    }
+}
+
+/// レッスンの1ステップ（公式JSONフォーマットv1.0対応）
 struct Step: Codable {
     let id: String
-    let type: StepType
-    let title: String?
-    let content: String
-    let imageName: String?
-    let videoName: String?
     let order: Int
+    let type: StepType
+    let title: String
+    let body: String
+    let media: StepMedia?
+    let checkpoint: StepCheckpoint?
 
     enum CodingKeys: String, CodingKey {
         case id
+        case order
         case type
         case title
-        case content
-        case imageName = "image_name"
-        case videoName = "video_name"
-        case order
+        case body
+        case media
+        case checkpoint
     }
 }

@@ -26,7 +26,7 @@ class LessonRepository: LessonRepositoryProtocol {
     // MARK: - Properties
 
     private let bundle: Bundle
-    private let lessonsDirectoryName = "Lessons"
+    private let lessonsDirectoryName = "content/lessons"
     private var cachedLessons: [Lesson]?
 
     // MARK: - Initialization

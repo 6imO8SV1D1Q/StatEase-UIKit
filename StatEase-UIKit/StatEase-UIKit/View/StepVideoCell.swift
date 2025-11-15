@@ -120,14 +120,14 @@ class StepVideoCell: UITableViewCell {
 
     func configure(with step: Step) {
         titleLabel.text = step.title
-        contentLabel.text = step.content
+        contentLabel.text = step.body
 
-        // タイトルがない場合は非表示
-        titleLabel.isHidden = step.title == nil || step.title?.isEmpty == true
+        // タイトルが空の場合は非表示
+        titleLabel.isHidden = step.title.isEmpty
 
-        // 動画を読み込み
-        if let videoName = step.videoName {
-            setupVideoPlayer(with: videoName)
+        // 動画を読み込み（mediaがある場合）
+        if let media = step.media, media.type == "video" {
+            setupVideoPlayer(with: media.assetName)
         }
     }
 

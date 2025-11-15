@@ -10,7 +10,7 @@ import Foundation
 /// QuizRepository のプロトコル
 protocol QuizRepositoryProtocol {
     func fetchAllQuizzes() throws -> [Quiz]
-    func fetchQuizzes(forLessonId lessonId: String) throws -> [Quiz]
+    func fetchQuiz(id: String) throws -> Quiz?
 }
 
 /// 確認問題データの取得を担当するリポジトリ
@@ -19,7 +19,7 @@ class QuizRepository: QuizRepositoryProtocol {
     // MARK: - Properties
 
     private let bundle: Bundle
-    private let quizzesDirectoryName = "Quizzes"
+    private let quizzesDirectoryName = "content/lessons"
     private var cachedQuizzes: [Quiz]?
 
     // MARK: - Initialization
@@ -84,13 +84,13 @@ class QuizRepository: QuizRepositoryProtocol {
         return quizzes
     }
 
-    /// 指定したレッスンIDに紐づく確認問題を取得する
-    /// - Parameter lessonId: レッスンID
-    /// - Returns: 確認問題の配列
+    /// 指定したクイズIDの確認問題を取得する
+    /// - Parameter id: クイズID
+    /// - Returns: 確認問題（見つからない場合はnil）
     /// - Throws: RepositoryError
-    func fetchQuizzes(forLessonId lessonId: String) throws -> [Quiz] {
+    func fetchQuiz(id: String) throws -> Quiz? {
         let allQuizzes = try fetchAllQuizzes()
-        return allQuizzes.filter { $0.lessonId == lessonId }
+        return allQuizzes.first { $0.id == id }
     }
 
     /// キャッシュをクリアする

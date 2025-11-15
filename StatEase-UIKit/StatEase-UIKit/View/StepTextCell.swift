@@ -71,9 +71,9 @@ class StepTextCell: UITableViewCell {
 
     func configure(with step: Step) {
         titleLabel.text = step.title
-        contentLabel.text = step.content
+        contentLabel.text = step.body
 
-        // タイトルがない場合は非表示
-        titleLabel.isHidden = step.title == nil || step.title?.isEmpty == true
+        // タイトルが空の場合は非表示
+        titleLabel.isHidden = step.title.isEmpty
     }
 }
