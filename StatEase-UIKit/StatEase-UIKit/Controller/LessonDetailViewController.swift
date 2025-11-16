@@ -10,6 +10,7 @@ import UIKit
 class LessonDetailViewController: UIViewController {
 
     private let lesson: Lesson
+    private let quizRepository: QuizRepositoryProtocol
     private var currentStepIndex: Int = 0
     private var completedStepIds: Set<String> = []
 
@@ -58,8 +59,9 @@ class LessonDetailViewController: UIViewController {
         return button
     }()
 
-    init(lesson: Lesson) {
+    init(lesson: Lesson, quizRepository: QuizRepositoryProtocol = QuizRepository()) {
         self.lesson = lesson
+        self.quizRepository = quizRepository
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -117,7 +119,7 @@ class LessonDetailViewController: UIViewController {
     }
 
     private func saveProgress() {
-        var progress = UserDefaultsStore.shared.fetchProgress(for: lesson.id) ?? UserProgress(lessonId: lesson.id)
+        var progress = UserDefaultsStore.shared.fetchProgress(for: lesson.id) ?? UserProgressRecord(lessonId: lesson.id)
         progress.completedSteps = completedStepIds
         progress.isCompleted = completedStepIds.count == lesson.steps.count
         progress.lastAccessedDate = Date()
@@ -133,21 +135,25 @@ class LessonDetailViewController: UIViewController {
         progressView.setProgress(progressValue, animated: true)
         progressLabel.text = "\(completedSteps) / \(totalSteps) ステップ完了"
 
-        // すべてのステップが完了したらクイズボタンを表示
-        if completedSteps == totalSteps && lesson.quizId != nil {
-            quizButton.isHidden = false
-        }
+        let hasQuiz = lesson.quizId != nil
+        let shouldShowQuiz = completedSteps == totalSteps && hasQuiz
+        quizButton.isHidden = !shouldShowQuiz
     }
 
     @objc private func quizButtonTapped() {
-        guard let quizId = lesson.quizId else { return }
+        guard let quizId = lesson.quizId else {
+            showErrorAlert(message: "このレッスンに対応するクイズが見つかりません。")
+            return
+        }
 
-        let result = QuizRepository.shared.fetchQuiz(by: quizId)
-        switch result {
-        case .success(let quiz):
-            let quizVC = QuizViewController(quiz: quiz, lessonId: lesson.id)
-            navigationController?.pushViewController(quizVC, animated: true)
-        case .failure(let error):
+        do {
+            if let quiz = try quizRepository.fetchQuiz(id: quizId) {
+                let quizVC = QuizViewController(quiz: quiz, lessonId: lesson.id)
+                navigationController?.pushViewController(quizVC, animated: true)
+            } else {
+                showErrorAlert(message: "クイズデータが見つかりません。")
+            }
+        } catch {
             print("Failed to load quiz: \(error)")
             showErrorAlert(message: "クイズの読み込みに失敗しました")
         }
@@ -163,15 +169,15 @@ class LessonDetailViewController: UIViewController {
 // MARK: - UITableViewDataSource
 extension LessonDetailViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return lesson.steps.count
     }
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let step = lesson.steps[indexPath.row]
+        let step = lesson.steps[indexPath.section]
 
         switch step.type {
         case .text, .formula:
@@ -213,6 +219,35 @@ extension LessonDetailViewController: UITableViewDelegate {
         return UITableView.automaticDimension
     }
 
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 44
+    }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.backgroundColor = .systemGroupedBackground
+
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 18, weight: .semibold)
+        label.textColor = .label
+        label.numberOfLines = 0
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = lesson.steps[section].title
+
+        headerView.addSubview(label)
+        NSLayoutConstraint.activate([
+            label.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 24),
+            label.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: -24),
+            label.bottomAnchor.constraint(equalTo: headerView.bottomAnchor, constant: -4),
+            label.topAnchor.constraint(equalTo: headerView.topAnchor, constant: 16)
+        ])
+        return headerView
+    }
+
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 8
+    }
+
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
     }
@@ -222,7 +257,7 @@ extension LessonDetailViewController: UITableViewDelegate {
         let visibleCells = tableView.visibleCells
         for cell in visibleCells {
             if let indexPath = tableView.indexPath(for: cell) {
-                let step = lesson.steps[indexPath.row]
+                let step = lesson.steps[indexPath.section]
 
                 // セルが完全に表示されたらステップを完了としてマーク
                 let cellRect = tableView.rectForRow(at: indexPath)

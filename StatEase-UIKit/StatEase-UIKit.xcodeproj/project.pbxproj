@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		70B812032F02E21700A1F6A0 /* StatEase-UIKit/content in Resources */ = {isa = PBXBuildFile; fileRef = 70B812022F02E21700A1F6A0 /* StatEase-UIKit/content */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		7069294C2EC82F1100108649 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		706929352EC82F0D00108649 /* StatEase-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StatEase-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7069294B2EC82F1100108649 /* StatEase-UIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StatEase-UIKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		706929552EC82F1100108649 /* StatEase-UIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StatEase-UIKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70B812022F02E21700A1F6A0 /* StatEase-UIKit/content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "StatEase-UIKit/content"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -88,6 +93,7 @@
 		7069292C2EC82F0D00108649 = {
 			isa = PBXGroup;
 			children = (
+				70B812022F02E21700A1F6A0 /* StatEase-UIKit/content */,
 				706929372EC82F0D00108649 /* StatEase-UIKit */,
 				7069294E2EC82F1100108649 /* StatEase-UIKitTests */,
 				706929582EC82F1100108649 /* StatEase-UIKitUITests */,
@@ -225,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70B812032F02E21700A1F6A0 /* StatEase-UIKit/content in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

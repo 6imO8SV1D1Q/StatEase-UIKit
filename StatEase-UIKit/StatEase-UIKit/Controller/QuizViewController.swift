@@ -261,7 +261,7 @@ class QuizViewController: UIViewController {
         let percentage = "\(correctAnswers) / \(quiz.questions.count)"
 
         // 進捗を保存
-        var progress = UserDefaultsStore.shared.fetchProgress(for: lessonId) ?? UserProgress(lessonId: lessonId)
+        var progress = UserDefaultsStore.shared.fetchProgress(for: lessonId) ?? UserProgressRecord(lessonId: lessonId)
         progress.quizScore = score
         progress.isCompleted = true
         UserDefaultsStore.shared.saveProgress(progress)

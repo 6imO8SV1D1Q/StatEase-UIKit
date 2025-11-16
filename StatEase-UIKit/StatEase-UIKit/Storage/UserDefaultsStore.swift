@@ -17,7 +17,7 @@ class UserDefaultsStore {
     private init() {}
 
     /// 進捗を保存
-    func saveProgress(_ progress: UserProgress) {
+    func saveProgress(_ progress: UserProgressRecord) {
         var allProgress = fetchAllProgress()
 
         // 既存の進捗を更新または新規追加
@@ -36,20 +36,20 @@ class UserDefaultsStore {
     }
 
     /// 特定のレッスンの進捗を取得
-    func fetchProgress(for lessonId: String) -> UserProgress? {
+    func fetchProgress(for lessonId: String) -> UserProgressRecord? {
         let allProgress = fetchAllProgress()
         return allProgress.first(where: { $0.lessonId == lessonId })
     }
 
     /// すべての進捗を取得
-    func fetchAllProgress() -> [UserProgress] {
+    func fetchAllProgress() -> [UserProgressRecord] {
         guard let data = defaults.data(forKey: progressKey) else {
             return []
         }
 
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
-        guard let progress = try? decoder.decode([UserProgress].self, from: data) else {
+        guard let progress = try? decoder.decode([UserProgressRecord].self, from: data) else {
             return []
         }
 

@@ -30,23 +30,27 @@ struct Lesson: Codable {
     let title: String
     let subtitle: String
     let estimatedMinutes: Int
-    let topic: String
+    let category: String  // 大項目（例: "データソース"）
+    let topic: String     // 小項目（例: "身近な統計"）
     let summary: String
     let learningObjectives: [String]
     let prerequisites: [String]
     let steps: [Step]
     let resources: LessonResources
+    let quizId: String?
 
     enum CodingKeys: String, CodingKey {
         case id
         case title
         case subtitle
         case estimatedMinutes = "estimated_minutes"
+        case category
         case topic
         case summary
         case learningObjectives = "learning_objectives"
         case prerequisites
         case steps
         case resources
+        case quizId = "quiz_id"
     }
 }
