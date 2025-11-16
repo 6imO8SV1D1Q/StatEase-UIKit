@@ -58,7 +58,19 @@ class LessonListViewController: UIViewController {
 
     private func setupUI() {
         title = "StatEase"
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .systemGroupedBackground
+
+        if let navigationBar = navigationController?.navigationBar {
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = .systemGroupedBackground
+            appearance.titleTextAttributes = [
+                .foregroundColor: UIColor.label,
+                .font: UIFont.systemFont(ofSize: 24, weight: .bold)
+            ]
+            navigationBar.standardAppearance = appearance
+            navigationBar.scrollEdgeAppearance = appearance
+        }
 
         view.addSubview(tableView)
 
@@ -84,9 +96,14 @@ class LessonListViewController: UIViewController {
             lessons.sort { $0.id < $1.id }
 
             // category（大項目）ごとにグループ化
-            let grouped = Dictionary(grouping: lessons, by: { $0.category })
-            groupedLessons = grouped.sorted { categoryOrder($0.key) < categoryOrder($1.key) }
-                .map { ($0.key, $0.value.sorted { $0.id < $1.id }) }
+            let groupedByCategory = Dictionary(grouping: lessons, by: { $0.category })
+
+            groupedLessons = groupedByCategory
+                .sorted { categoryOrder($0.key) < categoryOrder($1.key) }
+                .map { category, lessonsInCategory in
+                    let sortedLessons = lessonsInCategory.sorted { $0.id < $1.id }
+                    return (category: category, lessons: sortedLessons)
+                }
 
             // 全セクションを開いた状態にする
             expandedSections = Set(groupedLessons.map { $0.category })
@@ -214,9 +231,7 @@ extension LessonListViewController: UITableViewDataSource {
 
         let lesson = groupedLessons[indexPath.section].lessons[indexPath.row]
         let isCompleted = userProgress.isLessonCompleted(lessonId: lesson.id)
-
         cell.configure(with: lesson, isCompleted: isCompleted)
-        cell.accessoryType = .disclosureIndicator
 
         return cell
     }
