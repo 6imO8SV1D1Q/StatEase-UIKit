@@ -69,6 +69,10 @@ class LessonListCell: UITableViewCell {
     // MARK: - Setup
 
     private func setupUI() {
+        durationLabel.setContentCompressionResistancePriority(.required, for: .horizontal)
+        durationLabel.setContentHuggingPriority(.required, for: .horizontal)
+        descriptionLabel.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+
         contentView.addSubview(titleLabel)
         contentView.addSubview(descriptionLabel)
         contentView.addSubview(durationLabel)
@@ -76,7 +80,7 @@ class LessonListCell: UITableViewCell {
 
         NSLayoutConstraint.activate([
             // 所要時間ラベル（タイトルの右側）
-            durationLabel.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
+            durationLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             durationLabel.trailingAnchor.constraint(equalTo: completionIcon.leadingAnchor, constant: -8),
             durationLabel.widthAnchor.constraint(greaterThanOrEqualToConstant: 50),
             durationLabel.heightAnchor.constraint(equalToConstant: 20),
@@ -89,7 +93,7 @@ class LessonListCell: UITableViewCell {
             // 説明ラベル
             descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 4),
             descriptionLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
-            descriptionLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -50),
+            descriptionLabel.trailingAnchor.constraint(equalTo: durationLabel.leadingAnchor, constant: -8),
             descriptionLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12),
 
             // 完了アイコン
