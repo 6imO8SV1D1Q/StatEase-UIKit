@@ -1,0 +1,28 @@
+{
+  "id": "dp_04",
+  "title": "四分位範囲",
+  "subtitle": "四分位範囲の理解",
+  "estimated_minutes": 5,
+  "category": "dispersion",
+  "topic": "散らばりなどの指標",
+  "summary": "四分位範囲について学びます。",
+  "learning_objectives": [
+    "四分位範囲を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dp_04_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "四分位範囲"
+    ],
+    "external_links": []
+  }
+}

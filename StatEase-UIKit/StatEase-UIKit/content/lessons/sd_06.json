@@ -1,0 +1,28 @@
+{
+  "id": "sd_06",
+  "title": "連続修正",
+  "subtitle": "連続修正の理解",
+  "estimated_minutes": 5,
+  "category": "sampling_distribution",
+  "topic": "推測統計の基礎となる標本分布の概念を理解する",
+  "summary": "連続修正について学びます。",
+  "learning_objectives": [
+    "連続修正を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "sd_06_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "連続修正"
+    ],
+    "external_links": []
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "rm_07",
+  "title": "自由度調整済み決定係数",
+  "subtitle": "修正済み決定係数",
+  "estimated_minutes": 5,
+  "category": "regression_multiple",
+  "topic": "回帰分析",
+  "summary": "自由度調整済み決定係数について学びます。",
+  "learning_objectives": [
+    "自由度調整済み決定係数を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rm_07_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "自由度調整済み決定係数"
+    ],
+    "external_links": []
+  }
+}

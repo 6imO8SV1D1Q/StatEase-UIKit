@@ -1,0 +1,28 @@
+{
+  "id": "dp_02",
+  "title": "標準偏差",
+  "subtitle": "標準偏差の計算と意味",
+  "estimated_minutes": 5,
+  "category": "dispersion",
+  "topic": "散らばりなどの指標",
+  "summary": "標準偏差について学びます。",
+  "learning_objectives": [
+    "標準偏差を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dp_02_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "標準偏差"
+    ],
+    "external_links": []
+  }
+}

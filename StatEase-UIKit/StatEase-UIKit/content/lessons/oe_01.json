@@ -1,0 +1,28 @@
+{
+  "id": "oe_01",
+  "title": "観察研究",
+  "subtitle": "観察研究の理解",
+  "estimated_minutes": 5,
+  "category": "observation_experiment",
+  "topic": "観察研究と実験研究",
+  "summary": "観察研究について学びます。",
+  "learning_objectives": [
+    "観察研究を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "oe_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "観察研究"
+    ],
+    "external_links": []
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "cda_04",
+  "title": "指数化",
+  "subtitle": "指数化の方法",
+  "estimated_minutes": 5,
+  "category": "center_dispersion_app",
+  "topic": "中心と散らばりの活用",
+  "summary": "指数化について学びます。",
+  "learning_objectives": [
+    "指数化を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "cda_04_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "指数化"
+    ],
+    "external_links": []
+  }
+}

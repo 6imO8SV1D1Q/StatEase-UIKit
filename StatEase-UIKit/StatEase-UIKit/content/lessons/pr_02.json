@@ -1,0 +1,28 @@
+{
+  "id": "pr_02",
+  "title": "加法定理",
+  "subtitle": "確率の加法定理",
+  "estimated_minutes": 5,
+  "category": "probability",
+  "topic": "確率",
+  "summary": "加法定理について学びます。",
+  "learning_objectives": [
+    "加法定理を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "pr_02_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "加法定理"
+    ],
+    "external_links": []
+  }
+}

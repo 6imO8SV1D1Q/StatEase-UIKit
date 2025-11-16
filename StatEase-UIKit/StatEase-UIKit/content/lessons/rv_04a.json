@@ -1,0 +1,30 @@
+{
+  "id": "rv_04a",
+  "title": "和の性質",
+  "subtitle": "和をとったときの期待値と分散",
+  "estimated_minutes": 5,
+  "category": "random_variable",
+  "topic": "確率変数",
+  "summary": "確率変数の和を取ったときの期待値と分散の求め方を学びます。",
+  "learning_objectives": [
+    "独立性の仮定ごとに和の期待値と分散を計算できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rv_04a_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "期待値",
+      "分散",
+      "独立性"
+    ],
+    "external_links": []
+  }
+}

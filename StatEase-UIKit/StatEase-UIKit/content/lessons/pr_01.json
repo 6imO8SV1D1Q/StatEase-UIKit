@@ -1,0 +1,28 @@
+{
+  "id": "pr_01",
+  "title": "事象と確率",
+  "subtitle": "事象と確率の基礎",
+  "estimated_minutes": 5,
+  "category": "probability",
+  "topic": "確率",
+  "summary": "事象と確率について学びます。",
+  "learning_objectives": [
+    "事象と確率を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "pr_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "事象と確率"
+    ],
+    "external_links": []
+  }
+}

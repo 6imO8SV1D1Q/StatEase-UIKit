@@ -1,0 +1,28 @@
+{
+  "id": "ed_01",
+  "title": "実験",
+  "subtitle": "実験の基礎",
+  "estimated_minutes": 5,
+  "category": "experimental_design",
+  "topic": "実験計画の概念の理解",
+  "summary": "実験について学びます。",
+  "learning_objectives": [
+    "実験を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "ed_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "実験"
+    ],
+    "external_links": []
+  }
+}

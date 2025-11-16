@@ -1,0 +1,30 @@
+{
+  "id": "dd_08e",
+  "title": "ベル型分布",
+  "subtitle": "滑らかな鐘形の形状",
+  "estimated_minutes": 5,
+  "category": "data_distribution",
+  "topic": "データの分布の記述",
+  "summary": "ベル型分布の特徴と正規分布との関係を学びます。",
+  "learning_objectives": [
+    "ベル型分布を正規分布と関連づけて説明できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dd_08e_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "ベル型分布",
+      "正規分布",
+      "左右対称"
+    ],
+    "external_links": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "dd_08f",
+  "title": "一様分布の形状",
+  "subtitle": "全ての区間がほぼ同じ高さ",
+  "estimated_minutes": 5,
+  "category": "data_distribution",
+  "topic": "データの分布の記述",
+  "summary": "一様分布の形状とどんなデータで現れるかを学びます。",
+  "learning_objectives": [
+    "一様分布のパターンを見分け、意味を説明できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dd_08f_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "一様分布",
+      "区間",
+      "分布の形状"
+    ],
+    "external_links": []
+  }
+}

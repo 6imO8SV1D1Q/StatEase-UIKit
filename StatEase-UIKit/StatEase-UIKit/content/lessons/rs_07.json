@@ -1,0 +1,28 @@
+{
+  "id": "rs_07",
+  "title": "残差プロット",
+  "subtitle": "残差プロットの作成",
+  "estimated_minutes": 5,
+  "category": "regression_simple",
+  "topic": "単回帰と予測",
+  "summary": "残差プロットについて学びます。",
+  "learning_objectives": [
+    "残差プロットを理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rs_07_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "残差プロット"
+    ],
+    "external_links": []
+  }
+}

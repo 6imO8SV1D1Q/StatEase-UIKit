@@ -1,0 +1,28 @@
+{
+  "id": "ed_04",
+  "title": "ブロック化",
+  "subtitle": "ブロック化の理解",
+  "estimated_minutes": 5,
+  "category": "experimental_design",
+  "topic": "実験計画の概念の理解",
+  "summary": "ブロック化について学びます。",
+  "learning_objectives": [
+    "ブロック化を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "ed_04_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "ブロック化"
+    ],
+    "external_links": []
+  }
+}

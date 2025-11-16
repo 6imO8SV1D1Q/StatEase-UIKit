@@ -1,0 +1,28 @@
+{
+  "id": "i1_03",
+  "title": "標準正規分布表の利用",
+  "subtitle": "分布表の使い方",
+  "estimated_minutes": 5,
+  "category": "inference_1pop",
+  "topic": "１つの母集団の母数に関する仮説検定の方法について理解する",
+  "summary": "標準正規分布表の利用について学びます。",
+  "learning_objectives": [
+    "標準正規分布表の利用を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "i1_03_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "標準正規分布表の利用"
+    ],
+    "external_links": []
+  }
+}

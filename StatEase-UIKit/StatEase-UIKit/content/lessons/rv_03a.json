@@ -1,0 +1,29 @@
+{
+  "id": "rv_03a",
+  "title": "分散",
+  "subtitle": "期待値からのばらつき",
+  "estimated_minutes": 5,
+  "category": "random_variable",
+  "topic": "確率変数",
+  "summary": "確率変数の分散の計算方法と性質を学びます。",
+  "learning_objectives": [
+    "分散の定義と計算方法を説明できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rv_03a_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "分散",
+      "期待値"
+    ],
+    "external_links": []
+  }
+}

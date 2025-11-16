@@ -1,0 +1,28 @@
+{
+  "id": "oe_06",
+  "title": "全数調査",
+  "subtitle": "全数調査の理解",
+  "estimated_minutes": 5,
+  "category": "observation_experiment",
+  "topic": "観察研究と実験研究",
+  "summary": "全数調査について学びます。",
+  "learning_objectives": [
+    "全数調査を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "oe_06_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "全数調査"
+    ],
+    "external_links": []
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "ct_02",
+  "title": "中央値",
+  "subtitle": "中央値の計算と意味",
+  "estimated_minutes": 5,
+  "category": "central_tendency",
+  "topic": "中心の位置を示す指標",
+  "summary": "中央値について学びます。",
+  "learning_objectives": [
+    "中央値を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "ct_02_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "中央値"
+    ],
+    "external_links": []
+  }
+}

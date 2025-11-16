@@ -1,0 +1,30 @@
+{
+  "id": "ts_04a",
+  "title": "コレログラム",
+  "subtitle": "系列相関の可視化",
+  "estimated_minutes": 5,
+  "category": "timeseries",
+  "topic": "時系列データの処理",
+  "summary": "コレログラム（自己相関図）の作り方と読み取り方を学びます。",
+  "learning_objectives": [
+    "コレログラムを作成し、ラグごとの相関を解釈できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "ts_04a_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "コレログラム",
+      "自己相関",
+      "ラグ"
+    ],
+    "external_links": []
+  }
+}

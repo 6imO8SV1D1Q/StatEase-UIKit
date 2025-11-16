@@ -1,0 +1,28 @@
+{
+  "id": "rm_02",
+  "title": "重回帰モデル",
+  "subtitle": "重回帰モデルの理解",
+  "estimated_minutes": 5,
+  "category": "regression_multiple",
+  "topic": "回帰分析",
+  "summary": "重回帰モデルについて学びます。",
+  "learning_objectives": [
+    "重回帰モデルを理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rm_02_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "重回帰モデル"
+    ],
+    "external_links": []
+  }
+}

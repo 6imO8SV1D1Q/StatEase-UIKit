@@ -1,0 +1,28 @@
+{
+  "id": "oe_05",
+  "title": "標本",
+  "subtitle": "標本の概念",
+  "estimated_minutes": 5,
+  "category": "observation_experiment",
+  "topic": "観察研究と実験研究",
+  "summary": "標本について学びます。",
+  "learning_objectives": [
+    "標本を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "oe_05_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "標本"
+    ],
+    "external_links": []
+  }
+}

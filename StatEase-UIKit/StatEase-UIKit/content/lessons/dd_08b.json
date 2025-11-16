@@ -1,0 +1,30 @@
+{
+  "id": "dd_08b",
+  "title": "対称な分布",
+  "subtitle": "左右に同じ尾を持つ形状",
+  "estimated_minutes": 5,
+  "category": "data_distribution",
+  "topic": "データの分布の記述",
+  "summary": "対称な分布の見分け方と平均と中央値との関係を学びます。",
+  "learning_objectives": [
+    "対称な分布の特徴と代表値の関係を説明できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dd_08b_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "対称分布",
+      "平均",
+      "中央値"
+    ],
+    "external_links": []
+  }
+}

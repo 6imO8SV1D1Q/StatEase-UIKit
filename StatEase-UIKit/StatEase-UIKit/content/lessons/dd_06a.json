@@ -1,0 +1,30 @@
+{
+  "id": "dd_06a",
+  "title": "ヒストグラム",
+  "subtitle": "連続データの分布を棒で表す",
+  "estimated_minutes": 5,
+  "category": "data_distribution",
+  "topic": "データの分布の記述",
+  "summary": "ヒストグラムの作り方と形状の読み取り方を学びます。",
+  "learning_objectives": [
+    "ヒストグラムを作成し、分布の特徴を読み取れる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dd_06a_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "ヒストグラム",
+      "階級幅",
+      "頻度"
+    ],
+    "external_links": []
+  }
+}

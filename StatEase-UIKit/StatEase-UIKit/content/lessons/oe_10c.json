@@ -1,0 +1,30 @@
+{
+  "id": "oe_10c",
+  "title": "多段抽出法",
+  "subtitle": "段階的に母集団を絞り込む",
+  "estimated_minutes": 5,
+  "category": "observation_experiment",
+  "topic": "観察研究と実験研究",
+  "summary": "多段抽出法の段階構造とコストメリットを学びます。",
+  "learning_objectives": [
+    "多段抽出法のステップと利点を説明できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "oe_10c_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "多段抽出法",
+      "標本抽出法",
+      "段階抽出"
+    ],
+    "external_links": []
+  }
+}

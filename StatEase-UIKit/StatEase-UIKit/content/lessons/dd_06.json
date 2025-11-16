@@ -1,0 +1,30 @@
+{
+  "id": "dd_06",
+  "title": "度数分布表",
+  "subtitle": "階級と度数の整理",
+  "estimated_minutes": 5,
+  "category": "data_distribution",
+  "topic": "データの分布の記述",
+  "summary": "度数分布表の作り方と読み取り方を学びます。",
+  "learning_objectives": [
+    "度数分布表を作成して特徴を読み取れる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dd_06_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "度数分布表",
+      "階級",
+      "度数"
+    ],
+    "external_links": []
+  }
+}

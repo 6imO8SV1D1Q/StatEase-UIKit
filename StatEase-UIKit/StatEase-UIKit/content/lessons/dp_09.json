@@ -1,0 +1,28 @@
+{
+  "id": "dp_09",
+  "title": "カイ二乗値",
+  "subtitle": "一様な頻度からのずれ",
+  "estimated_minutes": 5,
+  "category": "dispersion",
+  "topic": "散らばりなどの指標",
+  "summary": "カイ二乗値について学びます。",
+  "learning_objectives": [
+    "カイ二乗値を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dp_09_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "カイ二乗値"
+    ],
+    "external_links": []
+  }
+}

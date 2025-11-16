@@ -1,0 +1,28 @@
+{
+  "id": "i1_01",
+  "title": "正規母集団に関する分布とその活用",
+  "subtitle": "正規母集団の理解",
+  "estimated_minutes": 5,
+  "category": "inference_1pop",
+  "topic": "１つの母集団の母数に関する仮説検定の方法について理解する",
+  "summary": "正規母集団に関する分布とその活用について学びます。",
+  "learning_objectives": [
+    "正規母集団に関する分布とその活用を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "i1_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "正規母集団に関する分布とその活用"
+    ],
+    "external_links": []
+  }
+}

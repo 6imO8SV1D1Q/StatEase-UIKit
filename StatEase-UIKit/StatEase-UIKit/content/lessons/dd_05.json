@@ -1,0 +1,28 @@
+{
+  "id": "dd_05",
+  "title": "幹葉図",
+  "subtitle": "幹葉図の理解と作成",
+  "estimated_minutes": 5,
+  "category": "data_distribution",
+  "topic": "データの分布の記述",
+  "summary": "幹葉図について学びます。",
+  "learning_objectives": [
+    "幹葉図を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dd_05_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "幹葉図"
+    ],
+    "external_links": []
+  }
+}

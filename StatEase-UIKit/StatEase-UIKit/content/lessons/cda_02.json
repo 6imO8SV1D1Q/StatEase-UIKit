@@ -1,0 +1,28 @@
+{
+  "id": "cda_02",
+  "title": "標準化",
+  "subtitle": "z得点",
+  "estimated_minutes": 5,
+  "category": "center_dispersion_app",
+  "topic": "中心と散らばりの活用",
+  "summary": "標準化について学びます。",
+  "learning_objectives": [
+    "標準化を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "cda_02_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "標準化"
+    ],
+    "external_links": []
+  }
+}

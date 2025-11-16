@@ -1,0 +1,28 @@
+{
+  "id": "rs_01",
+  "title": "最小二乗法",
+  "subtitle": "最小二乗法の理解",
+  "estimated_minutes": 5,
+  "category": "regression_simple",
+  "topic": "単回帰と予測",
+  "summary": "最小二乗法について学びます。",
+  "learning_objectives": [
+    "最小二乗法を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rs_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "最小二乗法"
+    ],
+    "external_links": []
+  }
+}

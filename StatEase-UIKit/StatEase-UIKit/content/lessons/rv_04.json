@@ -1,0 +1,29 @@
+{
+  "id": "rv_04",
+  "title": "同時分布",
+  "subtitle": "同時確率と周辺確率",
+  "estimated_minutes": 5,
+  "category": "random_variable",
+  "topic": "確率変数",
+  "summary": "複数の確率変数の同時分布と周辺分布の関係を学びます。",
+  "learning_objectives": [
+    "同時分布の読み方と周辺化を説明できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rv_04_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "同時分布",
+      "周辺分布"
+    ],
+    "external_links": []
+  }
+}

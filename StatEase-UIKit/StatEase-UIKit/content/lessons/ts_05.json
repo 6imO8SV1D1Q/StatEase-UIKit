@@ -1,0 +1,28 @@
+{
+  "id": "ts_05",
+  "title": "トレンド",
+  "subtitle": "トレンドの抽出",
+  "estimated_minutes": 5,
+  "category": "timeseries",
+  "topic": "時系列データの処理",
+  "summary": "トレンドについて学びます。",
+  "learning_objectives": [
+    "トレンドを理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "ts_05_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "トレンド"
+    ],
+    "external_links": []
+  }
+}

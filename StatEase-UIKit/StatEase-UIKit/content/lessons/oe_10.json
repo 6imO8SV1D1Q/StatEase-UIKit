@@ -1,0 +1,30 @@
+{
+  "id": "oe_10",
+  "title": "系統抽出法",
+  "subtitle": "等間隔にサンプルを取り出す",
+  "estimated_minutes": 5,
+  "category": "observation_experiment",
+  "topic": "観察研究と実験研究",
+  "summary": "系統抽出法の手順とメリットと注意点を学びます。",
+  "learning_objectives": [
+    "系統抽出法のステップと使いどころを説明できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "oe_10_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "標本抽出法",
+      "系統抽出法",
+      "等間隔抽出"
+    ],
+    "external_links": []
+  }
+}

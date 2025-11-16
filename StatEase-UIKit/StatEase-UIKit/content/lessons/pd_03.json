@@ -1,0 +1,28 @@
+{
+  "id": "pd_03",
+  "title": "ポアソン分布",
+  "subtitle": "ポアソン分布の理解",
+  "estimated_minutes": 5,
+  "category": "probability_distribution",
+  "topic": "確率分布",
+  "summary": "ポアソン分布について学びます。",
+  "learning_objectives": [
+    "ポアソン分布を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "pd_03_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "ポアソン分布"
+    ],
+    "external_links": []
+  }
+}

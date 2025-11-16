@@ -1,0 +1,28 @@
+{
+  "id": "dp_07",
+  "title": "ジニ係数",
+  "subtitle": "ジニ係数の計算",
+  "estimated_minutes": 5,
+  "category": "dispersion",
+  "topic": "散らばりなどの指標",
+  "summary": "ジニ係数について学びます。",
+  "learning_objectives": [
+    "ジニ係数を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dp_07_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "ジニ係数"
+    ],
+    "external_links": []
+  }
+}

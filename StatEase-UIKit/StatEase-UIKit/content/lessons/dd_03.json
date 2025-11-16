@@ -1,0 +1,28 @@
+{
+  "id": "dd_03",
+  "title": "棒グラフ",
+  "subtitle": "棒グラフの理解と作成",
+  "estimated_minutes": 5,
+  "category": "data_distribution",
+  "topic": "データの分布の記述",
+  "summary": "棒グラフについて学びます。",
+  "learning_objectives": [
+    "棒グラフを理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dd_03_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "棒グラフ"
+    ],
+    "external_links": []
+  }
+}

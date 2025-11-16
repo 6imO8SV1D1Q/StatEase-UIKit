@@ -1,0 +1,28 @@
+{
+  "id": "dp_10",
+  "title": "歪度",
+  "subtitle": "分布の歪みの測定",
+  "estimated_minutes": 5,
+  "category": "dispersion",
+  "topic": "散らばりなどの指標",
+  "summary": "歪度について学びます。",
+  "learning_objectives": [
+    "歪度を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dp_10_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "歪度"
+    ],
+    "external_links": []
+  }
+}

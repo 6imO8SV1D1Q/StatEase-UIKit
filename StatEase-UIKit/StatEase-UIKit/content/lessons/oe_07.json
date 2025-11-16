@@ -1,0 +1,28 @@
+{
+  "id": "oe_07",
+  "title": "標本調査",
+  "subtitle": "標本調査の理解",
+  "estimated_minutes": 5,
+  "category": "observation_experiment",
+  "topic": "観察研究と実験研究",
+  "summary": "標本調査について学びます。",
+  "learning_objectives": [
+    "標本調査を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "oe_07_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "標本調査"
+    ],
+    "external_links": []
+  }
+}

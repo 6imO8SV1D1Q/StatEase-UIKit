@@ -1,0 +1,28 @@
+{
+  "id": "dd_04",
+  "title": "円グラフ",
+  "subtitle": "円グラフの理解と作成",
+  "estimated_minutes": 5,
+  "category": "data_distribution",
+  "topic": "データの分布の記述",
+  "summary": "円グラフについて学びます。",
+  "learning_objectives": [
+    "円グラフを理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dd_04_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "円グラフ"
+    ],
+    "external_links": []
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "cda_03",
+  "title": "変動係数",
+  "subtitle": "変動係数の計算",
+  "estimated_minutes": 5,
+  "category": "center_dispersion_app",
+  "topic": "中心と散らばりの活用",
+  "summary": "変動係数について学びます。",
+  "learning_objectives": [
+    "変動係数を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "cda_03_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "変動係数"
+    ],
+    "external_links": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "oe_10a",
+  "title": "層化抽出法",
+  "subtitle": "層ごとに偏りなくサンプルを取る",
+  "estimated_minutes": 5,
+  "category": "observation_experiment",
+  "topic": "観察研究と実験研究",
+  "summary": "層化抽出法の分割基準とサンプリング手順を学びます。",
+  "learning_objectives": [
+    "層化抽出法の流れと効果を説明できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "oe_10a_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "層化抽出法",
+      "層",
+      "標本抽出法"
+    ],
+    "external_links": []
+  }
+}

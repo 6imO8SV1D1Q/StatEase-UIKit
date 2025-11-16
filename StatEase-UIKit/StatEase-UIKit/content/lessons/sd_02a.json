@@ -1,0 +1,30 @@
+{
+  "id": "sd_02a",
+  "title": "標本平均の分散",
+  "subtitle": "標本サイズとばらつき",
+  "estimated_minutes": 5,
+  "category": "sampling_distribution",
+  "topic": "推測統計の基礎となる標本分布の概念を理解する",
+  "summary": "標本平均の分散の式と標本サイズとの関係を学びます。",
+  "learning_objectives": [
+    "標本平均の分散を導出し、サンプルサイズの影響を説明できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "sd_02a_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "標本平均",
+      "分散",
+      "サンプルサイズ"
+    ],
+    "external_links": []
+  }
+}

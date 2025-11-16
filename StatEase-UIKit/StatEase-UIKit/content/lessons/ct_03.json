@@ -1,0 +1,28 @@
+{
+  "id": "ct_03",
+  "title": "最頻値（モード）",
+  "subtitle": "最頻値の理解",
+  "estimated_minutes": 5,
+  "category": "central_tendency",
+  "topic": "中心の位置を示す指標",
+  "summary": "最頻値（モード）について学びます。",
+  "learning_objectives": [
+    "最頻値（モード）を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "ct_03_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "最頻値（モード）"
+    ],
+    "external_links": []
+  }
+}

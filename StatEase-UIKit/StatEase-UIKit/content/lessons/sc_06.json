@@ -1,0 +1,28 @@
+{
+  "id": "sc_06",
+  "title": "偏相関係数",
+  "subtitle": "偏相関係数の計算",
+  "estimated_minutes": 5,
+  "category": "scatter_correlation",
+  "topic": "散布図と相関",
+  "summary": "偏相関係数について学びます。",
+  "learning_objectives": [
+    "偏相関係数を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "sc_06_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "偏相関係数"
+    ],
+    "external_links": []
+  }
+}
