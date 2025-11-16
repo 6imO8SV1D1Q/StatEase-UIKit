@@ -57,11 +57,62 @@ class StepTextCell: UITableViewCell {
     }
 
     func configure(with step: Step) {
+        if let attributedParagraphs = makeParagraphs(from: step) {
+            contentLabel.attributedText = attributedParagraphs
+            return
+        }
+
         if let markdown = makeMarkdown(from: step.body) {
             contentLabel.attributedText = markdown
         } else {
             contentLabel.text = step.body
         }
+    }
+
+    private func makeParagraphs(from step: Step) -> NSAttributedString? {
+        guard let paragraphs = step.paragraphs, !paragraphs.isEmpty else {
+            return nil
+        }
+
+        let attributed = NSMutableAttributedString()
+        let bodyFont = UIFont.systemFont(ofSize: 16)
+        let titleFont = UIFont.systemFont(ofSize: 16, weight: .semibold)
+
+        for (index, paragraph) in paragraphs.enumerated() {
+            if let title = paragraph.title, !title.isEmpty {
+                let titleText = NSAttributedString(
+                    string: title + "\n",
+                    attributes: [
+                        .font: titleFont,
+                        .foregroundColor: UIColor.label
+                    ]
+                )
+                attributed.append(titleText)
+            }
+
+            let bodyText = NSAttributedString(
+                string: paragraph.body,
+                attributes: [
+                    .font: bodyFont,
+                    .foregroundColor: UIColor.label
+                ]
+            )
+            attributed.append(bodyText)
+
+            if index < paragraphs.count - 1 {
+                attributed.append(NSAttributedString(string: "\n\n"))
+            }
+        }
+
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = 6
+        paragraphStyle.paragraphSpacing = 10
+        attributed.addAttribute(
+            .paragraphStyle,
+            value: paragraphStyle,
+            range: NSRange(location: 0, length: attributed.length)
+        )
+        return attributed
     }
 
     private func makeMarkdown(from text: String) -> NSAttributedString? {
