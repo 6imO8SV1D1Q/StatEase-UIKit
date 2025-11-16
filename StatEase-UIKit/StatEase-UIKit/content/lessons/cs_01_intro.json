@@ -1,0 +1,24 @@
+{
+  "id": "cs_01_intro",
+  "title": "適合度検定",
+  "subtitle": "カイ二乗検定の基礎",
+  "estimated_minutes": 5,
+  "category": "chi_square_test",
+  "topic": "適合度検定と独立性の検定",
+  "summary": "適合度検定について学びます。",
+  "learning_objectives": ["適合度検定を理解できる"],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "cs_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": ["適合度検定"],
+    "external_links": []
+  }
+}

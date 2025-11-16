@@ -1,0 +1,24 @@
+{
+  "id": "rm_01_intro",
+  "title": "重回帰分析",
+  "subtitle": "複数の説明変数による予測",
+  "estimated_minutes": 5,
+  "category": "regression_multiple",
+  "topic": "回帰分析",
+  "summary": "重回帰分析について学びます。",
+  "learning_objectives": ["重回帰分析を理解できる"],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rm_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": ["重回帰分析"],
+    "external_links": []
+  }
+}

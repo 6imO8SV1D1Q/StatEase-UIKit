@@ -1,0 +1,24 @@
+{
+  "id": "ct_01_intro",
+  "title": "平均値",
+  "subtitle": "データの中心を示す指標",
+  "estimated_minutes": 5,
+  "category": "central_tendency",
+  "topic": "中心の位置を示す指標",
+  "summary": "平均値について学びます。",
+  "learning_objectives": ["平均値を理解できる"],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "ct_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": ["平均値"],
+    "external_links": []
+  }
+}

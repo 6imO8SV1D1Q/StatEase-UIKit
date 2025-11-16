@@ -1,0 +1,24 @@
+{
+  "id": "oe_01_intro",
+  "title": "観察研究と実験研究",
+  "subtitle": "データ収集法の違い",
+  "estimated_minutes": 5,
+  "category": "observation_experiment",
+  "topic": "観察研究と実験研究",
+  "summary": "観察研究と実験研究の違いを学びます。",
+  "learning_objectives": ["観察研究と実験研究の違いを理解できる"],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "oe_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": ["観察研究", "実験研究"],
+    "external_links": []
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "sd_01_intro",
+  "title": "標本分布",
+  "subtitle": "中心極限定理",
+  "estimated_minutes": 5,
+  "category": "sampling_distribution",
+  "topic": "推測統計の基礎",
+  "summary": "標本分布について学びます。",
+  "learning_objectives": ["標本分布を理解できる"],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "sd_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": ["標本分布"],
+    "external_links": []
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ts_01_intro",
+  "title": "時系列データ",
+  "subtitle": "トレンドと季節性",
+  "estimated_minutes": 5,
+  "category": "timeseries",
+  "topic": "時系列データの処理",
+  "summary": "時系列データについて学びます。",
+  "learning_objectives": ["時系列データを理解できる"],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "ts_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": ["時系列データ"],
+    "external_links": []
+  }
+}

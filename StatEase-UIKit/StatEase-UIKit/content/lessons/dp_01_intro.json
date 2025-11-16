@@ -1,0 +1,24 @@
+{
+  "id": "dp_01_intro",
+  "title": "分散と標準偏差",
+  "subtitle": "データの散らばりを測る",
+  "estimated_minutes": 5,
+  "category": "dispersion",
+  "topic": "散らばりなどの指標",
+  "summary": "分散と標準偏差について学びます。",
+  "learning_objectives": ["分散と標準偏差を理解できる"],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dp_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": ["分散", "標準偏差"],
+    "external_links": []
+  }
+}

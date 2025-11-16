@@ -1,0 +1,24 @@
+{
+  "id": "dd_01_intro",
+  "title": "質的変数と量的変数",
+  "subtitle": "データの種類を理解する",
+  "estimated_minutes": 5,
+  "category": "data_distribution",
+  "topic": "データの分布の記述",
+  "summary": "データの種類を理解し、質的変数と量的変数の違いを学びます。",
+  "learning_objectives": ["質的変数と量的変数の違いを理解できる"],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dd_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": ["質的変数", "量的変数"],
+    "external_links": []
+  }
+}

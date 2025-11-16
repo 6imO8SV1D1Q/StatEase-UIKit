@@ -1,0 +1,24 @@
+{
+  "id": "ss_01_intro",
+  "title": "統計ソフトウェアの活用",
+  "subtitle": "Rやpythonの基本",
+  "estimated_minutes": 5,
+  "category": "statistical_software",
+  "topic": "統計ソフトウェアの活用",
+  "summary": "統計ソフトウェアの活用について学びます。",
+  "learning_objectives": ["統計ソフトウェアを使えるようになる"],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "ss_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": ["R", "Python"],
+    "external_links": []
+  }
+}
