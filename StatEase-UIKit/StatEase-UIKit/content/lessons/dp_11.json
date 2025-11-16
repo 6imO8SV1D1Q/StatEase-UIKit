@@ -1,0 +1,28 @@
+{
+  "id": "dp_11",
+  "title": "尖度",
+  "subtitle": "分布の尖りの測定",
+  "estimated_minutes": 5,
+  "category": "dispersion",
+  "topic": "散らばりなどの指標",
+  "summary": "尖度について学びます。",
+  "learning_objectives": [
+    "尖度を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dp_11_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "尖度"
+    ],
+    "external_links": []
+  }
+}

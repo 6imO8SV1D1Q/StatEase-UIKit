@@ -1,0 +1,28 @@
+{
+  "id": "ts_03",
+  "title": "幾何平均",
+  "subtitle": "幾何平均の計算",
+  "estimated_minutes": 5,
+  "category": "timeseries",
+  "topic": "時系列データの処理",
+  "summary": "幾何平均について学びます。",
+  "learning_objectives": [
+    "幾何平均を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "ts_03_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "幾何平均"
+    ],
+    "external_links": []
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "ts_01",
+  "title": "成長率",
+  "subtitle": "成長率の計算",
+  "estimated_minutes": 5,
+  "category": "timeseries",
+  "topic": "時系列データの処理",
+  "summary": "成長率について学びます。",
+  "learning_objectives": [
+    "成長率を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "ts_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "成長率"
+    ],
+    "external_links": []
+  }
+}

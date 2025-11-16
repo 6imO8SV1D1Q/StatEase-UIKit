@@ -34,16 +34,12 @@ class LessonListCell: UITableViewCell {
 
     private let durationLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 12, weight: .regular)
-        label.textColor = .secondaryLabel
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-
-    private let difficultyLabel: UILabel = {
-        let label = UILabel()
-        label.font = .systemFont(ofSize: 12, weight: .medium)
-        label.textColor = .systemBlue
+        label.font = .systemFont(ofSize: 11, weight: .medium)
+        label.textColor = .white
+        label.backgroundColor = .systemOrange
+        label.textAlignment = .center
+        label.layer.cornerRadius = 10
+        label.layer.masksToBounds = true
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -73,31 +69,32 @@ class LessonListCell: UITableViewCell {
     // MARK: - Setup
 
     private func setupUI() {
+        durationLabel.setContentCompressionResistancePriority(.required, for: .horizontal)
+        durationLabel.setContentHuggingPriority(.required, for: .horizontal)
+        descriptionLabel.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+
         contentView.addSubview(titleLabel)
         contentView.addSubview(descriptionLabel)
-        contentView.addSubview(difficultyLabel)
         contentView.addSubview(durationLabel)
         contentView.addSubview(completionIcon)
 
         NSLayoutConstraint.activate([
+            // 所要時間ラベル（タイトルの右側）
+            durationLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            durationLabel.trailingAnchor.constraint(equalTo: completionIcon.leadingAnchor, constant: -8),
+            durationLabel.widthAnchor.constraint(greaterThanOrEqualToConstant: 50),
+            durationLabel.heightAnchor.constraint(equalToConstant: 20),
+
             // タイトルラベル
             titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 12),
             titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-            titleLabel.trailingAnchor.constraint(equalTo: completionIcon.leadingAnchor, constant: -8),
+            titleLabel.trailingAnchor.constraint(equalTo: durationLabel.leadingAnchor, constant: -8),
 
             // 説明ラベル
             descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 4),
             descriptionLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
-            descriptionLabel.trailingAnchor.constraint(equalTo: titleLabel.trailingAnchor),
-
-            // 難易度ラベル
-            difficultyLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 8),
-            difficultyLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
-            difficultyLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12),
-
-            // 所要時間ラベル
-            durationLabel.leadingAnchor.constraint(equalTo: difficultyLabel.trailingAnchor, constant: 12),
-            durationLabel.centerYAnchor.constraint(equalTo: difficultyLabel.centerYAnchor),
+            descriptionLabel.trailingAnchor.constraint(equalTo: durationLabel.leadingAnchor, constant: -8),
+            descriptionLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12),
 
             // 完了アイコン
             completionIcon.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
@@ -116,8 +113,7 @@ class LessonListCell: UITableViewCell {
     func configure(with lesson: Lesson, isCompleted: Bool) {
         titleLabel.text = lesson.title
         descriptionLabel.text = lesson.subtitle
-        difficultyLabel.text = lesson.topic
-        durationLabel.text = "約\(lesson.estimatedMinutes)分"
+        durationLabel.text = "\(lesson.estimatedMinutes)分"
         completionIcon.isHidden = !isCompleted
     }
 
@@ -127,7 +123,6 @@ class LessonListCell: UITableViewCell {
         super.prepareForReuse()
         titleLabel.text = nil
         descriptionLabel.text = nil
-        difficultyLabel.text = nil
         durationLabel.text = nil
         completionIcon.isHidden = true
     }

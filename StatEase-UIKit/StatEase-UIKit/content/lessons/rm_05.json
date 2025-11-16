@@ -1,0 +1,28 @@
+{
+  "id": "rm_05",
+  "title": "多重共線性",
+  "subtitle": "多重共線性の理解",
+  "estimated_minutes": 5,
+  "category": "regression_multiple",
+  "topic": "回帰分析",
+  "summary": "多重共線性について学びます。",
+  "learning_objectives": [
+    "多重共線性を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rm_05_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "多重共線性"
+    ],
+    "external_links": []
+  }
+}

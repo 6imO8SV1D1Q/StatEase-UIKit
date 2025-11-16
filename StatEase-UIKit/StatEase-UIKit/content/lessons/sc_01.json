@@ -1,0 +1,28 @@
+{
+  "id": "sc_01",
+  "title": "散布図",
+  "subtitle": "散布図の作成と解釈",
+  "estimated_minutes": 5,
+  "category": "scatter_correlation",
+  "topic": "散布図と相関",
+  "summary": "散布図について学びます。",
+  "learning_objectives": [
+    "散布図を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "sc_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "散布図"
+    ],
+    "external_links": []
+  }
+}

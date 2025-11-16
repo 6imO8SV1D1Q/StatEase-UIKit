@@ -1,0 +1,28 @@
+{
+  "id": "dp_05",
+  "title": "箱ひげ図",
+  "subtitle": "箱ひげ図の作成と解釈",
+  "estimated_minutes": 5,
+  "category": "dispersion",
+  "topic": "散らばりなどの指標",
+  "summary": "箱ひげ図について学びます。",
+  "learning_objectives": [
+    "箱ひげ図を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dp_05_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "箱ひげ図"
+    ],
+    "external_links": []
+  }
+}

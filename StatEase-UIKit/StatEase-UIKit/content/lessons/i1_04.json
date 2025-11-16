@@ -1,0 +1,28 @@
+{
+  "id": "i1_04",
+  "title": "t分布",
+  "subtitle": "t分布の理解",
+  "estimated_minutes": 5,
+  "category": "inference_1pop",
+  "topic": "１つの母集団の母数に関する仮説検定の方法について理解する",
+  "summary": "t分布について学びます。",
+  "learning_objectives": [
+    "t分布を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "i1_04_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "t分布"
+    ],
+    "external_links": []
+  }
+}

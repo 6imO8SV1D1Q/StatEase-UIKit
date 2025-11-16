@@ -1,0 +1,30 @@
+{
+  "id": "oe_10b",
+  "title": "クラスター抽出法",
+  "subtitle": "まとまりを単位にして抽出する",
+  "estimated_minutes": 5,
+  "category": "observation_experiment",
+  "topic": "観察研究と実験研究",
+  "summary": "クラスター抽出法の考え方と、母集団をクラスターに分ける手順を学びます。",
+  "learning_objectives": [
+    "クラスター抽出法の使いどころと注意点を説明できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "oe_10b_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "クラスター抽出法",
+      "標本抽出法",
+      "集落抽出"
+    ],
+    "external_links": []
+  }
+}

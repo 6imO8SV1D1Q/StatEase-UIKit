@@ -1,0 +1,29 @@
+{
+  "id": "rv_03b",
+  "title": "標準偏差",
+  "subtitle": "分散の平方根で尺度をそろえる",
+  "estimated_minutes": 5,
+  "category": "random_variable",
+  "topic": "確率変数",
+  "summary": "標準偏差の意味と分散との関係を学びます。",
+  "learning_objectives": [
+    "標準偏差の定義と利用シーンを説明できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rv_03b_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "標準偏差",
+      "分散"
+    ],
+    "external_links": []
+  }
+}

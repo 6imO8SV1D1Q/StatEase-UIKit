@@ -1,0 +1,28 @@
+{
+  "id": "pr_03",
+  "title": "条件付き確率",
+  "subtitle": "条件付き確率の理解",
+  "estimated_minutes": 5,
+  "category": "probability",
+  "topic": "確率",
+  "summary": "条件付き確率について学びます。",
+  "learning_objectives": [
+    "条件付き確率を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "pr_03_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "条件付き確率"
+    ],
+    "external_links": []
+  }
+}

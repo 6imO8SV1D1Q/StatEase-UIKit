@@ -1,0 +1,29 @@
+{
+  "id": "rv_03",
+  "title": "期待値",
+  "subtitle": "確率変数の平均的な値",
+  "estimated_minutes": 5,
+  "category": "random_variable",
+  "topic": "確率変数",
+  "summary": "確率変数の期待値の求め方と性質を学びます。",
+  "learning_objectives": [
+    "確率変数の期待値を計算し、意味を説明できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rv_03_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "期待値",
+      "期待値の線形性"
+    ],
+    "external_links": []
+  }
+}

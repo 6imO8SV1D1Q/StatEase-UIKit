@@ -1,0 +1,28 @@
+{
+  "id": "sc_03",
+  "title": "共分散",
+  "subtitle": "共分散の理解",
+  "estimated_minutes": 5,
+  "category": "scatter_correlation",
+  "topic": "散布図と相関",
+  "summary": "共分散について学びます。",
+  "learning_objectives": [
+    "共分散を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "sc_03_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "共分散"
+    ],
+    "external_links": []
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dp_08",
+  "title": "グラフの視覚的比較",
+  "subtitle": "２つのグラフの視覚的比較",
+  "estimated_minutes": 5,
+  "category": "dispersion",
+  "topic": "散らばりなどの指標",
+  "summary": "グラフの視覚的比較について学びます。",
+  "learning_objectives": [
+    "グラフの視覚的比較を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dp_08_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "グラフの視覚的比較"
+    ],
+    "external_links": []
+  }
+}

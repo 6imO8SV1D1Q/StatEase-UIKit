@@ -1,0 +1,28 @@
+{
+  "id": "pd_04",
+  "title": "一様分布",
+  "subtitle": "一様分布の理解",
+  "estimated_minutes": 5,
+  "category": "probability_distribution",
+  "topic": "確率分布",
+  "summary": "一様分布について学びます。",
+  "learning_objectives": [
+    "一様分布を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "pd_04_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "一様分布"
+    ],
+    "external_links": []
+  }
+}

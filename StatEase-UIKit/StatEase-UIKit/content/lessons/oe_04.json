@@ -1,0 +1,28 @@
+{
+  "id": "oe_04",
+  "title": "母集団",
+  "subtitle": "母集団の概念",
+  "estimated_minutes": 5,
+  "category": "observation_experiment",
+  "topic": "観察研究と実験研究",
+  "summary": "母集団について学びます。",
+  "learning_objectives": [
+    "母集団を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "oe_04_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "母集団"
+    ],
+    "external_links": []
+  }
+}

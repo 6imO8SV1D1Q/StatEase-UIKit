@@ -1,0 +1,28 @@
+{
+  "id": "oe_03",
+  "title": "調査の設計",
+  "subtitle": "調査設計の方法",
+  "estimated_minutes": 5,
+  "category": "observation_experiment",
+  "topic": "観察研究と実験研究",
+  "summary": "調査の設計について学びます。",
+  "learning_objectives": [
+    "調査の設計を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "oe_03_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "調査の設計"
+    ],
+    "external_links": []
+  }
+}

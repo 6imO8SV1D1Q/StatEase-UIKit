@@ -1,0 +1,28 @@
+{
+  "id": "ds_02",
+  "title": "公的統計",
+  "subtitle": "公的統計の理解",
+  "estimated_minutes": 5,
+  "category": "data_source",
+  "topic": "身近な統計",
+  "summary": "公的統計について学びます。",
+  "learning_objectives": [
+    "公的統計を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "ds_02_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "公的統計"
+    ],
+    "external_links": []
+  }
+}

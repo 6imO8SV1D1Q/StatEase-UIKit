@@ -10,14 +10,6 @@ import UIKit
 class StepImageCell: UITableViewCell {
     static let identifier = "StepImageCell"
 
-    private let titleLabel: UILabel = {
-        let label = UILabel()
-        label.font = .systemFont(ofSize: 18, weight: .semibold)
-        label.numberOfLines = 0
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-
     private let contentLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 16)
@@ -61,7 +53,6 @@ class StepImageCell: UITableViewCell {
         selectionStyle = .none
 
         contentView.addSubview(containerView)
-        containerView.addSubview(titleLabel)
         containerView.addSubview(contentLabel)
         containerView.addSubview(stepImageView)
 
@@ -73,11 +64,7 @@ class StepImageCell: UITableViewCell {
             containerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             containerView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8),
 
-            titleLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 16),
-            titleLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 16),
-            titleLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -16),
-
-            contentLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 12),
+            contentLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 16),
             contentLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 16),
             contentLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -16),
 
@@ -90,23 +77,107 @@ class StepImageCell: UITableViewCell {
     }
 
     func configure(with step: Step) {
-        titleLabel.text = step.title
-        contentLabel.text = step.body
+        if let markdown = makeMarkdown(from: step.body) {
+            contentLabel.attributedText = markdown
+        } else {
+            contentLabel.text = step.body
+        }
 
-        // タイトルが空の場合は非表示
-        titleLabel.isHidden = step.title.isEmpty
-
-        // 画像を読み込み（mediaがある場合）
         if let media = step.media, media.type == "image" {
-            stepImageView.image = UIImage(named: media.assetName)
-
-            // 画像が存在しない場合はプレースホルダー
-            if stepImageView.image == nil {
-                stepImageView.backgroundColor = .systemGray5
-            }
+            let image = loadImage(named: media.assetName) ?? placeholderImage(for: media.assetName)
+            stepImageView.image = image
+            stepImageView.isHidden = (image == nil)
+            imageHeightConstraint?.constant = image == nil ? 0 : 220
+            stepImageView.backgroundColor = image == nil ? .systemGray5 : .clear
         } else {
             stepImageView.image = nil
             stepImageView.backgroundColor = .systemGray5
+            stepImageView.isHidden = true
+            imageHeightConstraint?.constant = 0
+        }
+    }
+
+    private func makeMarkdown(from text: String) -> NSAttributedString? {
+        guard !text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
+            return nil
+        }
+
+        var options = AttributedString.MarkdownParsingOptions()
+        options.interpretedSyntax = .full
+
+        guard let attributed = try? AttributedString(markdown: text, options: options) else {
+            return nil
+        }
+
+        let mutable = NSMutableAttributedString(attributedString: NSAttributedString(attributed))
+        let range = NSRange(location: 0, length: mutable.length)
+
+        mutable.addAttribute(.font, value: UIFont.systemFont(ofSize: 16), range: range)
+        mutable.addAttribute(.foregroundColor, value: UIColor.label, range: range)
+
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = 6
+        paragraphStyle.paragraphSpacing = 10
+        mutable.addAttribute(.paragraphStyle, value: paragraphStyle, range: range)
+        return mutable
+    }
+
+    private func loadImage(named assetName: String) -> UIImage? {
+        if let image = UIImage(named: assetName) {
+            return image
+        }
+
+        let ext = (assetName as NSString).pathExtension
+        let baseName = (assetName as NSString).deletingPathExtension
+
+        if let urls = Bundle.main.urls(forResourcesWithExtension: ext.isEmpty ? nil : ext, subdirectory: "content") {
+            if let matched = urls.first(where: { $0.lastPathComponent == assetName }) {
+                return UIImage(contentsOfFile: matched.path)
+            }
+        }
+
+        if let url = Bundle.main.url(forResource: baseName, withExtension: ext) {
+            return UIImage(contentsOfFile: url.path)
+        }
+
+        return nil
+    }
+
+    private func placeholderImage(for assetName: String) -> UIImage? {
+        let size = CGSize(width: 600, height: 320)
+        let renderer = UIGraphicsImageRenderer(size: size)
+        return renderer.image { context in
+            UIColor.secondarySystemBackground.setFill()
+            context.fill(CGRect(origin: .zero, size: size))
+
+            let titleAttributes: [NSAttributedString.Key: Any] = [
+                .font: UIFont.systemFont(ofSize: 20, weight: .semibold),
+                .foregroundColor: UIColor.label
+            ]
+
+            let subtitleAttributes: [NSAttributedString.Key: Any] = [
+                .font: UIFont.systemFont(ofSize: 14),
+                .foregroundColor: UIColor.secondaryLabel
+            ]
+
+            let title = "図版がまだ登録されていません"
+            let subtitle = assetName
+
+            let titleSize = title.size(withAttributes: titleAttributes)
+            let subtitleSize = subtitle.size(withAttributes: subtitleAttributes)
+
+            let totalHeight = titleSize.height + 8 + subtitleSize.height
+            let startY = (size.height - totalHeight) / 2
+
+            title.draw(
+                at: CGPoint(x: (size.width - titleSize.width) / 2, y: startY),
+                withAttributes: titleAttributes
+            )
+
+            subtitle.draw(
+                at: CGPoint(x: (size.width - subtitleSize.width) / 2, y: startY + titleSize.height + 8),
+                withAttributes: subtitleAttributes
+            )
         }
     }
 }

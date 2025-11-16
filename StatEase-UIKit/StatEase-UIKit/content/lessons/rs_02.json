@@ -1,0 +1,28 @@
+{
+  "id": "rs_02",
+  "title": "変動の分解",
+  "subtitle": "変動の分解の理解",
+  "estimated_minutes": 5,
+  "category": "regression_simple",
+  "topic": "単回帰と予測",
+  "summary": "変動の分解について学びます。",
+  "learning_objectives": [
+    "変動の分解を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rs_02_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "変動の分解"
+    ],
+    "external_links": []
+  }
+}

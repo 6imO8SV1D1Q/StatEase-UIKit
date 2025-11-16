@@ -1,0 +1,30 @@
+{
+  "id": "i2_01a",
+  "title": "母平均の差の検定（分散未知で等分散）",
+  "subtitle": "プールした分散を使うt検定",
+  "estimated_minutes": 5,
+  "category": "inference_2pop",
+  "topic": "２つの母集団の母数に関する仮説検定の方法を理解する",
+  "summary": "分散未知で等分散とみなせる場合の母平均差の検定を学びます。",
+  "learning_objectives": [
+    "等分散を仮定した2標本t検定の流れを説明できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "i2_01a_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "母平均の差",
+      "等分散",
+      "2標本t検定"
+    ],
+    "external_links": []
+  }
+}

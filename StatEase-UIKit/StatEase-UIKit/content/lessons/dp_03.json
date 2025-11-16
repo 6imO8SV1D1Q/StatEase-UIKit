@@ -1,0 +1,28 @@
+{
+  "id": "dp_03",
+  "title": "範囲",
+  "subtitle": "最小値、最大値",
+  "estimated_minutes": 5,
+  "category": "dispersion",
+  "topic": "散らばりなどの指標",
+  "summary": "範囲について学びます。",
+  "learning_objectives": [
+    "範囲を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dp_03_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "範囲"
+    ],
+    "external_links": []
+  }
+}

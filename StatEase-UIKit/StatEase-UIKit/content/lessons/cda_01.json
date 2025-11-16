@@ -1,0 +1,28 @@
+{
+  "id": "cda_01",
+  "title": "偏差",
+  "subtitle": "偏差の理解",
+  "estimated_minutes": 5,
+  "category": "center_dispersion_app",
+  "topic": "中心と散らばりの活用",
+  "summary": "偏差について学びます。",
+  "learning_objectives": [
+    "偏差を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "cda_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "偏差"
+    ],
+    "external_links": []
+  }
+}

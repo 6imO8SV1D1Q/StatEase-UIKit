@@ -1,0 +1,28 @@
+{
+  "id": "rs_08",
+  "title": "標準誤差",
+  "subtitle": "標準誤差の理解",
+  "estimated_minutes": 5,
+  "category": "regression_simple",
+  "topic": "単回帰と予測",
+  "summary": "標準誤差について学びます。",
+  "learning_objectives": [
+    "標準誤差を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rs_08_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "標準誤差"
+    ],
+    "external_links": []
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "i2_02",
+  "title": "母分散の比の検定",
+  "subtitle": "母分散の比の検定",
+  "estimated_minutes": 5,
+  "category": "inference_2pop",
+  "topic": "２つの母集団の母数に関する仮説検定の方法を理解する",
+  "summary": "母分散の比の検定について学びます。",
+  "learning_objectives": [
+    "母分散の比の検定を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "i2_02_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "母分散の比の検定"
+    ],
+    "external_links": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "dd_08c",
+  "title": "単峰分布",
+  "subtitle": "ピークが1つの形状",
+  "estimated_minutes": 5,
+  "category": "data_distribution",
+  "topic": "データの分布の記述",
+  "summary": "単峰分布の特徴と代表的な例を学びます。",
+  "learning_objectives": [
+    "単峰分布を識別し、どのようなデータで現れるか説明できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dd_08c_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "単峰分布",
+      "ピーク",
+      "モード"
+    ],
+    "external_links": []
+  }
+}

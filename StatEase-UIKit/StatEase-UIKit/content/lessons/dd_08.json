@@ -1,0 +1,30 @@
+{
+  "id": "dd_08",
+  "title": "右裾が長い分布",
+  "subtitle": "右側に長い尾を持つ形状",
+  "estimated_minutes": 5,
+  "category": "data_distribution",
+  "topic": "データの分布の記述",
+  "summary": "右裾が長い（正の歪み）分布の特徴と読み取り方を学びます。",
+  "learning_objectives": [
+    "右裾が長い分布の例と読み解き方を説明できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dd_08_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "分布の形状",
+      "正の歪み",
+      "右裾"
+    ],
+    "external_links": []
+  }
+}

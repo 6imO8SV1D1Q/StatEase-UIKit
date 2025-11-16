@@ -1,0 +1,28 @@
+{
+  "id": "cd_02",
+  "title": "2元クロス表",
+  "subtitle": "2元クロス表の理解",
+  "estimated_minutes": 5,
+  "category": "categorical_data",
+  "topic": "質的変数の関連を探る方法",
+  "summary": "2元クロス表について学びます。",
+  "learning_objectives": [
+    "2元クロス表を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "cd_02_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "2元クロス表"
+    ],
+    "external_links": []
+  }
+}

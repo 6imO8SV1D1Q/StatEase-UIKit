@@ -1,0 +1,30 @@
+{
+  "id": "dd_08d",
+  "title": "多峰分布",
+  "subtitle": "ピークが複数ある形状",
+  "estimated_minutes": 5,
+  "category": "data_distribution",
+  "topic": "データの分布の記述",
+  "summary": "多峰分布の背景にあるグループの混在や検討ポイントを学びます。",
+  "learning_objectives": [
+    "多峰分布の例を挙げ、どのような時に現れるか説明できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "dd_08d_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "多峰分布",
+      "モード",
+      "混合分布"
+    ],
+    "external_links": []
+  }
+}

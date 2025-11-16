@@ -1,0 +1,28 @@
+{
+  "id": "rs_06",
+  "title": "観測値と予測値",
+  "subtitle": "観測値と予測値の比較",
+  "estimated_minutes": 5,
+  "category": "regression_simple",
+  "topic": "単回帰と予測",
+  "summary": "観測値と予測値について学びます。",
+  "learning_objectives": [
+    "観測値と予測値を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rs_06_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "観測値と予測値"
+    ],
+    "external_links": []
+  }
+}

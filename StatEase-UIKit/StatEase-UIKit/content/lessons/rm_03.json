@@ -1,0 +1,28 @@
+{
+  "id": "rm_03",
+  "title": "偏回帰係数",
+  "subtitle": "偏回帰係数の理解",
+  "estimated_minutes": 5,
+  "category": "regression_multiple",
+  "topic": "回帰分析",
+  "summary": "偏回帰係数について学びます。",
+  "learning_objectives": [
+    "偏回帰係数を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rm_03_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "偏回帰係数"
+    ],
+    "external_links": []
+  }
+}

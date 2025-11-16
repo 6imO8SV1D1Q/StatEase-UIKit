@@ -1,0 +1,28 @@
+{
+  "id": "ds_01",
+  "title": "データソース",
+  "subtitle": "調べる場合のデータソース",
+  "estimated_minutes": 5,
+  "category": "data_source",
+  "topic": "身近な統計",
+  "summary": "データソースについて学びます。",
+  "learning_objectives": [
+    "データソースを理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "ds_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "データソース"
+    ],
+    "external_links": []
+  }
+}

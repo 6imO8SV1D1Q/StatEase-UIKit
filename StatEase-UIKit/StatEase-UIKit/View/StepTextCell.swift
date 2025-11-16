@@ -10,14 +10,6 @@ import UIKit
 class StepTextCell: UITableViewCell {
     static let identifier = "StepTextCell"
 
-    private let titleLabel: UILabel = {
-        let label = UILabel()
-        label.font = .systemFont(ofSize: 18, weight: .semibold)
-        label.numberOfLines = 0
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-
     private let contentLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 16)
@@ -49,7 +41,6 @@ class StepTextCell: UITableViewCell {
         selectionStyle = .none
 
         contentView.addSubview(containerView)
-        containerView.addSubview(titleLabel)
         containerView.addSubview(contentLabel)
 
         NSLayoutConstraint.activate([
@@ -58,11 +49,7 @@ class StepTextCell: UITableViewCell {
             containerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             containerView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8),
 
-            titleLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 16),
-            titleLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 16),
-            titleLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -16),
-
-            contentLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 12),
+            contentLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 16),
             contentLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 16),
             contentLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -16),
             contentLabel.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -16)
@@ -70,10 +57,34 @@ class StepTextCell: UITableViewCell {
     }
 
     func configure(with step: Step) {
-        titleLabel.text = step.title
-        contentLabel.text = step.body
+        if let markdown = makeMarkdown(from: step.body) {
+            contentLabel.attributedText = markdown
+        } else {
+            contentLabel.text = step.body
+        }
+    }
 
-        // タイトルが空の場合は非表示
-        titleLabel.isHidden = step.title.isEmpty
+    private func makeMarkdown(from text: String) -> NSAttributedString? {
+        guard !text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
+            return nil
+        }
+
+        var options = AttributedString.MarkdownParsingOptions()
+        options.interpretedSyntax = .full
+
+        guard let attributed = try? AttributedString(markdown: text, options: options) else {
+            return nil
+        }
+
+        let mutable = NSMutableAttributedString(attributedString: NSAttributedString(attributed))
+        let range = NSRange(location: 0, length: mutable.length)
+        mutable.addAttribute(.font, value: UIFont.systemFont(ofSize: 16), range: range)
+        mutable.addAttribute(.foregroundColor, value: UIColor.label, range: range)
+
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = 6
+        paragraphStyle.paragraphSpacing = 10
+        mutable.addAttribute(.paragraphStyle, value: paragraphStyle, range: range)
+        return mutable
     }
 }

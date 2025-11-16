@@ -1,0 +1,28 @@
+{
+  "id": "rm_04",
+  "title": "回帰係数の検定",
+  "subtitle": "回帰係数の検定",
+  "estimated_minutes": 5,
+  "category": "regression_multiple",
+  "topic": "回帰分析",
+  "summary": "回帰係数の検定について学びます。",
+  "learning_objectives": [
+    "回帰係数の検定を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rm_04_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "回帰係数の検定"
+    ],
+    "external_links": []
+  }
+}

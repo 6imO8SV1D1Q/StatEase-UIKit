@@ -1,0 +1,29 @@
+{
+  "id": "i2_01",
+  "title": "母平均の差の検定（分散既知）",
+  "subtitle": "Z検定の枠組み",
+  "estimated_minutes": 5,
+  "category": "inference_2pop",
+  "topic": "２つの母集団の母数に関する仮説検定の方法を理解する",
+  "summary": "分散が既知の場合の母平均差の検定手順を学びます。",
+  "learning_objectives": [
+    "分散既知のケースで母平均差を検定できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "i2_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "母平均の差",
+      "Z検定"
+    ],
+    "external_links": []
+  }
+}

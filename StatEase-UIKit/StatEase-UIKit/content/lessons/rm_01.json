@@ -1,0 +1,28 @@
+{
+  "id": "rm_01",
+  "title": "回帰直線の傾きの推定と検定",
+  "subtitle": "傾きの推定と検定",
+  "estimated_minutes": 5,
+  "category": "regression_multiple",
+  "topic": "回帰分析",
+  "summary": "回帰直線の傾きの推定と検定について学びます。",
+  "learning_objectives": [
+    "回帰直線の傾きの推定と検定を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rm_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "回帰直線の傾きの推定と検定"
+    ],
+    "external_links": []
+  }
+}

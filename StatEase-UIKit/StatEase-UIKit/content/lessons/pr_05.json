@@ -1,0 +1,28 @@
+{
+  "id": "pr_05",
+  "title": "ベイズの定理",
+  "subtitle": "ベイズの定理の理解",
+  "estimated_minutes": 5,
+  "category": "probability",
+  "topic": "確率",
+  "summary": "ベイズの定理について学びます。",
+  "learning_objectives": [
+    "ベイズの定理を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "pr_05_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "ベイズの定理"
+    ],
+    "external_links": []
+  }
+}

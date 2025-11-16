@@ -1,0 +1,28 @@
+{
+  "id": "sd_01",
+  "title": "独立試行",
+  "subtitle": "独立試行の理解",
+  "estimated_minutes": 5,
+  "category": "sampling_distribution",
+  "topic": "推測統計の基礎となる標本分布の概念を理解する",
+  "summary": "独立試行について学びます。",
+  "learning_objectives": [
+    "独立試行を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "sd_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "独立試行"
+    ],
+    "external_links": []
+  }
+}
