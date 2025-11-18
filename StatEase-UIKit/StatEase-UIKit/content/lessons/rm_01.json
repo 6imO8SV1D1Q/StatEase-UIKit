@@ -5,11 +5,65 @@
   "estimated_minutes": 5,
   "category": "regression_multiple",
   "topic": "回帰分析",
-  "summary": "回帰直線の傾きの推定と検定について学びます。",
+  "summary": "単回帰モデルの傾きの推定と、その傾きが0と異なるかの検定手順を整理します。",
   "learning_objectives": [
     "回帰直線の傾きの推定と検定を理解できる"
   ],
   "prerequisites": [],
+  "steps": [
+    {
+      "id": "rm_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "傾きの推定",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "最小二乗推定",
+          "body": "単回帰の傾きは最小二乗法で求まり、\\(\\hat{\\beta}_1 = \\frac{\\sum (x_i-\\bar{x})(y_i-\\bar{y})}{\\sum (x_i-\\bar{x})^2}\\)。"
+        }
+      ]
+    },
+    {
+      "id": "rm_01_step02",
+      "order": 2,
+      "type": "text",
+      "title": "検定仮説",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "仮説",
+          "body": "一般的に \\(H_0: \\beta_1 = 0\\)、\\(H_1: \\beta_1 \\neq 0\\) を設定します。"
+        }
+      ]
+    },
+    {
+      "id": "rm_01_step03",
+      "order": 3,
+      "type": "text",
+      "title": "t統計量",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "式",
+          "body": "\\(t = \\frac{\\hat{\\beta}_1 - 0}{SE(\\hat{\\beta}_1)}\\)。自由度は n-2 です。"
+        }
+      ]
+    },
+    {
+      "id": "rm_01_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "前提の確認",
+          "body": "独立性・線形性・等分散性が満たされているか残差プロットなどで確認します。"
+        }
+      ]
+    }
+  ],
   "steps": [
     {
       "id": "rm_01_step01",

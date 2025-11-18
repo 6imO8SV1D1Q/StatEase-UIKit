@@ -5,9 +5,11 @@
   "estimated_minutes": 5,
   "category": "probability_distribution",
   "topic": "確率分布",
-  "summary": "ベルヌーイ試行について学びます。",
+  "summary": "成功/失敗の2値をとるベルヌーイ試行とベルヌーイ分布を学びます。",
   "learning_objectives": [
-    "ベルヌーイ試行を理解できる"
+    "ベルヌーイ試行の定義を説明できる",
+    "ベルヌーイ分布の平均・分散を計算できる",
+    "実務での利用例を挙げられる"
   ],
   "prerequisites": [],
   "steps": [
@@ -15,8 +17,61 @@
       "id": "pd_01_step01",
       "order": 1,
       "type": "text",
-      "title": "はじめに",
-      "body": "このレッスンは準備中です。"
+      "title": "ベルヌーイ試行とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "2値の結果",
+          "body": "成功と失敗など2通りの結果しか持たない試行をベルヌーイ試行と言います。成功を1、失敗を0と数値化すると扱いやすくなります。"
+        },
+        {
+          "title": "成功確率",
+          "body": "成功の確率を p、失敗の確率を 1-p とします。"
+        }
+      ]
+    },
+    {
+      "id": "pd_01_step02",
+      "order": 2,
+      "type": "text",
+      "title": "ベルヌーイ分布",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "PMF",
+          "body": "確率質量関数は \\(P(X=1)=p, P(X=0)=1-p\\)。"
+        },
+        {
+          "title": "期待値・分散",
+          "body": "期待値は p、分散は \\(p(1-p)\\)。"
+        }
+      ]
+    },
+    {
+      "id": "pd_01_step03",
+      "order": 3,
+      "type": "text",
+      "title": "例：メールのクリック",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "応用",
+          "body": "1回のメール送付でクリックするかしないかはベルヌーイ試行で表現できます。"
+        }
+      ]
+    },
+    {
+      "id": "pd_01_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "独立性",
+          "body": "複数の試行が独立であるかを確認し、依存がある場合はモデルを見直します。"
+        }
+      ]
     }
   ],
   "resources": {

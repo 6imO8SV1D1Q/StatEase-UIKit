@@ -38,6 +38,7 @@ struct Step: Codable {
     let type: StepType
     let title: String
     let body: String
+    let paragraphs: [StepParagraph]?
     let media: StepMedia?
     let checkpoint: StepCheckpoint?
 
@@ -47,7 +48,13 @@ struct Step: Codable {
         case type
         case title
         case body
+        case paragraphs
         case media
         case checkpoint
     }
+}
+
+struct StepParagraph: Codable {
+    let title: String?
+    let body: String
 }

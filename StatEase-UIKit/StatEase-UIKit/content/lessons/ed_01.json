@@ -5,7 +5,7 @@
   "estimated_minutes": 5,
   "category": "experimental_design",
   "topic": "実験計画の概念の理解",
-  "summary": "実験について学びます。",
+  "summary": "因果効果を推定するための実験の基本構造と重要な概念を学びます。",
   "learning_objectives": [
     "実験を理解できる"
   ],
@@ -15,8 +15,53 @@
       "id": "ed_01_step01",
       "order": 1,
       "type": "text",
-      "title": "はじめに",
-      "body": "このレッスンは準備中です。"
+      "title": "実験とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "介入と比較",
+          "body": "実験は処置（介入）を与え、対照群と比較することで因果効果を推定する方法です。"
+        }
+      ]
+    },
+    {
+      "id": "ed_01_step02",
+      "order": 2,
+      "type": "text",
+      "title": "ランダム化の重要性",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "無作為割付",
+          "body": "被験者を無作為に処理群・対照群に分けることで交絡を排除します。"
+        }
+      ]
+    },
+    {
+      "id": "ed_01_step03",
+      "order": 3,
+      "type": "text",
+      "title": "基本構造",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "処理と測定",
+          "body": "処理を適用し、アウトカムを測定して比較します。"
+        }
+      ]
+    },
+    {
+      "id": "ed_01_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "倫理",
+          "body": "介入が有害にならないか事前に検討します。"
+        }
+      ]
     }
   ],
   "resources": {

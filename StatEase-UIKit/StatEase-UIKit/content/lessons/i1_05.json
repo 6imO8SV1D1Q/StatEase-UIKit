@@ -5,11 +5,64 @@
   "estimated_minutes": 5,
   "category": "inference_1pop",
   "topic": "１つの母集団の母数に関する仮説検定の方法について理解する",
-  "summary": "カイ二乗分布について学びます。",
   "learning_objectives": [
     "カイ二乗分布を理解できる"
   ],
   "prerequisites": [],
+  "steps": [
+    {
+      "id": "i1_05_step01",
+      "order": 1,
+      "type": "text",
+      "title": "カイ二乗分布とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "定義",
+          "body": "標準正規変数を二乗して和を取るとカイ二乗分布になります。自由度νが正の整数の分布です。"
+        }
+      ]
+    },
+    {
+      "id": "i1_05_step02",
+      "order": 2,
+      "type": "text",
+      "title": "性質",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "非対称",
+          "body": "右に裾を引く分布で、自由度が大きいほど正規分布に近づきます。"
+        }
+      ]
+    },
+    {
+      "id": "i1_05_step03",
+      "order": 3,
+      "type": "text",
+      "title": "活用",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "母分散の推定",
+          "body": "正規母集団の母分散推定や適合度検定、独立性検定で用いられます。"
+        }
+      ]
+    },
+    {
+      "id": "i1_05_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "自由度",
+          "body": "検定で使う自由度はデータのグループ数や制約に応じて決まります。"
+        }
+      ]
+    }
+  ],
   "steps": [
     {
       "id": "i1_05_step01",

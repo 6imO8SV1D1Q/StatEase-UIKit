@@ -15,6 +15,60 @@
       "id": "rm_03_step01",
       "order": 1,
       "type": "text",
+      "title": "偏回帰係数とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "定義",
+          "body": "重回帰モデルで、他の変数を固定したときに説明変数が1単位変化したときの目的変数の変化量です。"
+        }
+      ]
+    },
+    {
+      "id": "rm_03_step02",
+      "order": 2,
+      "type": "text",
+      "title": "解釈",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "標準化偏回帰係数",
+          "body": "変数を標準化すると、係数の絶対値で影響度を比較できます。"
+        }
+      ]
+    },
+    {
+      "id": "rm_03_step03",
+      "order": 3,
+      "type": "text",
+      "title": "例",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "広告データ",
+          "body": "テレビ広告とオンライン広告を同時に入れた場合、偏回帰係数から個別効果を評価できます。"
+        }
+      ]
+    },
+    {
+      "id": "rm_03_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "多重共線性",
+          "body": "説明変数間に強い相関があると偏回帰係数が不安定になります。"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "rm_03_step01",
+      "order": 1,
+      "type": "text",
       "title": "はじめに",
       "body": "このレッスンは準備中です。"
     }

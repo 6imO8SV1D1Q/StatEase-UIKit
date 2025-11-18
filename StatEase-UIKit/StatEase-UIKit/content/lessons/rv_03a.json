@@ -5,7 +5,7 @@
   "estimated_minutes": 5,
   "category": "random_variable",
   "topic": "確率変数",
-  "summary": "確率変数の分散の計算方法と性質を学びます。",
+  "summary": "確率変数の分散の定義と計算、性質（分散の線形性）を学びます。",
   "learning_objectives": [
     "分散の定義と計算方法を説明できる"
   ],
@@ -15,8 +15,69 @@
       "id": "rv_03a_step01",
       "order": 1,
       "type": "text",
-      "title": "はじめに",
-      "body": "このレッスンは準備中です。"
+      "title": "分散の定義",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "式",
+          "body": "分散は期待値からのずれの二乗平均で、\\(\\text{Var}(X) = E[(X - E[X])^2]\\)。離散型では \\(\\sum (x - \\mu)^2 p_X(x)\\)、連続型では \\(\\int (x - \\mu)^2 f_X(x) dx\\)。"
+        },
+        {
+          "title": "直感",
+          "body": "分散が大きいほど値のばらつきが大きいことを意味します。"
+        }
+      ]
+    },
+    {
+      "id": "rv_03a_step02",
+      "order": 2,
+      "type": "text",
+      "title": "性質",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "線形性",
+          "body": "定数を掛けた場合 \\(\\text{Var}(aX) = a^2\\text{Var}(X)\\)。定数を足しても分散は変わりません。"
+        },
+        {
+          "title": "独立な和",
+          "body": "独立な X, Y なら \\(\\text{Var}(X+Y) = \\text{Var}(X) + \\text{Var}(Y)\\)。"
+        }
+      ]
+    },
+    {
+      "id": "rv_03a_step03",
+      "order": 3,
+      "type": "text",
+      "title": "例：二項分布",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "設定",
+          "body": "成功確率 p の二項分布 B(n,p) の分散は \\(np(1-p)\\)。"
+        },
+        {
+          "title": "応用",
+          "body": "サンプルサイズに応じてばらつきがどう変わるかを判断できます。"
+        }
+      ]
+    },
+    {
+      "id": "rv_03a_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "単位",
+          "body": "分散の単位は元の単位の二乗なので、解釈が難しい場合は標準偏差を使います。"
+        },
+        {
+          "title": "存在条件",
+          "body": "分散が無限大な分布（パレートの一部など）では分散が定義されない場合があります。"
+        }
+      ]
     }
   ],
   "resources": {

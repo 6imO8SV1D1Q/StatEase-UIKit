@@ -5,11 +5,65 @@
   "estimated_minutes": 5,
   "category": "experimental_design",
   "topic": "実験計画の概念の理解",
-  "summary": "一元配置実験について学びます。",
+ "summary": "一元配置実験について学びます。",
   "learning_objectives": [
     "一元配置実験を理解できる"
   ],
-  "prerequisites": [],
+ "prerequisites": [],
+  "steps": [
+    {
+      "id": "ed_05_step01",
+      "order": 1,
+      "type": "text",
+      "title": "一元配置実験とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "単一要因",
+          "body": "1つの要因を複数水準（処置）で操作し、その効果を比較する実験です。"
+        }
+      ]
+    },
+    {
+      "id": "ed_05_step02",
+      "order": 2,
+      "type": "text",
+      "title": "設計",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "ランダム化",
+          "body": "処置を実験単位にランダム割付し、反復を取ってばらつきを推定します。"
+        }
+      ]
+    },
+    {
+      "id": "ed_05_step03",
+      "order": 3,
+      "type": "text",
+      "title": "分析",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "ANOVA",
+          "body": "分散分析を用いて、処置間の平均差が有意かをF検定します。"
+        }
+      ]
+    },
+    {
+      "id": "ed_05_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "バラツキ要因",
+          "body": "未観測要因の影響を抑えるにはブロック化を検討します。"
+        }
+      ]
+    }
+  ],
   "steps": [
     {
       "id": "ed_05_step01",
