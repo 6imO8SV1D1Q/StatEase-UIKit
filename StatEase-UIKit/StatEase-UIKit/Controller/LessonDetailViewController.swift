@@ -59,6 +59,18 @@ class LessonDetailViewController: UIViewController {
         return button
     }()
 
+    private lazy var chatButton: UIButton = {
+        var config = UIButton.Configuration.filled()
+        config.image = UIImage(systemName: "message.fill")
+        config.cornerStyle = .capsule
+        config.baseBackgroundColor = .systemBlue
+
+        let button = UIButton(configuration: config)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(chatButtonTapped), for: .touchUpInside)
+        return button
+    }()
+
     init(lesson: Lesson, quizRepository: QuizRepositoryProtocol = QuizRepository()) {
         self.lesson = lesson
         self.quizRepository = quizRepository
@@ -89,6 +101,7 @@ class LessonDetailViewController: UIViewController {
         view.addSubview(progressLabel)
         view.addSubview(tableView)
         view.addSubview(quizButton)
+        view.addSubview(chatButton)
 
         NSLayoutConstraint.activate([
             progressView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 8),
@@ -108,7 +121,12 @@ class LessonDetailViewController: UIViewController {
             quizButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             quizButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
             quizButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16),
-            quizButton.heightAnchor.constraint(equalToConstant: 50)
+            quizButton.heightAnchor.constraint(equalToConstant: 50),
+
+            chatButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            chatButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16),
+            chatButton.widthAnchor.constraint(equalToConstant: 56),
+            chatButton.heightAnchor.constraint(equalToConstant: 56)
         ])
     }
 
@@ -157,6 +175,11 @@ class LessonDetailViewController: UIViewController {
             print("Failed to load quiz: \(error)")
             showErrorAlert(message: "クイズの読み込みに失敗しました")
         }
+    }
+
+    @objc private func chatButtonTapped() {
+        let chatVC = ChatViewController(lesson: lesson)
+        navigationController?.pushViewController(chatVC, animated: true)
     }
 
     private func showErrorAlert(message: String) {
