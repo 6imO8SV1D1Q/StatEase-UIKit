@@ -5,7 +5,7 @@
   "estimated_minutes": 5,
   "category": "inference_1pop",
   "topic": "１つの母集団の母数に関する仮説検定の方法について理解する",
-  "summary": "F分布について学びます。",
+  "summary": "2つのカイ二乗変数の比で定義されるF分布の性質と使いどころを学びます。",
   "learning_objectives": [
     "F分布を理解できる"
   ],
@@ -15,8 +15,53 @@
       "id": "i1_06_step01",
       "order": 1,
       "type": "text",
-      "title": "はじめに",
-      "body": "このレッスンは準備中です。"
+      "title": "F分布とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "定義",
+          "body": "自由度 \\(d_1, d_2\\) のカイ二乗変数 \\(X, Y\\) を用いて \\(F = (X/d_1)/(Y/d_2)\\) とすると、F分布に従います。"
+        }
+      ]
+    },
+    {
+      "id": "i1_06_step02",
+      "order": 2,
+      "type": "text",
+      "title": "性質",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "片側分布",
+          "body": "0以上の値しか取らず、右に裾が長い分布です。自由度が大きいほど正規分布に近づきます。"
+        }
+      ]
+    },
+    {
+      "id": "i1_06_step03",
+      "order": 3,
+      "type": "text",
+      "title": "利用シーン",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "分散比の検定",
+          "body": "母分散の比の検定やANOVAの分散分析表で使用します。"
+        }
+      ]
+    },
+    {
+      "id": "i1_06_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "自由度の順序",
+          "body": "F分布表は自由度の組み合わせによって臨界値が異なるため、順序を間違えないよう注意します。"
+        }
+      ]
     }
   ],
   "resources": {

@@ -15,6 +15,64 @@
       "id": "pd_05_step01",
       "order": 1,
       "type": "text",
+      "title": "指数分布とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "待ち時間モデル",
+          "body": "イベントがランダムに起こる過程の待ち時間を表す分布です。パラメータ \\(\\lambda\\) は単位時間あたりの発生率です。"
+        }
+      ]
+    },
+    {
+      "id": "pd_05_step02",
+      "order": 2,
+      "type": "text",
+      "title": "PDFと性質",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "PDF",
+          "body": "\\(f(x) = \\lambda e^{-\\lambda x}\\) for x ≥ 0。"
+        },
+        {
+          "title": "無記憶性",
+          "body": "指数分布は無記憶性を持ち、過去の待ち時間に依存しません。"
+        }
+      ]
+    },
+    {
+      "id": "pd_05_step03",
+      "order": 3,
+      "type": "text",
+      "title": "例：サーバレスポンス",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "応用",
+          "body": "リクエストがPoisson過程だとすると、次のリクエストまでの待ち時間は指数分布になります。"
+        }
+      ]
+    },
+    {
+      "id": "pd_05_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "適用条件",
+          "body": "発生率が時間とともに変わる場合は指数分布ではなく別モデルを検討します。"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "pd_05_step01",
+      "order": 1,
+      "type": "text",
       "title": "はじめに",
       "body": "このレッスンは準備中です。"
     }

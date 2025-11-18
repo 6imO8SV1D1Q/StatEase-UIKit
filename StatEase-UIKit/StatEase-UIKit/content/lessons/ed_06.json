@@ -3,13 +3,67 @@
   "title": "３群以上の平均値の差",
   "subtitle": "分散分析",
   "estimated_minutes": 5,
-  "category": "experimental_design",
-  "topic": "実験計画の概念の理解",
-  "summary": "３群以上の平均値の差について学びます。",
+ "category": "experimental_design",
+ "topic": "実験計画の概念の理解",
+  "summary": "3群以上の平均差を検定する分散分析（ANOVA）を学びます。",
   "learning_objectives": [
     "３群以上の平均値の差を理解できる"
   ],
   "prerequisites": [],
+  "steps": [
+    {
+      "id": "ed_06_step01",
+      "order": 1,
+      "type": "text",
+      "title": "ANOVAの目的",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "複数群の比較",
+          "body": "3群以上の平均を一度に比較し、群間差が有意かを判断します。"
+        }
+      ]
+    },
+    {
+      "id": "ed_06_step02",
+      "order": 2,
+      "type": "text",
+      "title": "F統計量",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "群間と群内",
+          "body": "群間平方和／自由度、群内平方和／自由度からF比を計算します。"
+        }
+      ]
+    },
+    {
+      "id": "ed_06_step03",
+      "order": 3,
+      "type": "text",
+      "title": "事後比較",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "多重比較",
+          "body": "Fが有意なら、どの群とどの群が違うのかを多重比較で調べます。"
+        }
+      ]
+    },
+    {
+      "id": "ed_06_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "前提条件",
+          "body": "群ごとの正規性と等分散性が成り立つかを事前に確認します。"
+        }
+      ]
+    }
+  ],
   "steps": [
     {
       "id": "ed_06_step01",

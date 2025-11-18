@@ -5,7 +5,7 @@
   "estimated_minutes": 5,
   "category": "probability_distribution",
   "topic": "確率分布",
-  "summary": "二項分布について学びます。",
+  "summary": "ベルヌーイ試行を複数回行った結果を表す二項分布の定義と性質を学びます。",
   "learning_objectives": [
     "二項分布を理解できる"
   ],
@@ -15,8 +15,61 @@
       "id": "pd_02_step01",
       "order": 1,
       "type": "text",
-      "title": "はじめに",
-      "body": "このレッスンは準備中です。"
+      "title": "二項分布とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "複数のベルヌーイ試行",
+          "body": "成功確率 p のベルヌーイ試行を n 回行ったとき、成功回数 X が従う分布を二項分布 B(n,p) と言います。"
+        }
+      ]
+    },
+    {
+      "id": "pd_02_step02",
+      "order": 2,
+      "type": "text",
+      "title": "確率質量関数",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "式",
+          "body": "\\(P(X = k) = \\binom{n}{k} p^k (1-p)^{n-k}\\) です。"
+        },
+        {
+          "title": "期待値・分散",
+          "body": "期待値は \\(np\\)、分散は \\(np(1-p)\\)。"
+        }
+      ]
+    },
+    {
+      "id": "pd_02_step03",
+      "order": 3,
+      "type": "text",
+      "title": "例：メールクリック数",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "設定",
+          "body": "独立にクリックする確率pのメールを n 人に送ると、クリック数は二項分布に従います。"
+        },
+        {
+          "title": "応用",
+          "body": "成功回数の信頼区間や正規近似による推定に利用します。"
+        }
+      ]
+    },
+    {
+      "id": "pd_02_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "独立性と同一確率",
+          "body": "試行が独立で成功確率が一定であることが前提です。"
+        }
+      ]
     }
   ],
   "resources": {

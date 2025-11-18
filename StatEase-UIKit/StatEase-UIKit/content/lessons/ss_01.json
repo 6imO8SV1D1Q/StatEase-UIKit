@@ -15,6 +15,60 @@
       "id": "ss_01_step01",
       "order": 1,
       "type": "text",
+      "title": "ソフト選定",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "RとPython",
+          "body": "Rは統計解析用のパッケージが豊富、Pythonはデータ処理や機械学習との連携がしやすい、といった特徴があります。"
+        }
+      ]
+    },
+    {
+      "id": "ss_01_step02",
+      "order": 2,
+      "type": "text",
+      "title": "基本操作",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "データの読み込み",
+          "body": "Rでは `read.csv`、Pythonでは pandas の `read_csv` を使ってデータを読み込みます。"
+        }
+      ]
+    },
+    {
+      "id": "ss_01_step03",
+      "order": 3,
+      "type": "text",
+      "title": "分析と可視化",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "パイプライン",
+          "body": "前処理→可視化→モデリング→検定、の一連の流れをスクリプト化して再利用できます。"
+        }
+      ]
+    },
+    {
+      "id": "ss_01_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "再現性",
+          "body": "スクリプトやノートブックで分析手順を残し、バージョン管理を行うと再現可能になります。"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "ss_01_step01",
+      "order": 1,
+      "type": "text",
       "title": "はじめに",
       "body": "このレッスンは準備中です。"
     }

@@ -5,9 +5,11 @@
   "estimated_minutes": 5,
   "category": "random_variable",
   "topic": "確率変数",
-  "summary": "連続型確率変数について学びます。",
+  "summary": "連続型確率変数と確率密度関数（PDF）、累積分布関数（CDF）の基本を学びます。",
   "learning_objectives": [
-    "連続型確率変数を理解できる"
+    "連続型確率変数の例を挙げられる",
+    "確率密度から確率を求められる",
+    "CDFの意味を説明できる"
   ],
   "prerequisites": [],
   "steps": [
@@ -15,8 +17,69 @@
       "id": "rv_02_step01",
       "order": 1,
       "type": "text",
-      "title": "はじめに",
-      "body": "このレッスンは準備中です。"
+      "title": "連続型確率変数とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "連続的な値",
+          "body": "連続型確率変数は連続的な範囲の値を取り得る変数で、身長や時間などが例です。"
+        },
+        {
+          "title": "確率密度関数",
+          "body": "値の範囲に対する確率は密度関数 \\(f_X(x)\\) の積分で求めます。単独の値に確率を割り当てるわけではありません。"
+        }
+      ]
+    },
+    {
+      "id": "rv_02_step02",
+      "order": 2,
+      "type": "text",
+      "title": "CDFと確率",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "累積分布関数",
+          "body": "\\(F_X(x) = P(X \\le x) = \\int_{-\\infty}^{x} f_X(t) dt\\) で定義され、確率を簡単に計算できます。"
+        },
+        {
+          "title": "区間の確率",
+          "body": "区間 [a, b] の確率は \\(P(a \\le X \\le b) = F_X(b) - F_X(a)\\)。"
+        }
+      ]
+    },
+    {
+      "id": "rv_02_step03",
+      "order": 3,
+      "type": "text",
+      "title": "例：正規分布",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "密度",
+          "body": "正規分布の密度は \\(f(x) = \\frac{1}{\\sqrt{2\\pi \\sigma^2}} e^{-(x-\\mu)^2/(2\\sigma^2)}\\)。"
+        },
+        {
+          "title": "確率の計算",
+          "body": "Xが平均±1σに収まる確率は CDF を用いて計算し、およそ0.68です。"
+        }
+      ]
+    },
+    {
+      "id": "rv_02_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "密度の単位",
+          "body": "密度そのものの値には確率の単位がなく、面積（積分）で確率を得る点を理解しましょう。"
+        },
+        {
+          "title": "離散データとの違い",
+          "body": "連続変数を扱う際はヒストグラムや核密度推定などを用いて密度を可視化するのが一般的です。"
+        }
+      ]
     }
   ],
   "resources": {

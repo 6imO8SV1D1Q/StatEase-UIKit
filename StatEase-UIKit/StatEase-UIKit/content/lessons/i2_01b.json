@@ -15,6 +15,60 @@
       "id": "i2_01b_step01",
       "order": 1,
       "type": "text",
+      "title": "前提",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "異分散",
+          "body": "母分散が異なる場合に、等分散を仮定せずに母平均差を検定する方法です。"
+        }
+      ]
+    },
+    {
+      "id": "i2_01b_step02",
+      "order": 2,
+      "type": "text",
+      "title": "統計量",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "Welchのt",
+          "body": "\\(T = \\frac{(\\bar{X}_1-\\bar{X}_2)-Δ_0}{\\sqrt{S_1^2/n_1 + S_2^2/n_2}}\\)。自由度は Welch-Satterthwaite の式で近似します。"
+        }
+      ]
+    },
+    {
+      "id": "i2_01b_step03",
+      "order": 3,
+      "type": "text",
+      "title": "計算例",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "ツール",
+          "body": "Excelや統計ソフトにはWelch検定が実装されており、自由度も自動計算されます。"
+        }
+      ]
+    },
+    {
+      "id": "i2_01b_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "自由度の解釈",
+          "body": "自由度が小さい場合は検出力が低下するため、サンプルサイズを確保します。"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "i2_01b_step01",
+      "order": 1,
+      "type": "text",
       "title": "はじめに",
       "body": "このレッスンは準備中です。"
     }
