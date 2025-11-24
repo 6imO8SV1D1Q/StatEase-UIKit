@@ -21,7 +21,12 @@ protocol AIServiceProtocol {
 
 class GeminiService: AIServiceProtocol {
 
-    private let baseURL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent"
+    private let baseURL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
+
+    nonisolated private func decodeResponse(_ data: Data) throws -> GeminiResponse {
+        let decoder = JSONDecoder()
+        return try decoder.decode(GeminiResponse.self, from: data)
+    }
 
     func sendMessage(_ message: String, context: String? = nil, completion: @escaping (Result<String, GeminiError>) -> Void) {
 
@@ -82,7 +87,7 @@ class GeminiService: AIServiceProtocol {
             contents: contents,
             generationConfig: GeminiRequest.GeminiGenerationConfig(
                 temperature: 0.7,
-                maxOutputTokens: 500
+                maxOutputTokens: 2048
             )
         )
 
@@ -105,25 +110,35 @@ class GeminiService: AIServiceProtocol {
                 return
             }
 
+            // デバッグ: レスポンスを出力
+            if let responseString = String(data: data, encoding: .utf8) {
+                print("API Response: \(responseString)")
+            }
+
             // レスポンスをデコード
+            let geminiResponse: GeminiResponse
             do {
-                let geminiResponse = try JSONDecoder().decode(GeminiResponse.self, from: data)
-
-                // エラーチェック
-                if let error = geminiResponse.error {
-                    completion(.failure(.apiError(error.message)))
-                    return
-                }
-
-                // レスポンステキストを取得
-                if let firstCandidate = geminiResponse.candidates?.first,
-                   let firstPart = firstCandidate.content.parts.first {
-                    completion(.success(firstPart.text))
-                } else {
-                    completion(.failure(.invalidResponse))
-                }
+                geminiResponse = try self.decodeResponse(data)
             } catch {
+                print("Decoding error: \(error)")
                 completion(.failure(.decodingError(error)))
+                return
+            }
+
+            // エラーチェック
+            if let error = geminiResponse.error {
+                completion(.failure(.apiError(error.message)))
+                return
+            }
+
+            // レスポンステキストを取得
+            if let firstCandidate = geminiResponse.candidates?.first,
+               let parts = firstCandidate.content.parts,
+               let firstPart = parts.first {
+                completion(.success(firstPart.text))
+            } else {
+                print("No parts in response or empty response")
+                completion(.failure(.invalidResponse))
             }
         }
 

@@ -9,44 +9,44 @@ import Foundation
 
 // Gemini API用のリクエスト/レスポンスモデル
 
-struct GeminiRequest: Codable {
+struct GeminiRequest: Codable, Sendable {
     let contents: [GeminiContent]
     let generationConfig: GeminiGenerationConfig?
 
-    struct GeminiContent: Codable {
+    struct GeminiContent: Codable, Sendable {
         let parts: [GeminiPart]
         let role: String?
     }
 
-    struct GeminiPart: Codable {
+    struct GeminiPart: Codable, Sendable {
         let text: String
     }
 
-    struct GeminiGenerationConfig: Codable {
+    struct GeminiGenerationConfig: Codable, Sendable {
         let temperature: Double?
         let maxOutputTokens: Int?
     }
 }
 
-struct GeminiResponse: Codable {
+struct GeminiResponse: Codable, Sendable {
     let candidates: [GeminiCandidate]?
-    let error: GeminiError?
+    let error: GeminiAPIError?
 
-    struct GeminiCandidate: Codable {
+    struct GeminiCandidate: Codable, Sendable {
         let content: GeminiContent
         let finishReason: String?
     }
 
-    struct GeminiContent: Codable {
-        let parts: [GeminiPart]
+    struct GeminiContent: Codable, Sendable {
+        let parts: [GeminiPart]?
         let role: String
     }
 
-    struct GeminiPart: Codable {
+    struct GeminiPart: Codable, Sendable {
         let text: String
     }
 
-    struct GeminiError: Codable {
+    struct GeminiAPIError: Codable, Sendable {
         let message: String
         let code: Int?
     }
