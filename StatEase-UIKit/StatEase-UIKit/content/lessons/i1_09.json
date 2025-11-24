@@ -1,0 +1,90 @@
+{
+  "id": "i1_09",
+  "title": "点推定と区間推定",
+  "subtitle": "推定の方法とその性質",
+  "estimated_minutes": 5,
+  "category": "inference_1pop",
+  "topic": "１つの母集団の母数に関する仮説検定の方法について理解する",
+  "summary": "点推定と区間推定について学びます。",
+  "learning_objectives": [
+    "点推定と区間推定を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "i1_09_step01",
+      "order": 1,
+      "type": "text",
+      "title": "点推定とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "概念",
+          "body": "母数を単一の値で推定する手法。標本平均などが点推定量になります。"
+        },
+        {
+          "title": "性質",
+          "body": "不偏性、一致性、効率性などの評価指標があります。"
+        }
+      ]
+    },
+    {
+      "id": "i1_09_step02",
+      "order": 2,
+      "type": "text",
+      "title": "区間推定とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "信頼区間",
+          "body": "母数が含まれると考えられる区間を確率的に示します。"
+        },
+        {
+          "title": "例：母平均",
+          "body": "母分散既知なら \\(\\bar{X} ± z_{α/2} σ/√n\\) などで求めます。"
+        }
+      ]
+    },
+    {
+      "id": "i1_09_step03",
+      "order": 3,
+      "type": "text",
+      "title": "例：クリック率",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "点推定",
+          "body": "成功回数÷試行回数で点推定し、二項分布を使って信頼区間を計算します。"
+        }
+      ]
+    },
+    {
+      "id": "i1_09_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "解釈",
+          "body": "信頼区間は母数自体が区間内に含まれる確率ではなく、同じ手順を繰り返した場合の頻度的解釈になります。"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "i1_09_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "点推定と区間推定"
+    ],
+    "external_links": []
+  }
+}

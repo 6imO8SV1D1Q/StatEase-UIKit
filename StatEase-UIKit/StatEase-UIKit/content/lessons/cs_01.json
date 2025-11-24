@@ -1,0 +1,73 @@
+{
+  "id": "cs_01",
+  "title": "適合度検定",
+  "subtitle": "適合度検定の理解",
+  "estimated_minutes": 5,
+  "category": "chi_square_test",
+  "topic": "適合度検定と独立性の検定を理解する",
+  "summary": "観測データが理論分布にどれほど適合しているかを評価する適合度検定（カイ二乗）を学びます。",
+  "learning_objectives": [
+    "適合度検定を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "cs_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "目的",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "理論分布との比較",
+          "body": "観測度数が理論分布に適合しているかを評価するためのカイ二乗検定です。"
+        }
+      ]
+    },
+    {
+      "id": "cs_01_step02",
+      "order": 2,
+      "type": "text",
+      "title": "統計量",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "カイ二乗統計量",
+          "body": "\\(\\chi^2 = \\sum \\frac{(O_i - E_i)^2}{E_i}\\) を計算し、自由度（カテゴリ数−1−制約数）のカイ二乗分布と比較します。"
+        }
+      ]
+    },
+    {
+      "id": "cs_01_step03",
+      "order": 3,
+      "type": "text",
+      "title": "例",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "サイコロの検定",
+          "body": "観測度数を理論的な1/6ずつと比較し、適合度を判定します。"
+        }
+      ]
+    },
+    {
+      "id": "cs_01_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "期待度数",
+          "body": "各カテゴリの期待度数が5以上になるようにカテゴリをまとめる必要があります。"
+        }
+      ]
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "適合度検定"
+    ],
+    "external_links": []
+  }
+}

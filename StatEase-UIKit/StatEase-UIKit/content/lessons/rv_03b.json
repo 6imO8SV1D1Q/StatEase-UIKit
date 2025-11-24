@@ -1,0 +1,86 @@
+{
+  "id": "rv_03b",
+  "title": "標準偏差",
+  "subtitle": "分散の平方根で尺度をそろえる",
+  "estimated_minutes": 5,
+  "category": "random_variable",
+  "topic": "確率変数",
+  "summary": "標準偏差の意味と分散との関係を学びます。",
+  "learning_objectives": [
+    "標準偏差の定義と利用シーンを説明できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rv_03b_step01",
+      "order": 1,
+      "type": "text",
+      "title": "標準偏差の定義",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "分散の平方根",
+          "body": "標準偏差は分散の平方根で、元の単位に戻したばらつきの指標です。\\(\\sigma_X = \\sqrt{\\text{Var}(X)}\\)。"
+        },
+        {
+          "title": "意味",
+          "body": "平均からのズレを直感的に表現し、データの散らばりを判断する基準になります。"
+        }
+      ]
+    },
+    {
+      "id": "rv_03b_step02",
+      "order": 2,
+      "type": "text",
+      "title": "使いどころ",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "比較",
+          "body": "同じ単位を持つ複数の指標の散らばりを比較できます。"
+        },
+        {
+          "title": "正規分布での目安",
+          "body": "平均±1σに約68%、±2σに約95%のデータが含まれるなど、正規分布の説明にも使われます。"
+        }
+      ]
+    },
+    {
+      "id": "rv_03b_step03",
+      "order": 3,
+      "type": "text",
+      "title": "例：売上データ",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "解釈例",
+          "body": "平均売上100万円、標準偏差15万円の店舗は、平均80万円、標準偏差5万円の店舗より売上変動が大きいと判断できます。"
+        }
+      ]
+    },
+    {
+      "id": "rv_03b_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "外れ値の影響",
+          "body": "標準偏差は外れ値に敏感です。必要に応じて中央値やIQRも併用します。"
+        },
+        {
+          "title": "単位",
+          "body": "単位が異なるデータ同士では標準偏差の比較ができません。変動係数などの比率を利用します。"
+        }
+      ]
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "標準偏差",
+      "分散"
+    ],
+    "external_links": []
+  }
+}

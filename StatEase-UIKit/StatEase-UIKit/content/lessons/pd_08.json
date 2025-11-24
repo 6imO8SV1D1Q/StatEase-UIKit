@@ -1,0 +1,73 @@
+{
+  "id": "pd_08",
+  "title": "超幾何分布",
+  "subtitle": "超幾何分布の理解",
+  "estimated_minutes": 5,
+  "category": "probability_distribution",
+  "topic": "確率分布",
+  "summary": "母集団から復元せずに抽出する際の成功回数を表す超幾何分布を学びます。",
+  "learning_objectives": [
+    "超幾何分布を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "pd_08_step01",
+      "order": 1,
+      "type": "text",
+      "title": "超幾何分布とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "復元なし抽出",
+          "body": "成功数K、失敗数N-Kの母集団から復元なしで n 個抽出したとき、成功数Xの分布が超幾何分布です。"
+        }
+      ]
+    },
+    {
+      "id": "pd_08_step02",
+      "order": 2,
+      "type": "text",
+      "title": "PMF",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "式",
+          "body": "\\(P(X=k) = \\frac{\\binom{K}{k} \\binom{N-K}{n-k}}{\\binom{N}{n}}\\)。"
+        }
+      ]
+    },
+    {
+      "id": "pd_08_step03",
+      "order": 3,
+      "type": "text",
+      "title": "例：品質検査",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "応用",
+          "body": "ロット内の欠陥品を抽出検査するとき、超幾何分布で欠陥数の分布が表せます。"
+        }
+      ]
+    },
+    {
+      "id": "pd_08_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "母集団の有限性",
+          "body": "復元抽出や母集団が非常に大きい場合は二項分布で近似できます。"
+        }
+      ]
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "超幾何分布"
+    ],
+    "external_links": []
+  }
+}

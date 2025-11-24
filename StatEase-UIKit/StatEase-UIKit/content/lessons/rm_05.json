@@ -1,0 +1,82 @@
+{
+  "id": "rm_05",
+  "title": "多重共線性",
+  "subtitle": "多重共線性の理解",
+ "estimated_minutes": 5,
+ "category": "regression_multiple",
+ "topic": "回帰分析",
+  "summary": "重回帰で説明変数同士が強く相関する多重共線性とその対処を学びます。",
+  "learning_objectives": [
+    "多重共線性を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rm_05_step01",
+      "order": 1,
+      "type": "text",
+      "title": "多重共線性とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "定義",
+          "body": "複数の説明変数がほぼ線形結合で表せるほど強く相関している状態です。係数推定が不安定になり、解釈が難しくなります。"
+        }
+      ]
+    },
+    {
+      "id": "rm_05_step02",
+      "order": 2,
+      "type": "text",
+      "title": "症状",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "標準誤差の増大",
+          "body": "係数の標準誤差が大きくなり、t値が小さくなるなどの影響があります。"
+        }
+      ]
+    },
+    {
+      "id": "rm_05_step03",
+      "order": 3,
+      "type": "text",
+      "title": "診断",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "VIF",
+          "body": "分散拡大要因 (VIF) が一般的。10を超えると共線性が疑われます。"
+        }
+      ]
+    },
+    {
+      "id": "rm_05_step04",
+      "order": 4,
+      "type": "text",
+      "title": "対処",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "変数の整理",
+          "body": "相関の高い変数を統合・除去する、主成分回帰やリッジ回帰など正則化を利用する方法があります。"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "rm_05_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "多重共線性"
+    ],
+    "external_links": []
+  }
+}

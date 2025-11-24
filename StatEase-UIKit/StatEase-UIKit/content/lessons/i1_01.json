@@ -1,0 +1,77 @@
+{
+  "id": "i1_01",
+  "title": "正規母集団に関する分布とその活用",
+  "subtitle": "正規母集団の理解",
+  "estimated_minutes": 5,
+  "category": "inference_1pop",
+  "topic": "１つの母集団の母数に関する仮説検定の方法について理解する",
+  "summary": "正規母集団からサンプル統計量を取り扱う際に使う分布とその活用を整理します。",
+  "learning_objectives": [
+    "正規母集団に関する分布とその活用を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "i1_01_step01",
+      "order": 1,
+      "type": "text",
+      "title": "正規母集団と標本平均",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "標本平均の分布",
+          "body": "母分散が既知の場合、標本平均は正規分布 \\(N(\\mu, \\sigma^2/n)\\) に従います。"
+        }
+      ]
+    },
+    {
+      "id": "i1_01_step02",
+      "order": 2,
+      "type": "text",
+      "title": "標本分散の分布",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "χ²分布",
+          "body": "\\((n-1)S^2/\\sigma^2\\) は自由度 \\(n-1\\) のカイ二乗分布に従います。"
+        }
+      ]
+    },
+    {
+      "id": "i1_01_step03",
+      "order": 3,
+      "type": "text",
+      "title": "t分布への橋渡し",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "t統計量",
+          "body": "母分散が未知の場合、\\(t = \\frac{\\bar{X}-\\mu}{S/\\sqrt{n}}\\) は自由度 \\(n-1\\) のt分布に従います。"
+        }
+      ]
+    },
+    {
+      "id": "i1_01_step04",
+      "order": 4,
+      "type": "text",
+      "title": "活用例",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "区間推定",
+          "body": "標本平均の分布を使って母平均の信頼区間を求められます。"
+        },
+        {
+          "title": "検定",
+          "body": "t分布やZ分布を用いて仮説検定を行います。"
+        }
+      ]
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "正規母集団に関する分布とその活用"
+    ],
+    "external_links": []
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "pd_09",
+  "title": "負の二項分布",
+  "subtitle": "負の二項分布の理解",
+  "estimated_minutes": 5,
+  "category": "probability_distribution",
+  "topic": "確率分布",
+  "summary": "成功が一定回数出るまでの試行回数を表す負の二項分布の性質を学びます。",
+  "learning_objectives": [
+    "負の二項分布を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "pd_09_step01",
+      "order": 1,
+      "type": "text",
+      "title": "負の二項分布とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "定義",
+          "body": "成功確率 p のベルヌーイ試行で、r 回目の成功が出るまでに必要な試行回数（または失敗数）を表す分布です。"
+        }
+      ]
+    },
+    {
+      "id": "pd_09_step02",
+      "order": 2,
+      "type": "text",
+      "title": "PMFと性質",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "式",
+          "body": "\\(P(X=k) = \\binom{k-1}{r-1} p^r (1-p)^{k-r}\\) （k ≥ r）。"
+        },
+        {
+          "title": "期待値・分散",
+          "body": "期待値は \\(r/p\\)、分散は \\(r(1-p)/p^2\\)。"
+        }
+      ]
+    },
+    {
+      "id": "pd_09_step03",
+      "order": 3,
+      "type": "text",
+      "title": "例：サポートチケット",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "応用",
+          "body": "サポート対応で r 件の成功（解決）に必要な問い合わせ件数をモデル化するなど、成功までの試行数を評価できます。"
+        }
+      ]
+    },
+    {
+      "id": "pd_09_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "負の二項と幾何分布",
+          "body": "r=1 の場合は幾何分布になります。"
+        }
+      ]
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "負の二項分布"
+    ],
+    "external_links": []
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "id": "rm_02",
+  "title": "重回帰モデル",
+  "subtitle": "重回帰モデルの理解",
+  "estimated_minutes": 5,
+  "category": "regression_multiple",
+  "topic": "回帰分析",
+  "summary": "重回帰モデルについて学びます。",
+  "learning_objectives": [
+    "重回帰モデルを理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rm_02_step01",
+      "order": 1,
+      "type": "text",
+      "title": "重回帰とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "複数の説明変数",
+          "body": "重回帰モデルは \\(Y = \\beta_0 + \\beta_1 x_1 + ... + \\beta_p x_p + \\varepsilon\\) の形を取り、複数の説明変数を同時に扱います。"
+        }
+      ]
+    },
+    {
+      "id": "rm_02_step02",
+      "order": 2,
+      "type": "text",
+      "title": "推定",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "最小二乗",
+          "body": "通常は最小二乗法(OLS)で係数を推定し、行列計算で \\(\\hat{\\beta} = (X'X)^{-1}X'Y\\) を得ます。"
+        }
+      ]
+    },
+    {
+      "id": "rm_02_step03",
+      "order": 3,
+      "type": "text",
+      "title": "指標",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "R²と調整R²",
+          "body": "モデルの説明力を評価する指標として用いられます。"
+        }
+      ]
+    },
+    {
+      "id": "rm_02_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "多重共線性",
+          "body": "説明変数同士が強く相関すると推定が不安定になります。VIFなどで確認します。"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "rm_02_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "重回帰モデル"
+    ],
+    "external_links": []
+  }
+}

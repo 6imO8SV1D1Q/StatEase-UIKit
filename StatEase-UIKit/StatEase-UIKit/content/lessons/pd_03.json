@@ -1,0 +1,77 @@
+{
+  "id": "pd_03",
+  "title": "ポアソン分布",
+  "subtitle": "ポアソン分布の理解",
+  "estimated_minutes": 5,
+  "category": "probability_distribution",
+  "topic": "確率分布",
+  "summary": "一定時間あたりの稀な発生回数を表すポアソン分布の性質と例を学びます。",
+  "learning_objectives": [
+    "ポアソン分布を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "pd_03_step01",
+      "order": 1,
+      "type": "text",
+      "title": "ポアソン分布とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "発生回数モデル",
+          "body": "一定時間・一定領域で稀に起こるイベントの回数を表す分布です。平均発生率 \\(\\lambda\\) がパラメータ。"
+        }
+      ]
+    },
+    {
+      "id": "pd_03_step02",
+      "order": 2,
+      "type": "text",
+      "title": "PMFと性質",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "式",
+          "body": "\\(P(X=k) = e^{-\\lambda} \\frac{\\lambda^k}{k!}\\)。"
+        },
+        {
+          "title": "期待値・分散",
+          "body": "どちらも \\(\\lambda\\) です。"
+        }
+      ]
+    },
+    {
+      "id": "pd_03_step03",
+      "order": 3,
+      "type": "text",
+      "title": "例：サーバのエラー数",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "応用",
+          "body": "1時間あたりのエラー発生回数をモデリングし、閾値を超えたらアラートを出す、といった運用に使えます。"
+        }
+      ]
+    },
+    {
+      "id": "pd_03_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "発生率の一定性",
+          "body": "時間帯で発生率が変わる場合はホモジニアスなポアソンではなく、時間依存のモデルを検討します。"
+        }
+      ]
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "ポアソン分布"
+    ],
+    "external_links": []
+  }
+}

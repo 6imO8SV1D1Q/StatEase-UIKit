@@ -1,0 +1,82 @@
+{
+  "id": "rm_07",
+  "title": "自由度調整済み決定係数",
+  "subtitle": "修正済み決定係数",
+ "estimated_minutes": 5,
+ "category": "regression_multiple",
+ "topic": "回帰分析",
+  "summary": "重回帰モデルの比較で用いられる自由度調整済み決定係数を学びます。",
+  "learning_objectives": [
+    "自由度調整済み決定係数を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rm_07_step01",
+      "order": 1,
+      "type": "text",
+      "title": "調整済みR²とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "式",
+          "body": "調整済みR² = 1 - \\((1-R²) \\frac{n-1}{n-p-1}\\)、pは説明変数の数です。"
+        }
+      ]
+    },
+    {
+      "id": "rm_07_step02",
+      "order": 2,
+      "type": "text",
+      "title": "目的",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "モデル比較",
+          "body": "説明変数を増やすと必ず上昇するR²に対し、調整R²は自由度を補正して過剰適合を防ぎます。"
+        }
+      ]
+    },
+    {
+      "id": "rm_07_step03",
+      "order": 3,
+      "type": "text",
+      "title": "利用例",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "逐次モデル",
+          "body": "変数選択の際に、調整R²が上がるかを指標にします。"
+        }
+      ]
+    },
+    {
+      "id": "rm_07_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "他の指標と併用",
+          "body": "AICやBICなど他の評価指標と併用し、モデルを総合的に評価します。"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "rm_07_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "自由度調整済み決定係数"
+    ],
+    "external_links": []
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "id": "rm_06",
+  "title": "ダミー変数を用いた回帰",
+  "subtitle": "ダミー変数の活用",
+  "estimated_minutes": 5,
+  "category": "regression_multiple",
+  "topic": "回帰分析",
+  "summary": "ダミー変数を用いた回帰について学びます。",
+  "learning_objectives": [
+    "ダミー変数を用いた回帰を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rm_06_step01",
+      "order": 1,
+      "type": "text",
+      "title": "ダミー変数とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "カテゴリを0/1で表す",
+          "body": "質的なカテゴリを0/1で表し、回帰に組み込むための変数です。"
+        }
+      ]
+    },
+    {
+      "id": "rm_06_step02",
+      "order": 2,
+      "type": "text",
+      "title": "基準カテゴリ",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "ダミートラップ",
+          "body": "kカテゴリを表すにはk-1個のダミーを使い、基準となるカテゴリを1つ省きます。"
+        }
+      ]
+    },
+    {
+      "id": "rm_06_step03",
+      "order": 3,
+      "type": "text",
+      "title": "例：性別ダミー",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "解釈",
+          "body": "男性=1、女性=0 のダミーを入れると、係数は男性と女性の平均差を示します。"
+        }
+      ]
+    },
+    {
+      "id": "rm_06_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "交互作用",
+          "body": "ダミーと連続変数の掛け算項を入れると、カテゴリごとの傾きを表現できます。"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "rm_06_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "ダミー変数を用いた回帰"
+    ],
+    "external_links": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "i1_02",
+  "title": "標準正規分布",
+  "subtitle": "標準正規分布の理解",
+  "estimated_minutes": 5,
+  "category": "inference_1pop",
+  "topic": "１つの母集団の母数に関する仮説検定の方法について理解する",
+  "summary": "標準正規分布について学びます。",
+  "learning_objectives": [
+    "標準正規分布を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "i1_02_step01",
+      "order": 1,
+      "type": "text",
+      "title": "標準正規分布とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "N(0,1)",
+          "body": "平均0、分散1の正規分布です。密度は \\(\\phi(z) = \\frac{1}{\\sqrt{2\\pi}} e^{-z^2/2}\\)。"
+        }
+      ]
+    },
+    {
+      "id": "i1_02_step02",
+      "order": 2,
+      "type": "text",
+      "title": "標準化",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "Zスコア",
+          "body": "任意の正規分布の値 \\(X\\) を \\(Z=(X-\\mu)/\\sigma\\) と変換すると標準正規分布に従います。"
+        }
+      ]
+    },
+    {
+      "id": "i1_02_step03",
+      "order": 3,
+      "type": "text",
+      "title": "表の利用",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "累積確率",
+          "body": "標準正規分布表では \\(P(Z ≤ z)\\) を参照します。"
+        }
+      ]
+    },
+    {
+      "id": "i1_02_step04",
+      "order": 4,
+      "type": "text",
+      "title": "実務での利用",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "検定",
+          "body": "Z検定や信頼区間の構成など、頻繁に使用します。"
+        }
+      ]
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "標準正規分布"
+    ],
+    "external_links": []
+  }
+}

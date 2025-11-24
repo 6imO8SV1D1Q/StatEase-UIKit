@@ -1,0 +1,22 @@
+//
+//  APIKey.swift.sample
+//  StatEase-UIKit
+//
+//  このファイルをコピーして APIKey.swift を作成してください
+//  1. このファイルを同じディレクトリにコピー
+//  2. ファイル名を APIKey.swift に変更
+//  3. 下記の YOUR_GEMINI_API_KEY_HERE を実際のGoogle Gemini APIキーに置き換える
+//
+//  Gemini APIキーの取得方法:
+//  1. https://aistudio.google.com/app/apikey にアクセス
+//  2. 「Create API Key」をクリック
+//  3. 生成されたAPIキーをコピーして下記に貼り付け
+//
+//  注意: APIKey.swift は .gitignore に含まれているため、Gitにコミットされません
+//
+
+import Foundation
+
+struct APIConfiguration {
+    static let geminiAPIKey = "YOUR_GEMINI_API_KEY_HERE"
+}

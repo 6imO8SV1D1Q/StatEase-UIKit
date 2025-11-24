@@ -1,0 +1,89 @@
+{
+  "id": "pd_06",
+  "title": "正規分布",
+  "subtitle": "正規分布の理解",
+  "estimated_minutes": 5,
+  "category": "probability_distribution",
+  "topic": "確率分布",
+  "summary": "平均と分散で形が決まる正規分布の性質や応用を学びます。",
+  "learning_objectives": [
+    "正規分布を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "pd_06_step01",
+      "order": 1,
+      "type": "text",
+      "title": "正規分布とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "密度",
+          "body": "正規分布 N(μ, σ^2) の密度は \\(f(x) = \\frac{1}{\\sqrt{2\\piσ^2}} exp(-(x-μ)^2/(2σ^2))\\)。"
+        },
+        {
+          "title": "特徴",
+          "body": "釣鐘型で平均付近にデータが集まり、μとσが形状を決めます。"
+        }
+      ]
+    },
+    {
+      "id": "pd_06_step02",
+      "order": 2,
+      "type": "text",
+      "title": "標準正規分布",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "標準化",
+          "body": "正規分布は \\(Z = (X-μ)/σ\\) と標準化して標準正規分布 N(0,1) を用いれば、確率表から簡単に計算できます。"
+        },
+        {
+          "title": "68-95-99.7ルール",
+          "body": "平均±1σに約68%、±2σに約95%、±3σに約99.7%が含まれます。"
+        }
+      ]
+    },
+    {
+      "id": "pd_06_step03",
+      "order": 3,
+      "type": "text",
+      "title": "例：身長データ",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "仮定",
+          "body": "成人男性の身長は正規分布に近いとされ、平均170cm、標準偏差6cmでモデル化されます。"
+        },
+        {
+          "title": "応用",
+          "body": "6尺(約182cm)以上の割合などを簡単に求められます。"
+        }
+      ]
+    },
+    {
+      "id": "pd_06_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "正規性の確認",
+          "body": "すべてのデータが正規とは限りません。Q-Qプロットや正規性検定で確認します。"
+        },
+        {
+          "title": "外れ値",
+          "body": "外れ値に敏感なので、実データではロバストな手法も検討しましょう。"
+        }
+      ]
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "正規分布"
+    ],
+    "external_links": []
+  }
+}

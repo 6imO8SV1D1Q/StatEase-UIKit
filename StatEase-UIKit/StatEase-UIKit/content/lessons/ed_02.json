@@ -1,0 +1,82 @@
+{
+  "id": "ed_02",
+  "title": "処理群と対照群",
+  "subtitle": "処理群と対照群の理解",
+  "estimated_minutes": 5,
+  "category": "experimental_design",
+  "topic": "実験計画の概念の理解",
+  "summary": "処理群と対照群について学びます。",
+  "learning_objectives": [
+    "処理群と対照群を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "ed_02_step01",
+      "order": 1,
+      "type": "text",
+      "title": "処理群と対照群",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "定義",
+          "body": "処理群は介入を受けるグループ、対照群は受けないグループです。"
+        }
+      ]
+    },
+    {
+      "id": "ed_02_step02",
+      "order": 2,
+      "type": "text",
+      "title": "割付方法",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "ランダム割付",
+          "body": "無作為に割り付けることでバイアスを抑えます。"
+        }
+      ]
+    },
+    {
+      "id": "ed_02_step03",
+      "order": 3,
+      "type": "text",
+      "title": "例",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "A/Bテスト",
+          "body": "Webサイトで新デザインを処理群、旧デザインを対照群に割り当てて比較します。"
+        }
+      ]
+    },
+    {
+      "id": "ed_02_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "割付のバランス",
+          "body": "重要な属性（年齢、地域）で層別割付をするとバランスが取れます。"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "ed_02_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "処理群と対照群"
+    ],
+    "external_links": []
+  }
+}

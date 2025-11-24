@@ -1,0 +1,82 @@
+{
+  "id": "ed_07",
+  "title": "F比",
+  "subtitle": "F比の理解",
+  "estimated_minutes": 5,
+  "category": "experimental_design",
+ "topic": "実験計画の概念の理解",
+  "summary": "ANOVAの中心量であるF比とその解釈を学びます。",
+  "learning_objectives": [
+    "F比を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "ed_07_step01",
+      "order": 1,
+      "type": "text",
+      "title": "F比の定義",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "式",
+          "body": "F比 = 群間平均平方(MSB) / 群内平均平方(MSW)。"
+        }
+      ]
+    },
+    {
+      "id": "ed_07_step02",
+      "order": 2,
+      "type": "text",
+      "title": "解釈",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "値の大きさ",
+          "body": "Fが1に近いと差がない、Fが大きいと処理効果が疑われます。"
+        }
+      ]
+    },
+    {
+      "id": "ed_07_step03",
+      "order": 3,
+      "type": "text",
+      "title": "臨界値との比較",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "自由度",
+          "body": "F分布表で自由度 (k-1, N-k) を指定し、臨界値と比較します。"
+        }
+      ]
+    },
+    {
+      "id": "ed_07_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "等分散性",
+          "body": "MSWが誤差分散を適切に表すためには、等分散性が必要です。"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "ed_07_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "F比"
+    ],
+    "external_links": []
+  }
+}

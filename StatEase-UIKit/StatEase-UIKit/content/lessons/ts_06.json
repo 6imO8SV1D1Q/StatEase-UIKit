@@ -1,0 +1,93 @@
+{
+  "id": "ts_06",
+  "title": "平滑化",
+  "subtitle": "移動平均",
+  "estimated_minutes": 5,
+  "category": "timeseries",
+  "topic": "時系列データの処理",
+  "summary": "移動平均などの平滑化手法の目的と実装、読み取り方を学びます。",
+  "learning_objectives": [
+    "平滑化の目的を説明できる",
+    "単純移動平均・指数平滑を計算できる",
+    "平滑化した系列の使い所と注意点を述べられる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "ts_06_step01",
+      "order": 1,
+      "type": "text",
+      "title": "平滑化とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "ノイズを抑える",
+          "body": "平滑化は、短期的な変動を抑えて中長期の傾向を見やすくする処理です。代表的なのが移動平均や指数平滑。"
+        },
+        {
+          "title": "トレンドとの関係",
+          "body": "平滑化後の系列はトレンド成分の近似になります。トレンド分析や予測の前処理としても使われます。"
+        }
+      ]
+    },
+    {
+      "id": "ts_06_step02",
+      "order": 2,
+      "type": "text",
+      "title": "単純移動平均 (SMA)",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "計算",
+          "body": "幅 \\(k\\) の移動平均は直近 \\(k\\) 個の値の平均です。Excelでは `=AVERAGE(B2:B4)` をコピー、Pythonでは `series.rolling(window=k).mean()` を使います。"
+        },
+        {
+          "title": "ウィンドウ選択",
+          "body": "幅が大きいほどなめらかになりますが、最新動向への反応が鈍くなります。目的に応じて幅を調整します。"
+        }
+      ]
+    },
+    {
+      "id": "ts_06_step03",
+      "order": 3,
+      "type": "text",
+      "title": "指数平滑 (EWMA)",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "計算式",
+          "body": "指数平滑は \\(S_t = \\alpha x_t + (1-\\alpha) S_{t-1}\\) で更新します。\\(\\alpha\\) が大きいほど最新値を重視します。"
+        },
+        {
+          "title": "実装例",
+          "body": "Excelでは `=α*値 + (1-α)*前の平滑値`、Pythonでは `series.ewm(alpha=α).mean()` で計算可能です。"
+        }
+      ]
+    },
+    {
+      "id": "ts_06_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "データの遅れ",
+          "body": "平滑化は最新の変化を遅らせる性質があります。意思決定には原系列との併用が不可欠です。"
+        },
+        {
+          "title": "外れ値への反応",
+          "body": "単純移動平均は外れ値に弱く、指数平滑はαを小さくすると緩和できます。外れ値処理やロバスト平滑も検討しましょう。"
+        }
+      ]
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "平滑化",
+      "移動平均",
+      "指数平滑"
+    ],
+    "external_links": []
+  }
+}

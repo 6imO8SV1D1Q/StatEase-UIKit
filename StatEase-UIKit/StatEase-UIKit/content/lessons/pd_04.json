@@ -1,0 +1,77 @@
+{
+  "id": "pd_04",
+  "title": "一様分布",
+  "subtitle": "一様分布の理解",
+  "estimated_minutes": 5,
+  "category": "probability_distribution",
+  "topic": "確率分布",
+  "summary": "一様分布について学びます。",
+  "learning_objectives": [
+    "一様分布を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "pd_04_step01",
+      "order": 1,
+      "type": "text",
+      "title": "一様分布とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "等確率",
+          "body": "ある区間 [a,b] の全ての値が同じ確率密度を持つ分布です。"
+        }
+      ]
+    },
+    {
+      "id": "pd_04_step02",
+      "order": 2,
+      "type": "text",
+      "title": "密度とCDF",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "PDF",
+          "body": "\\(f(x) = \\frac{1}{b-a}\\) for a ≤ x ≤ b。"
+        },
+        {
+          "title": "CDF",
+          "body": "\\(F(x) = \\frac{x-a}{b-a}\\)。"
+        }
+      ]
+    },
+    {
+      "id": "pd_04_step03",
+      "order": 3,
+      "type": "text",
+      "title": "例：乱数",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "擬似乱数",
+          "body": "0〜1の一様乱数を生成し、他の分布を作るためのベースとして利用します。"
+        }
+      ]
+    },
+    {
+      "id": "pd_04_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "区間外の確率",
+          "body": "区間外の確率は0であることを意識しましょう。"
+        }
+      ]
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "一様分布"
+    ],
+    "external_links": []
+  }
+}

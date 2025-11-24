@@ -1,0 +1,90 @@
+{
+  "id": "rv_03",
+  "title": "期待値",
+  "subtitle": "確率変数の平均的な値",
+  "estimated_minutes": 5,
+  "category": "random_variable",
+  "topic": "確率変数",
+  "summary": "確率変数の期待値の計算方法と性質（線形性）を学びます。",
+  "learning_objectives": [
+    "確率変数の期待値を計算し、意味を説明できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rv_03_step01",
+      "order": 1,
+      "type": "text",
+      "title": "期待値とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "平均的な値",
+          "body": "期待値は確率変数の平均的な値を表し、離散型では \\(E[X] = \\sum x p_X(x)\\)、連続型では \\(E[X] = \\int x f_X(x) dx\\) で求めます。"
+        },
+        {
+          "title": "存在条件",
+          "body": "和や積分が収束することが必要です。尾が重い分布では期待値が存在しない場合もあります。"
+        }
+      ]
+    },
+    {
+      "id": "rv_03_step02",
+      "order": 2,
+      "type": "text",
+      "title": "期待値の性質",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "線形性",
+          "body": "\\(E[aX + bY] = aE[X] + bE[Y]\\)。独立である必要はありません。"
+        },
+        {
+          "title": "定数の期待値",
+          "body": "定数cの期待値はcです。"
+        }
+      ]
+    },
+    {
+      "id": "rv_03_step03",
+      "order": 3,
+      "type": "text",
+      "title": "例：コイン投げ",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "設定",
+          "body": "表なら1点、裏なら0点を与える場合、期待値は0.5。10回試行するなら合計得点の期待値は5。"
+        },
+        {
+          "title": "応用",
+          "body": "収益計算やロイヤリティプログラムの平均価値などを期待値で見積もれる。"
+        }
+      ]
+    },
+    {
+      "id": "rv_03_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "外れ値",
+          "body": "期待値は極端な値に敏感です。重い尾がある分布では中央値も併用しましょう。"
+        },
+        {
+          "title": "存在しない場合",
+          "body": "パレート分布などでは期待値が無限大になることがあります。その場合は別の指標で議論します。"
+        }
+      ]
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "期待値",
+      "期待値の線形性"
+    ],
+    "external_links": []
+  }
+}

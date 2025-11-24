@@ -1,0 +1,87 @@
+{
+  "id": "rv_04a",
+  "title": "和の性質",
+  "subtitle": "和をとったときの期待値と分散",
+  "estimated_minutes": 5,
+  "category": "random_variable",
+  "topic": "確率変数",
+  "summary": "確率変数の和を取ったときの期待値と分散の求め方を学びます。",
+  "learning_objectives": [
+    "独立性の仮定ごとに和の期待値と分散を計算できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rv_04a_step01",
+      "order": 1,
+      "type": "text",
+      "title": "和の期待値",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "線形性",
+          "body": "\\(E[X+Y] = E[X] + E[Y]\\) は常に成り立ちます。これを利用して合計の平均を簡単に求められます。"
+        }
+      ]
+    },
+    {
+      "id": "rv_04a_step02",
+      "order": 2,
+      "type": "text",
+      "title": "和の分散",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "独立な場合",
+          "body": "独立なら \\(\\text{Var}(X+Y) = \\text{Var}(X) + \\text{Var}(Y)\\)。"
+        },
+        {
+          "title": "相関がある場合",
+          "body": "一般には \\(\\text{Var}(X+Y) = \\text{Var}(X) + \\text{Var}(Y) + 2\\text{Cov}(X,Y)\\)。"
+        }
+      ]
+    },
+    {
+      "id": "rv_04a_step03",
+      "order": 3,
+      "type": "text",
+      "title": "例：複数チャネルの売上",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "期待値の足し合わせ",
+          "body": "チャネルAとBの平均売上を足せば、合計売上の平均になります。"
+        },
+        {
+          "title": "分散計算",
+          "body": "チャネル間に相関がある場合は共分散を考慮します。"
+        }
+      ]
+    },
+    {
+      "id": "rv_04a_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "独立の確認",
+          "body": "独立ではないのに単純に分散を足すと誤差が生じます。相関を確認しましょう。"
+        },
+        {
+          "title": "多数の変数",
+          "body": "複数の変数の和では共分散行列を使って計算する方が効率的です。"
+        }
+      ]
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "期待値",
+      "分散",
+      "独立性"
+    ],
+    "external_links": []
+  }
+}

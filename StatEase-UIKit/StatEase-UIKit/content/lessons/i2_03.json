@@ -1,0 +1,82 @@
+{
+  "id": "i2_03",
+  "title": "母比率の差の検定",
+  "subtitle": "母比率の差の検定",
+  "estimated_minutes": 5,
+  "category": "inference_2pop",
+  "topic": "２つの母集団の母数に関する仮説検定の方法を理解する",
+  "summary": "母比率の差の検定について学びます。",
+  "learning_objectives": [
+    "母比率の差の検定を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "i2_03_step01",
+      "order": 1,
+      "type": "text",
+      "title": "設定",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "二項分布",
+          "body": "独立な二項試行から得られた比率 p1, p2 の差を検定します。"
+        }
+      ]
+    },
+    {
+      "id": "i2_03_step02",
+      "order": 2,
+      "type": "text",
+      "title": "統計量",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "Z統計量",
+          "body": "プールした比率 \\(p = \\frac{x_1+x_2}{n_1+n_2}\\) を用い、\\(Z = \\frac{(p_1 - p_2) - Δ_0}{\\sqrt{p(1-p)(1/n_1 + 1/n_2)}}\\)。"
+        }
+      ]
+    },
+    {
+      "id": "i2_03_step03",
+      "order": 3,
+      "type": "text",
+      "title": "判定",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "標準正規",
+          "body": "Z統計量を標準正規の臨界値と比較して判断します。"
+        }
+      ]
+    },
+    {
+      "id": "i2_03_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "近似条件",
+          "body": "nが小さい場合や成功/失敗数が少ない場合は正確検定を使うことを検討します。"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "i2_03_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "母比率の差の検定"
+    ],
+    "external_links": []
+  }
+}

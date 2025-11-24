@@ -1,0 +1,82 @@
+{
+  "id": "ed_04",
+  "title": "ブロック化",
+  "subtitle": "ブロック化の理解",
+ "estimated_minutes": 5,
+ "category": "experimental_design",
+ "topic": "実験計画の概念の理解",
+  "summary": "実験でブロック化を行い、既知のばらつきを統制する方法を学びます。",
+  "learning_objectives": [
+    "ブロック化を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "ed_04_step01",
+      "order": 1,
+      "type": "text",
+      "title": "ブロック化とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "既知の要因を固める",
+          "body": "似た条件の実験単位をブロックとしてまとめ、処理をブロック内で比較することで、ブロック間のばらつきを除去します。"
+        }
+      ]
+    },
+    {
+      "id": "ed_04_step02",
+      "order": 2,
+      "type": "text",
+      "title": "例：地域ブロック",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "応用",
+          "body": "地域差が大きい場合、各地域をブロックにして実験を行うことで、地域間の差をコントロールできます。"
+        }
+      ]
+    },
+    {
+      "id": "ed_04_step03",
+      "order": 3,
+      "type": "text",
+      "title": "分析",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "分散分析",
+          "body": "ブロック効果を要因としてANOVAに組み込み、処理効果を正確に推定します。"
+        }
+      ]
+    },
+    {
+      "id": "ed_04_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "ブロックサイズ",
+          "body": "ブロック内に全ての処理を割り付けられるよう、ブロックサイズを設計します。"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "ed_04_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "ブロック化"
+    ],
+    "external_links": []
+  }
+}

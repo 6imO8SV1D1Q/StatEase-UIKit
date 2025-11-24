@@ -1,0 +1,77 @@
+{
+  "id": "i1_07",
+  "title": "分布表の活用",
+  "subtitle": "各種分布表の活用",
+  "estimated_minutes": 5,
+  "category": "inference_1pop",
+  "topic": "１つの母集団の母数に関する仮説検定の方法について理解する",
+  "summary": "標準正規・t・χ²・Fなどの表の活用方法と注意点を学びます。",
+  "learning_objectives": [
+    "分布表の活用を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "i1_07_step01",
+      "order": 1,
+      "type": "text",
+      "title": "表の種類",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "標準正規・t・χ²・F",
+          "body": "それぞれが異なる統計量の臨界値を提供します。どの分布を使うかは推定対象に依存します。"
+        }
+      ]
+    },
+    {
+      "id": "i1_07_step02",
+      "order": 2,
+      "type": "text",
+      "title": "表の使い方",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "臨界値の読み方",
+          "body": "自由度や両側/片側をチェックし、該当セルから臨界値を読み取ります。"
+        },
+        {
+          "title": "補間",
+          "body": "表にない自由度の場合は近い値を使うか補間します。"
+        }
+      ]
+    },
+    {
+      "id": "i1_07_step03",
+      "order": 3,
+      "type": "text",
+      "title": "例：t検定",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "手順",
+          "body": "自由度 n-1 を表で確認し、t統計量と比較します。"
+        }
+      ]
+    },
+    {
+      "id": "i1_07_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "表ごとの定義",
+          "body": "片側か両側か、累積確率か尾確率かなど表の仕様を確認します。"
+        }
+      ]
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "分布表の活用"
+    ],
+    "external_links": []
+  }
+}

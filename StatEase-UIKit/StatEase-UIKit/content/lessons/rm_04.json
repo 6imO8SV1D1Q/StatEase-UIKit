@@ -1,0 +1,82 @@
+{
+  "id": "rm_04",
+  "title": "回帰係数の検定",
+  "subtitle": "回帰係数の検定",
+  "estimated_minutes": 5,
+  "category": "regression_multiple",
+  "topic": "回帰分析",
+  "summary": "回帰係数の検定について学びます。",
+  "learning_objectives": [
+    "回帰係数の検定を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "rm_04_step01",
+      "order": 1,
+      "type": "text",
+      "title": "仮説設定",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "係数検定",
+          "body": "各回帰係数について \\(H_0: \\beta_j = 0\\) を検定します。"
+        }
+      ]
+    },
+    {
+      "id": "rm_04_step02",
+      "order": 2,
+      "type": "text",
+      "title": "統計量",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "t統計量",
+          "body": "\\(t = \\frac{\\hat{\\beta}_j}{SE(\\hat{\\beta}_j)}\\) を計算し、自由度 n-p-1 のt分布と比較します。"
+        }
+      ]
+    },
+    {
+      "id": "rm_04_step03",
+      "order": 3,
+      "type": "text",
+      "title": "p値と解釈",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "p値",
+          "body": "p値が有意水準より小さければ係数が0ではないと判断します。"
+        }
+      ]
+    },
+    {
+      "id": "rm_04_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "多重比較",
+          "body": "多くの係数を同時に検定すると偽陽性が増えます。"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "rm_04_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "回帰係数の検定"
+    ],
+    "external_links": []
+  }
+}

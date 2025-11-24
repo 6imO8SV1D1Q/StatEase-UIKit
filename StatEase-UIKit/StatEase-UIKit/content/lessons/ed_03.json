@@ -1,0 +1,82 @@
+{
+  "id": "ed_03",
+  "title": "反復",
+  "subtitle": "反復の理解",
+ "estimated_minutes": 5,
+ "category": "experimental_design",
+ "topic": "実験計画の概念の理解",
+  "summary": "実験で反復を行う目的と設計上のポイントを学びます。",
+  "learning_objectives": [
+    "反復を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "ed_03_step01",
+      "order": 1,
+      "type": "text",
+      "title": "反復とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "複数の実行",
+          "body": "同じ処置を繰り返し実施し、偶然のばらつきを推定するための設計要素です。"
+        }
+      ]
+    },
+    {
+      "id": "ed_03_step02",
+      "order": 2,
+      "type": "text",
+      "title": "効果",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "分散の推定",
+          "body": "反復がないと誤差分散を推定できず、検定が難しくなります。"
+        }
+      ]
+    },
+    {
+      "id": "ed_03_step03",
+      "order": 3,
+      "type": "text",
+      "title": "例",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "農業実験",
+          "body": "同じ肥料処方を複数の区画で試すことで、地力のばらつきを平均化します。"
+        }
+      ]
+    },
+    {
+      "id": "ed_03_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "ランダム化と組み合わせ",
+          "body": "反復はランダム化やブロック化と合わせて設計します。"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "ed_03_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "反復"
+    ],
+    "external_links": []
+  }
+}

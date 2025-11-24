@@ -1,0 +1,72 @@
+{
+  "id": "i1_04",
+  "title": "t分布",
+  "subtitle": "t分布の理解",
+  "estimated_minutes": 5,
+  "category": "inference_1pop",
+  "topic": "１つの母集団の母数に関する仮説検定の方法について理解する",
+  "learning_objectives": [
+    "t分布を理解できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "i1_04_step01",
+      "order": 1,
+      "type": "text",
+      "title": "t分布とは",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "定義",
+          "body": "標準正規Zと自由度νのカイ二乗Vが独立なら、T = Z / \\sqrt{V/ν} は自由度νのt分布に従います。"
+        }
+      ]
+    },
+    {
+      "id": "i1_04_step02",
+      "order": 2,
+      "type": "text",
+      "title": "特性",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "形状",
+          "body": "正規分布に似た釣鐘型ですが、尾が厚く、自由度が増えるほど正規分布に近づきます。"
+        }
+      ]
+    },
+    {
+      "id": "i1_04_step03",
+      "order": 3,
+      "type": "text",
+      "title": "活用",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "母平均の推定",
+          "body": "母分散が未知の正規母集団で、標本平均から母平均を推定・検定する際にt分布を用います。"
+        }
+      ]
+    },
+    {
+      "id": "i1_04_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "自由度",
+          "body": "自由度はサンプルサイズに応じて n-1 となります。自由度を間違えると臨界値がずれます。"
+        }
+      ]
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "t分布"
+    ],
+    "external_links": []
+  }
+}

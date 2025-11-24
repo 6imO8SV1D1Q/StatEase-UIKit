@@ -1,0 +1,96 @@
+{
+  "id": "i2_01a",
+  "title": "母平均の差の検定（分散未知で等分散）",
+  "subtitle": "プールした分散を使うt検定",
+  "estimated_minutes": 5,
+  "category": "inference_2pop",
+  "topic": "２つの母集団の母数に関する仮説検定の方法を理解する",
+  "summary": "分散未知で等分散とみなせる場合の母平均差の検定を学びます。",
+  "learning_objectives": [
+    "等分散を仮定した2標本t検定の流れを説明できる"
+  ],
+  "prerequisites": [],
+  "steps": [
+    {
+      "id": "i2_01a_step01",
+      "order": 1,
+      "type": "text",
+      "title": "前提と仮説",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "前提",
+          "body": "両母集団は正規、分散は未知だが等しい（\\(σ_1^2=σ_2^2\\)）。"
+        },
+        {
+          "title": "仮説",
+          "body": "\\(H_0: μ_1-μ_2=Δ_0\\) を検定します。"
+        }
+      ]
+    },
+    {
+      "id": "i2_01a_step02",
+      "order": 2,
+      "type": "text",
+      "title": "統計量",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "プールした分散",
+          "body": "プール分散 \\(S_p^2 = \\frac{(n_1-1)S_1^2 + (n_2-1)S_2^2}{n_1+n_2-2}\\)。"
+        },
+        {
+          "title": "t統計量",
+          "body": "\\(T = \\frac{(\\bar{X}_1-\\bar{X}_2)-Δ_0}{S_p\\sqrt{1/n_1 + 1/n_2}}\\) は自由度 \\(n_1+n_2-2\\) のt分布に従います。"
+        }
+      ]
+    },
+    {
+      "id": "i2_01a_step03",
+      "order": 3,
+      "type": "text",
+      "title": "判定と区間推定",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "検定",
+          "body": "t分布の臨界値と比較して仮説を判断します。"
+        },
+        {
+          "title": "区間",
+          "body": "同じ統計量を使って母平均差の信頼区間も計算できます。"
+        }
+      ]
+    },
+    {
+      "id": "i2_01a_step04",
+      "order": 4,
+      "type": "text",
+      "title": "注意点",
+      "body": "",
+      "paragraphs": [
+        {
+          "title": "等分散の確認",
+          "body": "事前に等分散の前提をチェックし、満たされなければウェルチ検定を検討します。"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "id": "i2_01a_step01",
+      "order": 1,
+      "type": "text",
+      "title": "はじめに",
+      "body": "このレッスンは準備中です。"
+    }
+  ],
+  "resources": {
+    "key_terms": [
+      "母平均の差",
+      "等分散",
+      "2標本t検定"
+    ],
+    "external_links": []
+  }
+}
