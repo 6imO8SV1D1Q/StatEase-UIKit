@@ -21,7 +21,7 @@ class ChatViewController: UIViewController {
         table.separatorStyle = .none
         table.translatesAutoresizingMaskIntoConstraints = false
         table.register(ChatMessageCell.self, forCellReuseIdentifier: ChatMessageCell.identifier)
-        table.keyboardDismissMode = .interactive
+        table.keyboardDismissMode = .interactive // Changed from .onDrag
         return table
     }()
 
@@ -29,18 +29,29 @@ class ChatViewController: UIViewController {
         let view = UIView()
         view.backgroundColor = .systemBackground
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.isUserInteractionEnabled = true
         return view
     }()
 
-    private lazy var inputTextField: UITextField = {
-        let textField = UITextField()
-        textField.borderStyle = .roundedRect
-        textField.placeholder = "質問を入力..."
-        textField.font = .systemFont(ofSize: 16)
-        textField.returnKeyType = .send
-        textField.delegate = self
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        return textField
+    private lazy var topBorder: CALayer = {
+        let border = CALayer()
+        border.backgroundColor = UIColor.separator.cgColor
+        return border
+    }()
+
+    private lazy var inputTextView: UITextView = {
+        let textView = UITextView()
+        textView.font = .systemFont(ofSize: 16)
+        textView.textColor = .label
+        textView.backgroundColor = .secondarySystemBackground
+        textView.layer.cornerRadius = 8
+        textView.layer.borderWidth = 0.5
+        textView.layer.borderColor = UIColor.separator.cgColor
+        textView.textContainerInset = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+        textView.isScrollEnabled = false
+        textView.translatesAutoresizingMaskIntoConstraints = false
+        textView.delegate = self
+        return textView
     }()
 
     private lazy var sendButton: UIButton = {
@@ -83,10 +94,22 @@ class ChatViewController: UIViewController {
         // pushで表示するので閉じるボタンは不要
     }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        // 初期表示時にinputContainerViewをSafeAreaの上に配置
+        if inputTextView.isFirstResponder == false {
+            inputContainerBottomConstraint.constant = -view.safeAreaInsets.bottom
+        }
+
+        // 境界線のフレームを更新
+        topBorder.frame = CGRect(x: 0, y: 0, width: inputContainerView.bounds.width, height: 0.5)
+    }
+
+
     override func viewSafeAreaInsetsDidChange() {
         super.viewSafeAreaInsetsDidChange()
         // キーボードが出ていない場合のみSafeAreaを反映
-        if inputTextField.isFirstResponder == false {
+        if inputTextView.isFirstResponder == false {
             inputContainerBottomConstraint.constant = -view.safeAreaInsets.bottom
         }
     }
@@ -102,7 +125,8 @@ class ChatViewController: UIViewController {
 
         view.addSubview(tableView)
         view.addSubview(inputContainerView)
-        inputContainerView.addSubview(inputTextField)
+        inputContainerView.layer.addSublayer(topBorder)
+        inputContainerView.addSubview(inputTextView)
         inputContainerView.addSubview(sendButton)
         inputContainerView.addSubview(activityIndicator)
 
@@ -121,11 +145,11 @@ class ChatViewController: UIViewController {
             inputContainerBottomConstraint,
             inputContainerView.heightAnchor.constraint(equalToConstant: 60),
 
-            // TextField
-            inputTextField.leadingAnchor.constraint(equalTo: inputContainerView.leadingAnchor, constant: 16),
-            inputTextField.trailingAnchor.constraint(equalTo: sendButton.leadingAnchor, constant: -8),
-            inputTextField.centerYAnchor.constraint(equalTo: inputContainerView.centerYAnchor),
-            inputTextField.heightAnchor.constraint(equalToConstant: 40),
+            // TextView
+            inputTextView.leadingAnchor.constraint(equalTo: inputContainerView.leadingAnchor, constant: 16),
+            inputTextView.trailingAnchor.constraint(equalTo: sendButton.leadingAnchor, constant: -8),
+            inputTextView.centerYAnchor.constraint(equalTo: inputContainerView.centerYAnchor),
+            inputTextView.heightAnchor.constraint(equalToConstant: 40),
 
             // SendButton
             sendButton.trailingAnchor.constraint(equalTo: inputContainerView.trailingAnchor, constant: -16),
@@ -137,6 +161,10 @@ class ChatViewController: UIViewController {
             activityIndicator.centerXAnchor.constraint(equalTo: sendButton.centerXAnchor),
             activityIndicator.centerYAnchor.constraint(equalTo: sendButton.centerYAnchor)
         ])
+        
+        // Ensure input container is on top
+        view.bringSubviewToFront(inputContainerView)
+        inputContainerView.bringSubviewToFront(inputTextView)
     }
 
     private func setupKeyboardObservers() {
@@ -218,19 +246,23 @@ class ChatViewController: UIViewController {
     }
 
     @objc private func sendButtonTapped() {
+        print("Send button tapped") // Debug log
         sendMessage()
     }
 
     private func sendMessage() {
-        guard let text = inputTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines),
+        guard let text = inputTextView.text?.trimmingCharacters(in: .whitespacesAndNewlines),
               !text.isEmpty else {
+            print("Input text is empty or nil") // Debug log
             return
         }
+        
+        print("Sending message: \(text)") // Debug log
 
         let userMessage = ChatMessage(role: .user, content: text)
         messages.append(userMessage)
 
-        inputTextField.text = ""
+        inputTextView.text = ""
         sendButton.isHidden = true
         activityIndicator.startAnimating()
         tableView.reloadData()
@@ -321,10 +353,13 @@ extension ChatViewController: UITableViewDelegate {
     }
 }
 
-// MARK: - UITextFieldDelegate
-extension ChatViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        sendMessage()
-        return true
+// MARK: - UITextViewDelegate
+extension ChatViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        print("TextView did begin editing") // Debug log
+    }
+
+    func textViewDidChange(_ textView: UITextView) {
+        print("TextView text changed: '\(textView.text ?? "")'") // Debug log
     }
 }
